@@ -1,5 +1,5 @@
 html {
-  background: white;
+  background: #323232;
   margin: 50px 40px 20px 40px;
 }
 
@@ -13,7 +13,7 @@ body {
  padding: 16px;
   max-width: 600px;
   min-width: 200px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 h1 {
@@ -21,11 +21,9 @@ h1 {
 }
 
 #errorPageContainer {
-  background-color: #fff;
   border: 0px solid #AAA;
   border-radius: 5px;
-  box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
-  color: black;
+  color: #D2D2D2;
   margin-left: auto;
   margin-right: auto;
   max-width: 600px;
@@ -37,13 +35,15 @@ h1 {
 #errorLongContent {
   padding: 1px 0;
   margin-top: -20px;
-  color: black !important;
+  color: #D2D2D2 !important;
   box-shadow: none !important;
 }
 
 body.private #errorLongContent {
   margin-top: -100px !important;
-  padding-right: 165px;
+  padding-right: 15px;
+  text-align: justify;
+  font-size: 14px;
 }
 
 body.private #errorTitleText {
@@ -60,10 +60,11 @@ body.private > #errorPageContainer {
 
 body.private #errorTitle {
   background-image: url("chrome://browser/skin/pb-enabled.png") !important;
-  background-position: center right !important;
+  background-position: center !important;
   background-repeat: no-repeat !important;
   height: 128px !important;
-  width: 99.5% !important;
+  width: 100% !important;
+  margin-bottom: 110px;
 }
 
 body.normal #errorTitle {
@@ -88,9 +89,33 @@ body.normal > #errorPageContainer {
 }
 
 #moreInfoText {
+  text-align: justify;
   margin-bottom: 0;
 }
 
 #moreInfoLinkContainer {
-  margin-top: 0.5em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+button {
+  -moz-appearance: none;
+  background: #4C4C4C;
+  border: 0;
+  color: #D2D2D2;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: .875em;
+  font-family: 'Segoe UI', Tahoma, sans-serif;;
+  padding: 10px 24px;
+  transition: box-shadow 200ms cubic-bezier(255, 255, 255, 255);
+}
+
+button:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.50);
+}
+
+button:active {
+  background: #1E1E1E;
 }

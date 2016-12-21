@@ -1,5 +1,151 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
+ /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-@import url("chrome://global/content/aboutMemory.css");
+/*
+ * The version used for mobile is located at
+ * mobile/android/themes/core/aboutMemory.css.
+ * Desktop-specific stuff is at the bottom of this file.
+ */
+
+html {
+  background: #f7f7f7;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, sans-serif !important;
+}
+
+body {
+  padding: 3em;
+  margin: 4em auto;
+  min-width: 30em;
+  max-width: 65em;
+  color: -moz-fieldtext;
+}
+
+div.ancillary {
+  margin: 0.5em 0;
+  -moz-user-select: none;
+}
+
+div.section {
+  padding: 1em;
+  margin: 1em 0em;
+}
+
+div.opsRow {
+  padding: 1em;
+  margin-right: 0.5em;
+  margin-top: 1em;
+}
+
+div.opsRowLabel {
+  display: block;
+  color: black;
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+  font-weight: bold;
+}
+
+.opsRowLabel label {
+  margin-left: 1em;
+  font-size: 75%;
+  font-weight: normal;
+}
+
+div.non-verbose pre.entries {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  display: inline;  /* allow subsequent text to the right of the heading */
+}
+
+h2 {
+  padding-left: .1em;
+}
+
+h3 {
+  display: inline;  /* allow subsequent text to the right of the heading */
+}
+
+a.upDownArrow {
+  font-size: 130%;
+  text-decoration: none;
+  -moz-user-select: none;  /* no need to include this when cutting+pasting */
+}
+
+.accuracyWarning {
+  color: #d22;
+}
+
+.badInputWarning {
+  color: #f00;
+}
+
+.treeline {
+  color: #888;
+}
+
+.mrValue {
+  font-weight: bold;
+  color: #400;
+}
+
+.mrPerc {
+}
+
+.mrSep {
+}
+
+.mrName {
+  color: #004;
+}
+
+.mrNote {
+  color: #604;
+}
+
+.hasKids {
+  cursor: pointer;
+}
+
+.hasKids:hover {
+  text-decoration: underline;
+}
+
+.noselect {
+  -moz-user-select: none;  /* no need to include this when cutting+pasting */
+}
+
+.option {
+  font-size: 80%;
+  -moz-user-select: none;  /* no need to include this when cutting+pasting */
+}
+
+.legend {
+  font-size: 80%;
+  -moz-user-select: none;  /* no need to include this when cutting+pasting */
+}
+
+.debug {
+  font-size: 80%;
+}
+
+.hidden {
+  display: none;
+}
+
+.invalid {
+  color: #fff;
+  background-color: #f00;
+}
+
+/* Desktop-specific parts go here. */
+
+.hasKids:hover {
+  text-decoration: underline;
+}
+

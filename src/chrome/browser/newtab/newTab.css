@@ -148,6 +148,7 @@
   background-color: rgba(248,249,251,.95);
   color: #1f364c;
   line-height: 24px;
+  bottom: 84px !important;
 }
 
 /* CONTROLS */

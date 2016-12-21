@@ -1,6 +1,9 @@
 # Changelog
 
-### 1.5.0
+### 2.5.0
+- change of some UI elements
+
+### 2.4.0
 - support PM27's devtools
 - drop PM26 support
 

@@ -3,22 +3,23 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 html {
-  background: -moz-Dialog;
+  background: #f7f7f7;
   padding: 0 1em;
-  font: message-box;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, sans-serif !important;
 }
 
 body {
-  color: -moz-FieldText;
+  color: #646464;
   position: relative;
   min-width: 330px;
   max-width: 50em;
   margin: 4em auto;
-  border: 1px solid ThreeDShadow;
-  border-radius: 10px;
+  /* border: 1px solid ThreeDShadow;
+  border-radius: 10px; */
   padding: 3em;
   -moz-padding-start: 30px;
-  background: -moz-Field;
+  /* background: -moz-Field; */
 }
 
 .aboutPageWideContainer {

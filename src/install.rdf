@@ -8,15 +8,16 @@
     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   
   <Description about="urn:mozilla:install-manifest">
-    <em:id>{87a59598-d2b6-45ba-b98e-98e62085837f}</em:id>
-    <em:version>2.4.0</em:version>
-    <em:name>PMChrome</em:name>
-    <em:description>Chrome like theme for Pale Moon. Fork of "FXChrome" by dkgo</em:description>
-    <em:creator>Lootyhoof</em:creator>
+    <em:id>{A9F6B85E-8093-4A44-B0DA-447A1DBD0204}</em:id>
+    <em:version>2.5.0.a1</em:version>
+    <em:name>Material Moon</em:name>
+    <em:description>Material Chrome-like theme for Pale Moon. Fork of "PMChrome" (Lootyhoof) which is a fork of "FXChrome" (dkgo)</em:description>
+    <em:creator>FranklinDM</em:creator>
     <em:type>4</em:type>
-    <em:internalName>PMChrome</em:internalName>
+    <em:internalName>MMChrome</em:internalName>
     <em:skinnable>true</em:skinnable>
 	
+    <em:contributor>Lootyhoof</em:contributor>
     <em:contributor>dkgo</em:contributor>
     <em:contributor>Chrome</em:contributor>
     <em:contributor>Graciliano (Win10 caption buttons)</em:contributor>

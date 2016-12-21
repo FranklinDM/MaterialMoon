@@ -9,26 +9,36 @@
   margin: 0;
 }
 
+textbox {
+  background-color: #135CA0;
+  color: white;
+  border-radius: 2px;
+  width: 25em;
+  height: 25em;
+  font-size: 14px;
+}
+
 #tabsList {
   width: 100%;
 }
 
 #tabs-display {
-  background: #fff url(chrome://browser/skin/sync-bg.png) repeat-x center -80px;
+  background: #fff url(chrome://browser/skin/sync-bg.png) repeat-x;
+  background-color: #F7F7F7;
 }
 
 #headers {
-  background: url(chrome://browser/skin/sync-32.png) no-repeat;
-  margin-top: 4px;
-  width: 45em;
-  height: 32px;
+  background: url(chrome://browser/skin/sync-32-white.png) no-repeat;
+  margin-top: 10px;
+  width: 90em;
+  height: 35px;
   -moz-margin-start: 2em;
   -moz-margin-end: 2em;
 }
 
 #tabsListHeading {
   font-size: 140%;
-  font-weight: bold;
+  color: white;
   -moz-margin-start: 40px;
 }
 
@@ -82,7 +92,7 @@ richlistitem.desktop[type="client"] {
 .title,
 .clientName {
   color: #000000;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .title[selected="true"],

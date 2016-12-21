@@ -18,7 +18,7 @@
   -moz-appearance: none;
   padding: 18px;
   color: #000;
-  background-color: #FCFCFC;
+  background-color: #F7F7F7
 }
 
 html|html {
@@ -27,7 +27,4 @@ html|html {
 
 /* Content */
 *|*.main-content {
-  background-color: #FCFCFC;
-  border: 1px solid #DBDBDB;
-  border-radius: 3px;
 }

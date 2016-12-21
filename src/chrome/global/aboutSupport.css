@@ -3,13 +3,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 html {
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  background: #f7f7f7;
+  color: #646464;
   font: message-box;
 }
 
 body {
   width: 90%;
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -27,17 +28,16 @@ body {
 }
 
 table {
+  box-shadow: .5px .5px 2px 1px rgba(50, 50, 50, 0.14);
   background-color: -moz-Dialog;
   color: -moz-DialogText;
   font: message-box;
   text-align: start;
   width: 100%;
-  border: 1px solid ThreeDShadow;
   border-spacing: 0px;
 }
 
 th, td {
-  border: 1px dotted ThreeDShadow;
   padding: 3px;
 }
 
@@ -47,18 +47,20 @@ thead th {
 
 th {
   text-align: start;
-  background-color: Highlight;
+  background-color: lightgray;
   color: HighlightText;
 }
 
 th.column {
+  border-top: 1px solid gray;
+  background-color: lightgray;
   white-space: nowrap;
   width: 0px;
 }
 
 td {
   text-align: start;
-  border-top: 1px dotted ThreeDShadow;
+  border-top: 1px solid lightgray;
 }
 
 .prefs-table {
@@ -80,7 +82,7 @@ td {
 
 #reset-box {
   background-color: -moz-Dialog;
-  border: 1px solid ThreeDShadow;
+  box-shadow: .5px .5px 2px 1px rgba(50, 50, 50, 0.14);
   color: -moz-DialogText;
   float: right;
   margin-top: 2em;

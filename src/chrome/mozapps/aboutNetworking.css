@@ -1,0 +1,28 @@
+table {
+  margin-top: 1em;
+  background-color: white;
+  border-color: white;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.5em 0;
+  border-radius: 5px;
+  border-bottom: white;
+  border-left-color: white;
+  border-right: white;
+  border-top: white;
+}
+
+td {
+  border-radius: 0px;
+  border-color: white;
+  border-bottom: white;
+  border-top: white;
+  border-left: white;
+}
+
+th {
+  border-radius: 0px;
+  border-color: white;
+  border-left: white;
+  border-top: white;
+}
