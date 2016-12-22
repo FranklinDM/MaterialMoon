@@ -9,7 +9,7 @@
   
   <Description about="urn:mozilla:install-manifest">
     <em:id>{A9F6B85E-8093-4A44-B0DA-447A1DBD0204}</em:id>
-    <em:version>2.5.0.a1</em:version>
+    <em:version>2.5.0</em:version>
     <em:name>Material Moon</em:name>
     <em:description>Material Chrome-like theme for Pale Moon. Fork of "PMChrome" (Lootyhoof) which is a fork of "FXChrome" (dkgo)</em:description>
     <em:creator>FranklinDM</em:creator>
