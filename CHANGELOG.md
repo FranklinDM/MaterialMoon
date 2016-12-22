@@ -1,7 +1,10 @@
 # Changelog
 
 ### 2.5.0
-- change of some UI elements
+- changed a lot of resources
+- id change and name change (the material and the non-material version are different packages)
+- added new icon and preview image
+- material icons, ui, and many more were put into place
 
 ### 2.4.0
 - support PM27's devtools
