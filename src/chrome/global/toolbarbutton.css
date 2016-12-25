@@ -79,13 +79,23 @@ toolbarbutton:hover:active:not([disabled="true"]),
 toolbarbutton[checked="true"]:not([disabled="true"]),
 toolbarbutton[open="true"]:not([disabled="true"]) {
   /* The click animation (currently affects all toolbar buttons) */
-  /*border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch;*/
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.50) !important;
+  border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch;
+  /*  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.50) !important;
     border-radius: 500em !important;
     border-image: none !important;
     background-color: lightgray !important;
+    border-color: lightgray !important;*/
+}
+
+toolbar:hover:active:not([disabled="true"]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1,
+toolbar[checked="true"]:not([disabled="true"]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1,
+toolbar[open="true"]:not([disabled="true"]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar):hover:active:not([disabled="true"]) .toolbarbutton-1 {
+    border-image: none !important;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.50) !important;
+    border-radius: 500em !important;
+    background-color: lightgray !important;
     border-color: lightgray !important;
-}		
+}
 
 .toolbarbutton-icon[label]:not([label=""]),
 .toolbarbutton-icon[type="menu"] {
