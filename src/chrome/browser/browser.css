@@ -4326,7 +4326,7 @@ chatbox {
          (-moz-os-version: windows-vista),
          (-moz-os-version: windows-win7) {  
     #main-window {
-      background-color: #4271C9;
+      background-color: #CCC;
     }
     #main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme) {
       background-color: #4271C9;
@@ -4341,18 +4341,19 @@ chatbox {
     }
 	
 	#main-window:-moz-window-inactive {
-      background-color: #99B2DD;
+      background-color: #DCDCDC;
     }
 	
 	#main-window[tabsintitlebar]:not([inFullscreen]):-moz-window-inactive #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme) {
-      background-color: #99B2DD;
+      background-color: #DCDCDC;
       color: CaptionText;
     }
 	
     #main-window[tabsontop=false]:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme),
     #main-window[sizemode=normal]:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme),
     #main-window:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme) {
-      background-image: -moz-linear-gradient(rgb(169,195,231),rgb(154,178,221));
+      /*background-image: -moz-linear-gradient(rgb(169,195,231),rgb(154,178,221));*/
+      background-color: #DCDCDC;
       box-shadow: 0 -1px 0 0 #BDD1EC, 0 -2px 0 0 #595959;
     }
 
@@ -4398,10 +4399,9 @@ chatbox {
       margin-bottom: 0px !important;
     }
 	
-	#main-menubar {
-      background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4));
-      border-radius: 3px;
-    }
+	#main-menubar { /* RE: Philosophy (4:56 PM) */
+      text-shadow: 0px 0px 8px;
+   }
   }
   
   #toolbar-menubar:not([autohide=true]):not(:-moz-lwtheme),
@@ -4541,11 +4541,11 @@ chatbox {
     }
   }
   
-  @media (-moz-windows-theme: aero) {
+  /*@media (-moz-windows-theme: aero) {*/
 	#main-window[sizemode=maximized] #titlebar {
       margin-top: 4px !important;
     }
-  }
+  /*}*/
   
   #addon-bar {
     border-bottom-left-radius: 0px;
