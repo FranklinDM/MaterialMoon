@@ -47,12 +47,15 @@
 }
 
 /* override to add padding to sort bars */
-#userstyle-sorting, #greasemonkey-sort-bar,
+#userstyle-sorting, #greasemonkey-sort-bar, #search-filter,
 .view-header.global-warning-container {
-  padding-bottom: 5px;
+  padding: 5px;
+  background-color: #fafafa !important;
+  border: solid 1px lightgray;
+  margin-bottom: -1px;
 }
 
-#search-filter, #userstyle-footer {
+#userstyle-footer {
   border-color: transparent !important;
 }
 
