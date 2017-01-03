@@ -10,12 +10,14 @@
 }
 
 textbox {
-  background-color: #135CA0;
-  color: white;
-  border-radius: 2px;
-  width: 25em;
-  height: 25em;
+  padding-left: 30px;
   font-size: 14px;
+  min-height: 40px;
+  min-width: 580px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.22);
+  background-position: .5em;
+  color: white;
 }
 
 #tabsList {
@@ -29,9 +31,10 @@ textbox {
 
 #headers {
   background: url(chrome://browser/skin/sync-32-white.png) no-repeat;
-  margin-top: 10px;
-  width: 90em;
-  height: 35px;
+  background-position: 0px 12px;
+  margin-top: 0px;
+  width: 105em;
+  height: 56px;
   -moz-margin-start: 2em;
   -moz-margin-end: 2em;
 }
