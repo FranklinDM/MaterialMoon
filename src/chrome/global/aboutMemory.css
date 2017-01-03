@@ -30,12 +30,25 @@ div.ancillary {
 div.section {
   padding: 1em;
   margin: 1em 0em;
+  margin-right: 6px;
+  background-color: lightyellow !important;
+  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
+  border: solid 1px lightgray;
+
 }
 
 div.opsRow {
   padding: 1em;
   margin-right: 0.5em;
-  margin-top: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 1px;
+  background-color: white !important;;
+  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
+  border: solid 1px lightgray;
+}
+
+button {
+  margin-right: 3px;
 }
 
 div.opsRowLabel {
@@ -44,6 +57,12 @@ div.opsRowLabel {
   font-size: 1.2em;
   margin-bottom: 0.8em;
   font-weight: bold;
+  background-color: #fafafa;
+  margin-top: -12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding: 12px;
+  border-bottom: solid 1px lightgray;
 }
 
 .opsRowLabel label {
@@ -51,7 +70,7 @@ div.opsRowLabel {
   font-size: 75%;
   font-weight: normal;
 }
-
+  
 div.non-verbose pre.entries {
   overflow-x: hidden;
   text-overflow: ellipsis;
