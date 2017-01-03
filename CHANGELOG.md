@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.5.1
+- changed icon and preview
+- material icons, ui, and animations (half-implemented)
+- few tweaks and adjustments
+
 ### 2.5.0
 - changed a lot of resources
 - id change and name change (the material and the non-material version are different packages)
