@@ -2,10 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
 @import url("chrome://global/skin/inContentUI.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
@@ -26,14 +22,38 @@
 #addons-page {
   -moz-appearance: none !important;
   padding: 0 !important;
-  background: #FFFFFF !important;
+  background: #F7F7F7 !important;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   font-size: 75%;
 }
 
 #view-port-container {
-  border: none;
-  border-top: 1px solid #EEEEEE;
+  padding-top: 14px;
+  border: none !important;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+}
+
+/* box-shadow for the list views */
+#search-list, #discover-view,
+#updates-list, #addon-list,
+#detail-view, #search-list-empty,
+#search-loading {
+  border-radius: 1px;
+  background-color: white !important;;
+  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
+  border: solid 1px lightgray;
+}
+
+/* override to add padding to sort bars */
+#userstyle-sorting, #greasemonkey-sort-bar,
+.view-header.global-warning-container {
+  padding-bottom: 5px;
+}
+
+#search-filter, #userstyle-footer {
+  border-color: transparent !important;
 }
 
 .nav-button,
@@ -50,6 +70,8 @@
   border-width: 5px!important;
   color: black!important;
   box-shadow: none!important;
+  transition-property: border-radius, border-image, border-color, background-color;
+  transition-duration: 500ms;
 }
 
 #back-btn[disabled="true"] .toolbarbutton-icon,
@@ -79,13 +101,21 @@
 
 .nav-button:hover:not([disabled="true"]),
 #header-utils-btn:hover {
-  border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch !important;
+  /*border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch !important;*/
+    border-image: none !important;
+    border-radius: 3px !important;
+    background-color: rgba(0, 0, 0, 0.22) !important;
+    border-color: rgba(0, 0, 0, 0.22) !important;
 }
 
 .nav-button:hover:active:not([disabled="true"]),
 #header-utils-btn:hover:active,
 #header-utils-btn[open="true"] {
-  border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch !important;
+  /*border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch !important;*/
+    border-image: none !important;
+    border-radius: 99999px !important;
+    background-color: rgba(0, 0, 0, 0.22) !important;
+    border-color: rgba(0, 0, 0, 0.22) !important;
 }
 
 /*** global warnings ***/
@@ -180,11 +210,12 @@
 
 #categories {
   -moz-appearance: none;
+  background-color: white !important;
   position: relative;
   padding: 0px;
   margin: 0px;
   padding-top: 14px;
-  min-width: 155px;
+  min-width: 180px;
 }
 
 .category,
@@ -198,13 +229,11 @@
 }
 
 .category {
-  -moz-margin-start: 0px;
+  -moz-margin-start: 5px;
   -moz-margin-end: 0px;
-  -moz-border-start: 6px solid transparent;
-  color: #999999;
+  color: rgb(90, 90, 90);
   min-height: 17px;
-  padding: 2px 0 3px 12px;
-  text-transform: uppercase;
+  padding: 12px 0 3px 12px;
   background-color: transparent;
   overflow: hidden;
 }
@@ -236,8 +265,7 @@
 }
 
 .category[selected] {
-  -moz-border-start-color: rgb(78, 87, 100);
-  color: rgb(70, 78, 90);
+  color: #4285f4;
 }
 
 .category-name {
@@ -254,10 +282,10 @@
 }
 
 .category-icon {
-  width: 32px;
-  height: 32px;
-  -moz-margin-start: 6px;
-  display: none;
+  width: 18px;
+  height: 18px;
+  -moz-margin-start: 8px;
+  -moz-margin-end: 10px;
 }
 
 #category-search > .category-icon {
@@ -299,23 +327,31 @@
 #header {
   padding: 0px;
   margin: 0px; 
-  min-height: 52px;
-  -moz-padding-start: 23px;
-  -moz-padding-end: 23px;
+  min-height: 56px;
+  /*-moz-padding-start: 25px;
+  -moz-padding-end: 25px;*/
+  -moz-padding-start: 2em;
+  -moz-padding-end: 2em;
+  background-color: #3367d6;
+  color: white !important;
 }
 
 #header-search {
-  width: 220px;
-  border: 1px solid #bfbfbf;
+  padding-left: 30px;
+  font-size: 14px;
+  min-height: 40px;
+  min-width: 580px;
   border-radius: 2px;
-  background-origin: border-box;
-  color: #444;
-  font: inherit;
-  min-height: 2em;
-  padding: 3px;
-  outline: none;
-  padding-bottom: 4px;
-  background-image: none;
+  background-color: rgba(0, 0, 0, 0.22);
+  background-position: .5em;
+  color: white;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+              width 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#header-search:hover {
+  width: 200%;
+  background-color: transparent;
 }
 
 #header-utils-btn {
@@ -438,6 +474,7 @@
   font-size: 13px;
   margin: 0;
   padding: 6px 0px;
+  border-bottom: 1px solid lightgray;
 }
 
 .details {
@@ -677,11 +714,16 @@ richlistitem[pending="uninstall"] .pending {
   -moz-appearance: none;
   padding: 0 6px;
   margin: 0 3px;
-  border-radius: 10000px;
+  border-radius: 4px;
+  transition: background-color 300ms, color 300ms;
+}
+
+.search-filter-radio:hover {
+  background-color: lightgray;
 }
 
 .search-filter-radio[selected] {
-  background-color: grey;
+  background-color: gray;
   color: white;
 }
 
@@ -1021,9 +1063,9 @@ menulist { /* Fixes some styling inconsistencies */
 /*** check for updates ***/
 
 #updates-container {
-  margin-top: -4px;
+  margin-top: 2px;
   -moz-box-align: center;
-  color: rgb(48, 57, 66);
+  color: white; /*rgb(48, 57, 66);*/
 }
 
 #updates-installed,
