@@ -31,8 +31,9 @@ toolbarbutton {
   border-color: transparent;
   border-width: 5px;
   border-radius: 0px;
-  box-shadow: none;
-  transition: box-shadow 300ms, border-radius 1s, border-image 1s, border-color 1s, background-color 1s;
+  transition-property: border-radius, border-image, border-color, background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
 }
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) toolbarbutton {
@@ -72,26 +73,33 @@ toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-dropmarker {
 }
 
 toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
-  border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch;
+/*  border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch; */
+    border-image: none !important;
+    border-radius: 3px !important;
+    background-color: lightgray !important;
+    border-color: lightgray !important;
+    transition-property: border-radius, border-image, border-color, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
 }
 
 toolbarbutton:hover:active:not([disabled="true"]),
 toolbarbutton[checked="true"]:not([disabled="true"]),
 toolbarbutton[open="true"]:not([disabled="true"]) {
-  /* The click animation (currently affects all toolbar buttons) */
-  border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch;
-  /*  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.50) !important;
-    border-radius: 500em !important;
+  /* border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch; */
     border-image: none !important;
+    border-radius: 3px !important;
     background-color: lightgray !important;
-    border-color: lightgray !important;*/
+    border-color: lightgray !important;
+    transition-property: border-radius, border-image, border-color, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;stop now
 }
 
-toolbar:hover:active:not([disabled="true"]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1,
-toolbar[checked="true"]:not([disabled="true"]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1,
-toolbar[open="true"]:not([disabled="true"]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar):hover:active:not([disabled="true"]) .toolbarbutton-1 {
+toolbarbutton:hover:active:not([disabled="true"]),
+toolbarbutton[checked="true"]:not([disabled="true"]),
+toolbarbutton[open="true"]:not([disabled="true"]) .toolbarbutton-1 {
     border-image: none !important;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.50) !important;
     border-radius: 500em !important;
     background-color: lightgray !important;
     border-color: lightgray !important;
