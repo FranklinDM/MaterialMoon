@@ -1,16 +1,18 @@
 # Changelog
 
-### 2.5.1
+### 2.6.0
 - changed icon and preview
 - material icons, ui, and animations (half-implemented)
 - few tweaks and adjustments
+- integrated assets from Lootyhoof's unfinished material theme for PMC
 
-### 2.5.0
+### 2.5.0 (continue prev. versioning)
 - changed a lot of resources
 - id change and name change (the material and the non-material version are different packages)
 - added new icon and preview image
 - material icons, ui, and many more were put into place
 
+# PMChrome
 ### 2.4.0
 - support PM27's devtools
 - drop PM26 support

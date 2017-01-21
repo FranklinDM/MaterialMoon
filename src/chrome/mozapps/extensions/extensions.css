@@ -33,8 +33,7 @@
   padding-left: 14px;
   padding-right: 14px;
   padding-bottom: 14px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-right: 14px;
 }
 
 /* box-shadow for the list views */
@@ -42,19 +41,18 @@
 #updates-list, #addon-list,
 #detail-view, #search-list-empty,
 #search-loading {
-  border-radius: 1px;
+  border-radius: 3px;
   background-color: white !important;;
-  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
-  border: solid 1px lightgray;
+  box-shadow: 0px 2px 2px 0px rgba(167, 167, 167, 0.45);
 }
 
 /* override to add padding to sort bars */
 #userstyle-sorting, #greasemonkey-sort-bar, #search-filter,
 .view-header.global-warning-container {
   padding: 5px;
-  background-color: #fafafa !important;
-  border: solid 1px lightgray;
-  margin-bottom: -1px;
+  background-color: white !important;
+  box-shadow: 0px .5px 2px 1px rgba(167, 167, 167, 0.45);
+  margin-bottom: -1px; 
 }
 
 #userstyle-footer {
@@ -215,22 +213,11 @@
 
 #categories {
   -moz-appearance: none;
-  background-color: white !important;
   position: relative;
   padding: 0px;
   margin: 0px;
   padding-top: 14px;
-  width: 2px;
-  box-shadow: 0px 2px 6px 2px rgba(167, 167, 167, 0.45);
-  transition: width 500ms;
-}
-
-#categories:hover {
-  width: 180px;
-}
-
-#categories:focus:not(:hover) {
-  width: 55px;
+  min-width: 180px;
 }
 
 .category,
@@ -240,7 +227,7 @@
 }
 
 .category-name {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 
 .category {
@@ -255,7 +242,7 @@
 
 @media not all and (-moz-windows-compositor) {
   .category {
-    padding: 4px 0 5px 12px;
+    padding: 4px 0 18px 12px;
   }
 }
 
@@ -281,10 +268,6 @@
 
 .category[selected] {
   color: #4285f4;
-}
-
-.category-name {
-  font-size: 12px;
 }
 
 .category-badge {
