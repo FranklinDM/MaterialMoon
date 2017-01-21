@@ -380,7 +380,7 @@
   }
 
   #main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
-    margin-top: -4px !important;
+    margin-top: -2px !important;
     margin-bottom: -3px !important;
     -moz-padding-start: 46px !important; 
     -moz-padding-end: 145px !important; 
@@ -1311,17 +1311,13 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 }
 
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity {
-  background: transparent
-              linear-gradient(rgba(233,245,223,.6), rgba(195,233,195,.6), rgba(161,218,161,.6));
-  border-color: rgba(106,167,106,.84);
-  box-shadow: 0 1px 1px 0 rgba(251,254,251,.9) inset;
+  background: transparent;
+  border-right-color: rgba(106,167,106,.84);
 }
 
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedDomain {
-  background: transparent
-              linear-gradient(rgba(233,245,223,.6), rgba(195,233,195,.6), rgba(161,218,255,.6));
-  border-color: rgba(106,167,174,.84);
-  box-shadow: 0 1px 1px 0 rgba(251,254,251,.9) inset;
+  background: transparent;
+  border-right-color: rgba(106,167,174,.84);
 }
 
 #identity-box.verifiedIdentity #identity-icon-labels {
@@ -1761,7 +1757,7 @@ toolbarseparator {
 }
 
 #navigator-toolbox[tabsontop=true] > #TabsToolbar {
-  margin-bottom: -3px;
+  margin-bottom: -2px;
 }
 
 window[sizemode="maximized"] #navigator-toolbox {
@@ -2074,15 +2070,15 @@ toolbar[brighttext] .tabbrowser-arrowscrollbox > .scrollbutton-down {
   padding: 0 !important;
   background: transparent;
   list-style-image: url(chrome://browser/skin/tabbrowser/tab_new.png);
-  -moz-image-region: rect(0px, 34px, 18px, 0px);
+  -moz-image-region: rect(0px, 36px, 19px, 0px);
 }
 
 .tabs-newtab-button:hover {
-  -moz-image-region: rect(0px, 68px, 18px, 34px);
+  -moz-image-region: rect(0px, 72px, 19px, 36px);
 }
 
 .tabs-newtab-button:hover:active {
-  -moz-image-region: rect(0px, 102px, 18px, 68px);
+  -moz-image-region: rect(0px, 108px, 19px, 72px);
 }
 
 .tabs-newtab-button:-moz-locale-dir(rtl) {
@@ -4329,15 +4325,13 @@ chatbox {
       background-color: #CCC;
     }
     #main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme) {
-      background-color: #4271C9;
+      background-color: #DCDCDC;
       color: CaptionText;
     }
     #main-window[tabsontop=false] #titlebar-content:not(:-moz-lwtheme),
     #main-window[sizemode=normal] #titlebar-content:not(:-moz-lwtheme),
     #titlebar-content:not(:-moz-lwtheme) {
       padding-bottom: 0;
-      background-image: -moz-linear-gradient(rgb(204,204,204),rgb(204,204,204));
-      box-shadow: 0 -1px 0 0 #85ABE4, 0 -2px 0 0 #595959;
     }
 	
 	#main-window:-moz-window-inactive {
@@ -4352,9 +4346,7 @@ chatbox {
     #main-window[tabsontop=false]:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme),
     #main-window[sizemode=normal]:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme),
     #main-window:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme) {
-      /*background-image: -moz-linear-gradient(rgb(169,195,231),rgb(154,178,221));*/
       background-color: #DCDCDC;
-      box-shadow: 0 -1px 0 0 #BDD1EC, 0 -2px 0 0 #595959;
     }
 
     #main-window[privatebrowsingmode=temporary],
@@ -4375,7 +4367,7 @@ chatbox {
     #main-window[privatebrowsingmode=temporary][tabsontop=false]:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme),
     #main-window[privatebrowsingmode=temporary][sizemode=normal]:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme),
     #main-window[privatebrowsingmode=temporary]:-moz-window-inactive #titlebar-content:not(:-moz-lwtheme) {
-      background-image: -moz-linear-gradient(rgb(147,161,178),rgb(131,146,164));
+      background-color: #526D92;
       box-shadow: 0 -1px 0 0 #ACB7C4, 0 -2px 0 0 #3E3F3F;
     }
 
@@ -4399,8 +4391,8 @@ chatbox {
       margin-bottom: 0px !important;
     }
 	
-	#main-menubar { /* RE: Philosophy (4:56 PM) */
-      text-shadow: 0px 0px 8px;
+	#main-menubar {
+      text-shadow: 0px 0px 3px;
    }
   }
   
@@ -4541,11 +4533,11 @@ chatbox {
     }
   }
   
-  /*@media (-moz-windows-theme: aero) {*/
+  @media (-moz-windows-theme: aero) {
 	#main-window[sizemode=maximized] #titlebar {
       margin-top: 4px !important;
     }
-  /*}*/
+  }
   
   #addon-bar {
     border-bottom-left-radius: 0px;
