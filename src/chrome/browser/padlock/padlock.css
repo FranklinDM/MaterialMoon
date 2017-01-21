@@ -106,3 +106,112 @@
   list-style-image: url("padlock_mod_broken.png") !important;
   background-color: transparent;
 }
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib[padshow="ib-trans-bg"][level="ev"] {
+  list-style-image: url("n_padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib[padshow="ib-trans-bg"][level="high"] {
+  list-style-image: url("n_padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib[padshow="ib-trans-bg"][level="low"],
+#main-window[privatebrowsingmode=temporary] #padlock-ib[padshow="ib-trans-bg"][level="mixed"] {
+  list-style-image: url("n_padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib[padshow="ib-trans-bg"][level="broken"] {
+  list-style-image: url("n_padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib-left[padshow="ib-left"][level="ev"] {
+  list-style-image: url("n_padlock_mod_ev.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib-left[padshow="ib-left"][level="high"] {
+  list-style-image: url("n_padlock_mod_https.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib-left[padshow="ib-left"][level="low"],
+#main-window[privatebrowsingmode=temporary] #padlock-ib-left[padshow="ib-left"][level="mixed"] {
+  list-style-image: url("n_padlock_mod_low.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ib-left[padshow="ib-left"][level="broken"] {
+  list-style-image: url("n_padlock_mod_broken.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ub-right[padshow="ub-right"][level="ev"] {
+  list-style-image: url("n_padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ub-right[padshow="ub-right"][level="high"] {
+  list-style-image: url("n_padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ub-right[padshow="ub-right"][level="low"],
+#main-window[privatebrowsingmode=temporary] #padlock-ub-right[padshow="ub-right"][level="mixed"] {
+  list-style-image: url("n_padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-ub-right[padshow="ub-right"][level="broken"] {
+  list-style-image: url("n_padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-sb[padshow="statbar"][level="ev"] {
+  list-style-image: url("n_padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-sb[padshow="statbar"][level="high"] {
+  list-style-image: url("n_padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-sb[padshow="statbar"][level="low"],
+#main-window[privatebrowsingmode=temporary] #padlock-sb[padshow="statbar"][level="mixed"] {
+  list-style-image: url("n_padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-sb[padshow="statbar"][level="broken"] {
+  list-style-image: url("n_padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-tab[padshow="tabs-bar"][level="ev"] {
+  list-style-image: url("n_padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-tab[padshow="tabs-bar"][level="high"] {
+  list-style-image: url("n_padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-tab[padshow="tabs-bar"][level="low"],
+#main-window[privatebrowsingmode=temporary] #padlock-tab[padshow="tabs-bar"][level="mixed"] {
+  list-style-image: url("n_padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
+#main-window[privatebrowsingmode=temporary] #padlock-tab[padshow="tabs-bar"][level="broken"] {
+  list-style-image: url("n_padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
