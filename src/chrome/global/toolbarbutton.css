@@ -29,7 +29,6 @@ toolbarbutton {
   border-radius: 0px;
   transition-property: border-radius, border-image, border-color, background-color;
   transition-duration: 500ms;
-  transition-timing-function: ease-out;
 }
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) toolbarbutton {
@@ -74,9 +73,6 @@ toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):no
     border-radius: 3px !important;
     background-color: lightgray !important;
     border-color: lightgray !important;
-    transition-property: border-radius, border-image, border-color, background-color;
-    transition-duration: 500ms;
-    transition-timing-function: ease-out;
 }
 
 toolbarbutton:hover:active:not([disabled="true"]),
@@ -89,16 +85,18 @@ toolbarbutton[open="true"]:not([disabled="true"]) {
     border-color: lightgray !important;
     transition-property: border-radius, border-image, border-color, background-color;
     transition-duration: 500ms;
-    transition-timing-function: ease-out;stop now
 }
 
-toolbarbutton:hover:active:not([disabled="true"]),
-toolbarbutton[checked="true"]:not([disabled="true"]),
+toolbarbutton:hover:active:not([disabled="true"]) .toolbarbutton-1,
+toolbarbutton[checked="true"]:not([disabled="true"]) .toolbarbutton-1,
 toolbarbutton[open="true"]:not([disabled="true"]) .toolbarbutton-1 {
+  /* border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch; */
     border-image: none !important;
     border-radius: 500em !important;
     background-color: lightgray !important;
     border-color: lightgray !important;
+    transition-property: border-radius, border-image, border-color, background-color;
+    transition-duration: 500ms;
 }
 
 .toolbarbutton-icon[label]:not([label=""]),
@@ -152,4 +150,8 @@ toolbarbutton[type="menu-button"] {
   border: none;
   background-color: transparent;
   width: auto;
+}
+
+.toolbarbutton-menubutton-dropmarker, .toolbarbutton-menu-dropmarker {
+  border-radius: 0px !important;
 }
