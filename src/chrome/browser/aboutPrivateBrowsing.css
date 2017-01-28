@@ -52,6 +52,7 @@ body.private #errorTitleText {
   background: transparent !important;
   border: 0px solid #AAA !important;
   box-shadow: none !important;
+  display: none;
 }
 
 body.private > #errorPageContainer {
@@ -96,6 +97,10 @@ body.normal > #errorPageContainer {
 #moreInfoLinkContainer {
   margin-top: 2em;
   text-align: center;
+}
+
+#moreInfoLink {
+  color: #7BAAEA;
 }
 
 button {

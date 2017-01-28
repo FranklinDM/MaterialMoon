@@ -55,15 +55,26 @@
   border-color: transparent;
   border-width: 5px;
   box-shadow: none;
+  border-radius: 0px;
+  transition-property: border-radius, border-image, border-color, background-color;
+  transition-duration: 500ms;
 }
 
 #placesMenu > menu:hover {
-  border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch;
+/*  border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch; */
+  border-image: none;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 #placesMenu > menu:hover:active,
 #placesMenu > menu[open="true"] {
-  border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch;
+/*  border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch; */
+  border-image: none;
+  border-radius: 3px; 
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
 #placesMenu > menu > .menubar-text {
