@@ -1398,7 +1398,6 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   margin-top: 1px;
   margin-bottom: 1px;
   border: 1px solid transparent;
-  border-radius: 1.8px;
   -moz-margin-start: 1px;
 }
 
@@ -1424,22 +1423,16 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   color: #FFFFFF;
 }
 
-#identity-box.verifiedIdentity #identity-icon-labels,
-#identity-box.verifiedDomain #identity-icon-labels {
-  visibility: hidden;
-/*  -moz-margin-start: 4px;
+#identity-box.verifiedIdentity #identity-icon-labels {
+  -moz-margin-start: 4px;
   -moz-margin-end: 1px;
-  color: #079500;*/
-  overflow: hidden;
-  width: 0px;
-  height: 0px;
+  color: #079500;
 }
 
-#identity-box.verifiedIdentity #identity-icon-labels:after,
-#identity-box.verifiedDomain #identity-icon-labels:after {
-  visibility: visible;
-  content: "Secure" !important;
-  color: #079500 !important;
+#identity-box.verifiedDomain #identity-icon-labels {
+  -moz-margin-start: 4px;
+  -moz-margin-end: 1px;
+  color: #0B4680;
 }
 
 #identity-box:-moz-focusring {
@@ -1496,12 +1489,11 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   list-style-image: url(chrome://browser/skin/n_search-magnifying-glass.png);
 }
 
-/* try to hide page proxy favicon when in real web pages */
 #page-proxy-favicon[src][pageproxystate="valid"] {
+/*  opacity: 0;
+  height: .1px;
+  width: .1px*/
   padding: 1.5px;
-  height: .5px;
-  width: .5px;
-  opacity: 0px;
 }
 
 /* autocomplete */
@@ -3581,12 +3573,6 @@ html|*#gcli-output-frame {
 #navigator-toolbox[iconsize=large][mode=icons] > #nav-bar *|* > .toolbarbutton-badge[badge]:not([badge=""]):-moz-locale-dir(rtl)::after {
   left: 1px;
   right: auto;
-}
-
-#main-window[privatebrowsingmode=temporary] #toolbar-menubar {
-  background-image: url("chrome://browser/skin/privatebrowsing-dark.png");
-  background-position: top right;
-  background-repeat: no-repeat;
 }
 
 #main-window[privatebrowsingmode=temporary] #toolbar-menubar:-moz-locale-dir(rtl) {

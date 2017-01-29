@@ -8,7 +8,7 @@
     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   
   <Description about="urn:mozilla:install-manifest">
-    <em:id>{A9F6B85E-8093-4A44-B0DA-447A1DBD0204}</em:id>
+    <em:id>materialmoon@franklindm</em:id>
     <em:version>2.6.0</em:version>
     <em:name>Material Moon</em:name>
     <em:description>Material Chrome-like theme for Pale Moon. Fork of "PMChrome" (Lootyhoof) and "FXChrome" (dkgo)</em:description>
