@@ -27,7 +27,7 @@ toolbarbutton {
   border-color: transparent;
   border-width: 5px;
   border-radius: 0px;
-  transition-property: border-radius, border-image, border-color, background-color;
+  transition-property: border-radius, background-color, border-color;
   transition-duration: 500ms;
 }
 

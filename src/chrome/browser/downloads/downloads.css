@@ -238,12 +238,13 @@ richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:acti
 
 #downloads-indicator-icon {
   background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"),
-                              0, 108, 18, 90) center no-repeat !important;
+                              0, 108, 18, 90) center no-repeat;
   min-width: 18px;
   min-height: 18px;
 }
 
-toolbar[brighttext] #downloads-indicator-icon {
+toolbar[brighttext] #downloads-indicator-icon,
+#main-window[privatebrowsingmode=temporary] #downloads-indicator-icon {
   background: -moz-image-rect(url("chrome://browser/skin/Toolbar-inverted.png"),
                               0, 108, 18, 90) center no-repeat;
 }
@@ -257,6 +258,7 @@ toolbar[brighttext] #downloads-indicator-icon {
 }
 
 toolbar[brighttext] #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
+#main-window[privatebrowsingmode=temporary] #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
 #TabsToolbar #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
   background: url("chrome://browser/skin/downloads/favicon_downloads2.png") no-repeat center !important;
 }
@@ -325,10 +327,9 @@ toolbar[brighttext] #downloads-indicator:not([counter]) > #downloads-indicator-a
   }
 }
 
-toolbar[brighttext] #downloads-indicator-counter {
+toolbar[brighttext] #downloads-indicator-counter,
+#main-window[privatebrowsingmode=temporary] #downloads-indicator-counter {
   color: white;
-  text-shadow: 0 0 1px rgba(0,0,0,.7),
-               0 1px 1.5px rgba(0,0,0,.5);
 }
 
 #downloads-indicator-progress {
@@ -404,3 +405,4 @@ toolbar[mode="full"] > #downloads-indicator > .toolbarbutton-text {
 #downloadsListBox  richlistitem {
   transition: 0ms background-color;
 }
+	

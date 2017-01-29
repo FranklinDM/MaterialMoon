@@ -73,7 +73,7 @@
   border-width: 5px!important;
   color: black!important;
   box-shadow: none!important;
-  transition-property: border-radius, border-image, border-color, background-color;
+  transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
 }
 
@@ -116,9 +116,11 @@
 #header-utils-btn[open="true"] {
   /*border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch !important;*/
     border-image: none !important;
-    border-radius: 99999px !important;
+    border-radius: 500em !important;
+	box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.22) !important;
     background-color: rgba(0, 0, 0, 0.22) !important;
     border-color: rgba(0, 0, 0, 0.22) !important;
+	transition-duration: 200ms;
 }
 
 /*** global warnings ***/
