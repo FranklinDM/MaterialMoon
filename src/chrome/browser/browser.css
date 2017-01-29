@@ -121,7 +121,7 @@
 #navigator-toolbox > toolbar:not(:-moz-lwtheme) {
   -moz-appearance: none;
   border-style: none;
-  background-color: -moz-Dialog;
+  background-color: #F1F1F1; /*-moz-Dialog;*/
 }
 
 #main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar {
