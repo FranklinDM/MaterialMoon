@@ -856,7 +856,7 @@ menuitem.bookmark-item {
 }
 
 toolbar[brighttext] .toolbarbutton-1,
-#main-window[privatebrowsingmode=temporary] .toolbarbutton-1 {
+#main-window[privatebrowsingmode=temporary] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button, #social-share-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
   list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 
@@ -866,8 +866,8 @@ toolbar[brighttext] .toolbarbutton-1,
   #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
   #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
   
-  #main-window[privatebrowsingmode=temporary]   #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
-  #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
+  #main-window[privatebrowsingmode=temporary] #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
+  #main-window[privatebrowsingmode=temporary] #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
     list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
   }
 }
@@ -2149,22 +2149,24 @@ toolbar[brighttext] .tabbrowser-arrowscrollbox > .scrollbutton-down {
 #new-tab-button {
   -moz-appearance: none; 
   -moz-padding-start: 4px !important;
-  -moz-padding-end: 4px !important;
+  -moz-padding-end: 4px !important;	
   list-style-image: url(chrome://browser/skin/tabbrowser/newtab.png);
   -moz-image-region: rect(0px, 16px, 18px, 0px) !important;
 }
 
-toolbar[brighttext] #new-tab-button {
+toolbar[brighttext] #new-tab-button,
+#main-window[privatebrowsingmode=temporary] #new-tab-button {
   list-style-image: url(chrome://browser/skin/tabbrowser/newtab-inverted.png);
 }
 
 #alltabs-button {
   padding: 0 !important;
-  list-style-image: url("chrome://browser/skin/tabbrowser/mainwindow-dropdown-arrow.png");
+  list-style-image: url("chrome://browser/skin/tabbrowser/mainwindow-dropdown-arrow-inverted.png");
 }
 
-toolbar[brighttext] #alltabs-button {
-  list-style-image: url("chrome://browser/skin/tabbrowser/mainwindow-dropdown-arrow-inverted.png");
+toolbar[brighttext] #alltabs-button,
+#main-window[privatebrowsingmode=temporary] #alltabs-button {
+  list-style-image: url("chrome://browser/skin/tabbrowser/mainwindow-dropdown-arrow.png");
 }
 
 @media (-moz-os-version: windows-xp),
@@ -2749,6 +2751,9 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
   border: none;
   background: -moz-dialog;
   color: -moz-dialogText;
+}
+#main-window[privatebrowsingmode=temporary] #allTabs-panel {
+  background: #505050;
 }
 
 #allTabs-meta {
@@ -3663,6 +3668,16 @@ html|*#gcli-output-frame {
   border-top: 1px solid;
   -moz-border-top-colors: rgba(153,153,153,1) rgba(153,153,153,1);
   background-clip: padding-box;
+}
+
+#main-window[privatebrowsingmode=temporary] #nav-bar,
+#main-window[privatebrowsingmode=temporary] > #nav-bar[collapsed=true]:not([customizing]) + toolbar,
+#main-window[privatebrowsingmode=temporary] > #nav-bar[collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar,
+#main-window[privatebrowsingmode=temporary] #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] ~ #PersonalToolbar,
+#main-window[privatebrowsingmode=temporary] #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] + toolbar,
+#main-window[privatebrowsingmode=temporary] #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] ~ #PersonalToolbar,
+#main-window[privatebrowsingmode=temporary] #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] ~ toolbar[collapsed="true"]  ~ #PersonalToolbar {
+  -moz-border-top-colors: #5D5D5D !important;
 }
 
 #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] ~ #PersonalToolbar,

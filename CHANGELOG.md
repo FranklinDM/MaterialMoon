@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.6.2
+- fixes for the "jumpy" toolbar icons on private browsing mode
+- minor tweaks to some icons
+
+### 2.6.1
+- id change again (you need to uninstall prev. version first)
+- material click animation (nav-bar, the circular one)
+- fully implemented dark private browsing
+- minor tweaks to some icons
+
 ### 2.6.0
 - changed icon and preview
 - material icons, ui, and animations (half-implemented)
