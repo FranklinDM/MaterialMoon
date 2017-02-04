@@ -108,8 +108,7 @@
   background-color: #F1F1F1 !important;
 }
 
-@media (-moz-os-version: windows-xp),
-       (-moz-os-version: windows-vista),
+@media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7),
        (-moz-os-version: windows-win8) {
   #main-window[tabsontop=true][disablechrome] #navigator-toolbox::after {
@@ -369,8 +368,7 @@
   background-position: center bottom;
 }
 
-@media (-moz-os-version: windows-xp),
-       (-moz-os-version: windows-vista),
+@media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
   @media not all and (-moz-windows-compositor) {
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) {
@@ -860,8 +858,7 @@ toolbar[brighttext] .toolbarbutton-1,
   list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 
-@media (-moz-os-version: windows-xp),
-       (-moz-os-version: windows-vista),
+@media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
   #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
   #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
@@ -2022,9 +2019,6 @@ window[sizemode="maximized"] #navigator-toolbox {
   margin-bottom: -11px;
 }
 
-.tab-close-button.close-icon {
-  list-style-image: url("chrome://global/skin/icons/tab_close.png") !important;
-}
 /* Tab close button */
 .tab-close-button {
   -moz-appearance: none;
@@ -2040,10 +2034,24 @@ window[sizemode="maximized"] #navigator-toolbox {
   -moz-image-region: rect(0, 64px, 16px, 48px);
 }
 
+.tab-close-button.close-icon {
+  list-style-image: url("chrome://global/skin/icons/tab_close.png") !important;
+}
+
+#main-window[privatebrowsingmode=temporary] .tab-close-button.close-icon {
+  list-style-image: url("chrome://global/skin/icons/n_tab_close.png") !important;
+}
+
 @media (min-resolution: 2dppx) {
   .tab-close-button:not([selected]):not(:hover):not(:active) {
     list-style-image: url("chrome://global/skin/icons/tab_close@2x.png");
     -moz-image-region: rect(0, 128px, 32px, 96px);
+  }
+  .tab-close-button.close-icon {
+    list-style-image: url("chrome://global/skin/icons/tab_close@2x.png") !important;
+  }
+  #main-window[privatebrowsingmode=temporary] .tab-close-button.close-icon {
+    list-style-image: url("chrome://global/skin/icons/n_tab_close@2x.png") !important;
   }
 }
 
@@ -2070,8 +2078,7 @@ toolbar[brighttext] .tabbrowser-arrowscrollbox > .scrollbutton-down {
   list-style-image: url(chrome://browser/skin/tabbrowser/tab-arrow-left-inverted.png);
 }
 
-@media (-moz-os-version: windows-xp),
-       (-moz-os-version: windows-vista),
+@media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
   .tabbrowser-arrowscrollbox > .scrollbutton-up,
   .tabbrowser-arrowscrollbox > .scrollbutton-down {
@@ -2161,8 +2168,7 @@ toolbar[brighttext] #alltabs-button,
   list-style-image: url("chrome://browser/skin/tabbrowser/mainwindow-dropdown-arrow.png");
 }
 
-@media (-moz-os-version: windows-xp),
-       (-moz-os-version: windows-vista),
+@media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
   #TabsToolbar[tabsontop=true] > #new-tab-button,
   #TabsToolbar[tabsontop=true] > toolbarpaletteitem > #new-tab-button {
@@ -3682,8 +3688,7 @@ html|*#gcli-output-frame {
   background-clip: padding-box!important;
 }
 
-@media (-moz-os-version: windows-xp),
-       (-moz-os-version: windows-vista),
+@media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7),
        (-moz-os-version: windows-win8) {
   #main-window #nav-bar,
@@ -3768,7 +3773,7 @@ html|*#gcli-output-frame {
 
     .titlebar-button {
       border: none;
-      margin: 0 0 -5px 0 !important;
+      margin: 0 0 -10px 0 !important;
       padding: 9px 17px;
       transition: background-color linear 120ms;
     }
@@ -4124,8 +4129,7 @@ html|*#gcli-output-frame {
                       linear-gradient(hsl(214,44%,87%), hsl(214,44%,87%));
   }
 
-  @media (-moz-os-version: windows-xp),
-         (-moz-os-version: windows-vista),
+  @media (-moz-os-version: windows-vista),
          (-moz-os-version: windows-win7) {  
     #main-window {
       background-color: #CCC;
@@ -4230,8 +4234,7 @@ html|*#gcli-output-frame {
 }
 
 @media not all and (-moz-windows-compositor) {
-  @media (-moz-os-version: windows-xp),
-         (-moz-os-version: windows-vista),
+  @media (-moz-os-version: windows-vista),
          (-moz-os-version: windows-win7) {
     #navigator-toolbox {
       border-style: none;
