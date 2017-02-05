@@ -447,14 +447,13 @@
 #appmenu-popup {
   -moz-appearance: none;
   border-style: solid;
-  border-width: 3px 4px 7px 4px;
-  border-image: url("chrome://global/skin/icons/shadow.png") 3 4 7 4 fill repeat stretch;
+  border-width: 3px;
+  border-color: gray;
   background-color: transparent;
 }
 
 #appmenu-popup > .popup-internal-box {
   background-color: #FFFFFF;
-  border-radius: 3px;
   margin: -2px;
   padding: 1px;
 }
@@ -1235,7 +1234,8 @@ toolbar[brighttext] #tabview-button {
 }
 
 #TabsToolbar[tabsontop=true] .toolbarbutton-menubutton-dropmarker,
-.toolbarbutton-menubutton-dropmarker:-moz-lwtheme-brighttext {
+.toolbarbutton-menubutton-dropmarker:-moz-lwtheme-brighttext,
+#main-window[privatebrowsingmode=temporary] .toolbarbutton-menubutton-dropmarker {
   list-style-image: url("chrome://global/skin/icons/dropdown3.png");
   -moz-image-region: rect(0px, 9px, 9px, 0);
 }
@@ -3723,9 +3723,14 @@ html|*#gcli-output-frame {
 #navigator-toolbox[tabsontop=false] #TabsToolbar {
   box-shadow: 0 -1px 0 #F4F4F4 inset, 0 -2px 0 rgba(0,0,0,.28) inset;
 }
+
 #navigator-toolbox[tabsontop=false] #TabsToolbar:not(:-moz-lwtheme) {
   -moz-appearance: none;
   background-color: #F1F1F1;
+}
+
+#main-window[privatebrowsingmode=temporary] #navigator-toolbox[tabsontop=false] #TabsToolbar {
+  background-color: #505050;
 }
 
 .tabbrowser-tab:not(:-moz-lwtheme) {

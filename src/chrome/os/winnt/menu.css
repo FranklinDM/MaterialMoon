@@ -13,7 +13,7 @@
 menu,
 menuitem,
 .splitmenu-menuitem {
-  -moz-appearance: menuitem;
+  -moz-appearance: none;
   -moz-box-align: center;
   color: MenuText;
   font: menu;
@@ -33,16 +33,6 @@ menuitem[_moz-menuactive="true"][disabled="true"],
 .splitmenu-menuitem[_moz-menuactive="true"][disabled="true"] {
   color: GrayText;
   text-shadow: none;
-}
-
-@media (-moz-windows-classic) {
-  menu[disabled="true"],
-  menubar > menu[disabled="true"][_moz-menuactive="true"],
-  menuitem[disabled="true"],
-  .splitmenu-menuitem[disabled="true"] {
-    color: ThreeDShadow;
-    text-shadow: 1px 1px ThreeDHighlight;
-  }
 }
 
 menuitem.spell-suggestion {
@@ -118,6 +108,7 @@ menubar > menu {
 }
 
 menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
+  background-color: rgba(0, 0, 0, 0.1);
   color: -moz-menubarhovertext;
 }
 
@@ -135,8 +126,8 @@ menubar > menu:-moz-lwtheme:not([disabled="true"]) {
 }
 
 menubar > menu:-moz-lwtheme[_moz-menuactive="true"]:not([disabled="true"]) {
-  background-color: Highlight;
-  color: HighlightText !important;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: Black !important;
   text-shadow: none;
 }
 
@@ -160,13 +151,15 @@ menubar > menu:-moz-window-inactive {
 menupopup > menu,
 menupopup > menuitem {
   max-width: 42em;
+  min-height: 25px;
 }
 
 menu[_moz-menuactive="true"],
 menuitem[_moz-menuactive="true"],
 .splitmenu-menuitem[_moz-menuactive="true"] {
-  background-color: -moz-menuhover;
-  color: -moz-menuhovertext;
+/*  background-color: -moz-menuhover;*/
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 /* ::::: menu/menuitems in menulist popups ::::: */
@@ -188,8 +181,9 @@ menulist > menupopup > menu {
 menulist > menupopup > menuitem[_moz-menuactive="true"],
 .menulist-menupopup > menu[_moz-menuactive="true"],
 menulist > menupopup > menu[_moz-menuactive="true"] {
-  background-color: highlight;
-  color: highlighttext;
+  /*background-color: highlight;*/
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .menulist-menupopup > menuitem > .menu-iconic-left,
@@ -229,20 +223,37 @@ menulist > menupopup > menuitem:not(.menuitem-iconic) > .menu-iconic-text {
 
 menuitem[type="checkbox"],
 menuitem[checked="true"] {
-  -moz-appearance: checkmenuitem;
+  -moz-appearance: none;
 }
 menuitem[type="checkbox"] > .menu-iconic-left,
-menuitem[checked="true"] > .menu-iconic-left {
-  -moz-appearance: menucheckbox;
-  padding-top: 0px;
+menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
+  -moz-appearance: none; /*menucheckbox;*/
+  padding-top: 16px; /*0px;*/
+  padding-left: 16px;
+  margin-right: 8px;
+  margin-left: 5px;
+}
+
+menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
+  background-image: url("chrome://global/skin/arrow/check.png");	
 }
 
 menuitem[type="radio"] {
-  -moz-appearance: radiomenuitem;
+  -moz-appearance: none;
 }
-menuitem[type="radio"] > .menu-iconic-left {
-  -moz-appearance: menuradio;
+
+menuitem[type="radio"] > .menu-iconic-left,
+menuitem[type="radio"][checked=true] > .menu-iconic-left {
+  -moz-appearance: none;
   padding-top: 0px;
+  padding-top: 16px; /*0px;*/
+  padding-left: 16px;
+  margin-right: 8px;
+  margin-left: 5px;
+}
+
+menuitem[type="radio"][checked="true"] > .menu-iconic-left {
+  background-image: url("chrome://global/skin/radio/menu-radio.png");	
 }
 
 menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon,
@@ -256,10 +267,10 @@ menuitem[type="radio"] > .menu-iconic-left > .menu-iconic-icon {
 /* ::::: menuseparator ::::: */
 
 menuseparator {
-  -moz-appearance: menuseparator;
-  padding: 3px 1px 4px 1px;
-  border-top: 1px solid ThreeDShadow;
-  border-bottom: 1px solid ThreeDHighlight;
+  -moz-appearance: none; /*menuseparator;*/
+  /*padding: 2px 2px 1px 1px;*/
+  margin: 4px 2px 4px 2px;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 menulist > menupopup > menuseparator,

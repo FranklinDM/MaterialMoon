@@ -12,10 +12,9 @@
 
 button {
   -moz-appearance: none;
-  background-color: #F9F9F9;
-  border-radius: 2px;
+  background-color: white;
+  border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.26);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 0 0 1px #FEFEFE;
   color: rgb(34, 34, 34);
   font: inherit;
   margin: 2px 2px 3px 2px;
@@ -23,11 +22,14 @@ button {
   min-height: 24px;
   -moz-padding-start: 8px;
   -moz-padding-end: 8px;
+  transition-property: background-color, border-color, box-shadow, color;
+  transition-duration: 300ms;
 }
 
 button:not([disabled="true"]):hover {
-  background-color: #FCFCFC;
+  background-color: white;
   color: #222;
+  box-shadow: 0px 1px 1px 0px rgba(167, 167, 167, 0.45);
 }
 
 button:not([disabled="true"]):hover:active,
@@ -37,6 +39,25 @@ button:not([disabled="true"])[checked="true"] {
   border: 1px solid rgba(0, 0, 0, 0.286);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 0 1px 0 #DADADA;
   color: #333;
+}
+
+button[default=true] {
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+  color: white;
+}
+
+button[default=true]:not([disabled="true"]):hover {
+  background-color: #4c8bf5;
+  border-color: #4c8bf5;
+  color: white;
+}
+button[default=true]:not([disabled="true"]):hover:active,
+button[default=true]:not([disabled="true"])[open="true"],
+button[default=true]:not([disabled="true"])[checked="true"] {
+  background-color: #659bf6;
+  border-color: #659bf6;
+  color: white;
 }
 
 .button-box {

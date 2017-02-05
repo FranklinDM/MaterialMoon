@@ -9,19 +9,19 @@
 
 menupopup,
 panel {
-  border: 3px solid transparent;
-  -moz-border-top-colors   : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-left-colors  : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-right-colors : ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
-  -moz-border-bottom-colors: ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
+  border: 1px solid transparent;
+  -moz-border-top-colors   : #bababa;
+  -moz-border-left-colors  : #bababa;
+  -moz-border-right-colors : #bababa;
+  -moz-border-bottom-colors: #bababa;
   padding: 0px;
   min-width: 1px;
-  background: Menu;
+  background: #FFFFFF;
   color: MenuText;
 }
 
 menupopup {
-  -moz-appearance: menupopup;
+  -moz-appearance: none;
 }
 
 menupopup > menu > menupopup {
@@ -59,10 +59,10 @@ panel[type="arrow"][side="right"] {
 
 @media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
-/* < Win8 */
-.panel-arrowcontent {
-  border-radius: 4px;
-}
+	/* < Win8 */
+	.panel-arrowcontent {
+	  border-radius: 4px;
+	}
 }
 
 .panel-arrow[side="top"],
