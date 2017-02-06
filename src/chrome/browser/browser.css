@@ -171,6 +171,19 @@
   background-color: #505050;
 }
 
+/* Improve appearance when using lightweight themes */
+#nav-bar:-moz-lwtheme,
+#nav-bar[collapsed=true]:not([customizing]) + toolbar:-moz-lwtheme,
+#nav-bar[collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar:-moz-lwtheme {
+  background: linear-gradient(rgba(241,241,241,1) 0%, rgba(255,255,255,0) 100%) !important;
+}
+
+#main-window[privatebrowsingmode=temporary] #nav-bar:-moz-lwtheme,
+#main-window[privatebrowsingmode=temporary] #nav-bar[collapsed=true]:not([customizing]) + toolbar:-moz-lwtheme,
+#main-window[privatebrowsingmode=temporary] #nav-bar[collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar:-moz-lwtheme {
+  background: linear-gradient(rgba(80,80,80,1) 0%, rgba(0,0,0,0) 100%) !important;
+}
+
 /*#navigator-toolbox[tabsontop=false]:-moz-lwtheme > #nav-bar,
 #navigator-toolbox[tabsontop=false]:not([customizing]):-moz-lwtheme > #nav-bar[collapsed="true"] + toolbar,
 #navigator-toolbox[tabsontop=false]:not([customizing]):-moz-lwtheme > #nav-bar[collapsed="true"] + #customToolbars + #PersonalToolbar {
@@ -798,29 +811,35 @@ menuitem.bookmark-item {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-#main-window[privatebrowsingmode=temporary] .bookmark-item:not(:-moz-any([livemark], [query], [tagContainer], [dayContainer], [hostContainer])) {
+#main-window[privatebrowsingmode=temporary] .bookmark-item:not(:-moz-any([livemark], [query], [tagContainer], [dayContainer], [hostContainer])),
+toolbar[brighttext] .bookmark-item:not(:-moz-any([livemark], [query], [tagContainer], [dayContainer], [hostContainer])) {
   list-style-image: url("chrome://global/skin/icons/n_folder-item.png");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 
-#main-window[privatebrowsingmode=temporary] .bookmark-item[container][livemark] { 
+#main-window[privatebrowsingmode=temporary] .bookmark-item[container][livemark],
+toolbar[brighttext] .bookmark-item[container][livemark]  { 
   list-style-image: url("chrome://browser/skin/n_livemark-folder.png");
   -moz-image-region: auto;
 }
 
-#main-window[privatebrowsingmode=temporary] .bookmark-item[container][query] {
+#main-window[privatebrowsingmode=temporary] .bookmark-item[container][query],
+toolbar[brighttext] .bookmark-item[container][query] {
   list-style-image: url("chrome://browser/skin/places/n_query.png");
 }
 
-#main-window[privatebrowsingmode=temporary] .bookmark-item[query][tagContainer] {
+#main-window[privatebrowsingmode=temporary] .bookmark-item[query][tagContainer],
+toolbar[brighttext] .bookmark-item[query][tagContainer] {
   list-style-image: url("chrome://browser/skin/places/n_tag.png");
 }
 
-#main-window[privatebrowsingmode=temporary] .bookmark-item[query][dayContainer] {
+#main-window[privatebrowsingmode=temporary] .bookmark-item[query][dayContainer],
+toolbar[brighttext] .bookmark-item[query][dayContainer] {
   list-style-image: url("chrome://browser/skin/places/n_calendar.png");
 }
 
-#main-window[privatebrowsingmode=temporary] .bookmark-item[container][livemark] .bookmark-item {
+#main-window[privatebrowsingmode=temporary] .bookmark-item[container][livemark] .bookmark-item,
+toolbar[brighttext] .bookmark-item[container][livemark] .bookmark-item {
   list-style-image: url("chrome://browser/skin/places/n_livemark-item.png");
 }
 
@@ -1968,7 +1987,7 @@ window[sizemode="maximized"] #navigator-toolbox {
 }
 
 .tabbrowser-tab:-moz-lwtheme {
-  color: black;
+  /*color: black;*/
   text-shadow: none;
 }
 
@@ -1976,11 +1995,11 @@ window[sizemode="maximized"] #navigator-toolbox {
   margin-top: 0 !important;
 }
 
-.tabbrowser-tab .tab-text[selected="true"]:not(:-moz-lwtheme) {
+.tabbrowser-tab .tab-text[selected="true"] { /*:not(:-moz-lwtheme)*/
   color: #000000;
 }
 
-#main-window[privatebrowsingmode=temporary] .tabbrowser-tab .tab-text[selected="true"]:not(:-moz-lwtheme) {
+#main-window[privatebrowsingmode=temporary] .tabbrowser-tab .tab-text[selected="true"] { /*:not(:-moz-lwtheme)*/
   color: #FFFFFF;
 }
 
