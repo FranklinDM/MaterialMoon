@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 body {
-  background-image: url("chrome://global/skin/media/imagedoc-darknoise.png");
+  background: black;
 }
 
 video {

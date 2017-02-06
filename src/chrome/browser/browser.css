@@ -29,6 +29,10 @@
   list-style-image: url("chrome://browser/skin/livemark-item.png");
 }
 
+#main-window[privatebrowsingmode=temporary] #ub-feed-button {
+  list-style-image: url("chrome://browser/skin/n_livemark-item.png");
+}
+
 /* keyframes used to pulse the overlay */
 @keyframes pulse {
  0% {
@@ -794,9 +798,34 @@ menuitem.bookmark-item {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-#main-window[privatebrowsingmode=temporary] .bookmark-item {
+#main-window[privatebrowsingmode=temporary] .bookmark-item:not(:-moz-any([livemark], [query], [tagContainer], [dayContainer], [hostContainer])) {
   list-style-image: url("chrome://global/skin/icons/n_folder-item.png");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#main-window[privatebrowsingmode=temporary] .bookmark-item[container][livemark] { 
+  list-style-image: url("chrome://browser/skin/n_livemark-folder.png");
+  -moz-image-region: auto;
+}
+
+#main-window[privatebrowsingmode=temporary] .bookmark-item[container][query] {
+  list-style-image: url("chrome://browser/skin/places/n_query.png");
+}
+
+#main-window[privatebrowsingmode=temporary] .bookmark-item[query][tagContainer] {
+  list-style-image: url("chrome://browser/skin/places/n_tag.png");
+}
+
+#main-window[privatebrowsingmode=temporary] .bookmark-item[query][dayContainer] {
+  list-style-image: url("chrome://browser/skin/places/n_calendar.png");
+}
+
+#main-window[privatebrowsingmode=temporary] .bookmark-item[container][livemark] .bookmark-item {
+  list-style-image: url("chrome://browser/skin/places/n_livemark-item.png");
+}
+
+#main-window[privatebrowsingmode=temporary] .bookmark-item[query][hostContainer] {
+  list-style-image: url("chrome://global/skin/icons/folder_16.png");
 }
 
 .bookmark-item[container] {
@@ -832,7 +861,7 @@ menuitem.bookmark-item {
   -moz-image-region: auto;
 }
 
-.bookmark-item[query][hostContainer] {
+.bookmark-item[query][hostContainer]{
   list-style-image: url("chrome://global/skin/icons/folder_16.png");
 }
 
