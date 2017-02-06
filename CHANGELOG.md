@@ -1,5 +1,16 @@
 # Changelog
 
+### 2.6.3
+- Ported commits from PMChrome
+  - improve menubar appearance on Linux
+  - Size caption buttons on Win10 correctly
+  - Remove redundant windows-xp queries
+  - Remove redundant download indicator styling
+- Add light version of the tab close button downloads.css
+- New icons (for plugins, feed icons, media, etc.)
+- Style the context menu to be more Chrome-like (Windows only)
+- Improved lightweight themes appearance
+
 ### 2.6.2
 - fixes for the "jumpy" toolbar icons on private browsing mode
 - minor tweaks to some icons
