@@ -101,21 +101,6 @@ toolbar[mode="icons"] #status4evar-download-button[forcelabel="true"] > label
 	height: 16px;
 }
 
-#status4evar-download-button #status4evar-download-icon
-{
-	background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"), 0, 108, 18, 90) center no-repeat;
-}
-
-#status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon
-{
-	background: -moz-image-rect(url("chrome://browser/skin/Toolbar-inverted.png"), 0, 108, 18, 90) center no-repeat;
-}
-
-#status4evar-download-button[attention] #status4evar-download-icon
-{
-	background-image: url("chrome://browser/skin/downloads/download-glow.png");
-}
-
 @keyframes status4evar-download-notification-finish
 {
 	from { opacity: 0; transform: scale(1); }
@@ -295,11 +280,6 @@ splitter.status4evar-status-splitter:not(:hover)
 	display: none;
 }
 
-#urlbar .urlbar-origin-label
-{
-	-moz-padding-start: 1px;
-}
-
 #urlbar .urlbar-origin-label,
 #urlbar .urlbar-over-link-host-label,
 #urlbar .urlbar-over-link-path-label
@@ -307,6 +287,11 @@ splitter.status4evar-status-splitter:not(:hover)
 	padding: 0;
 	margin: 0;
 	border: none;
+}
+
+#urlbar .urlbar-origin-label
+{
+	-moz-padding-start: 1px;
 }
 
 #urlbar .urlbar-over-link-box:-moz-locale-dir(ltr)
@@ -333,12 +318,23 @@ splitter.status4evar-status-splitter:not(:hover)
 
 #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(ltr)
 {
-	background: url(chrome://browser/skin/statusbar/urlbar-over-link-arrow.png) no-repeat left center;
+	border-left: 1px solid #A9A9A9;
 }
+
+#main-window[privatebrowsingmode=temporary] #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(ltr)
+{
+	border-left: 1px solid #383838;
+}
+
 
 #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(rtl)
 {
-	background: url(chrome://browser/skin/statusbar/urlbar-over-link-arrow-rtl.png) no-repeat right center;
+	border-right: 1px solid #A9A9A9;
+}
+
+#main-window[privatebrowsingmode=temporary] #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(rtl)
+{
+	border-right: 1px solid #383838;
 }
 
 /*
@@ -374,6 +370,21 @@ splitter.status4evar-status-splitter:not(:hover)
 {
 	min-width: 18px;
 	min-height: 18px;
+}
+
+#status4evar-download-button #status4evar-download-icon
+{
+	background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"), 0, 108, 18, 90) center no-repeat;
+}
+
+#status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon
+{
+	background: -moz-image-rect(url("chrome://browser/skin/Toolbar-inverted.png"), 0, 108, 18, 90) center no-repeat;
+}
+
+#status4evar-download-button[attention] #status4evar-download-icon
+{
+	background-image: url("chrome://browser/skin/downloads/download-glow.png");
 }
 
 toolbar[mode="icons"] #status4evar-download-button[forcelabel="true"] > label
@@ -421,3 +432,4 @@ splitter.status4evar-status-splitter
 {
 	border: none !important;
 }
+

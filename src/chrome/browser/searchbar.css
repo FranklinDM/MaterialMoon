@@ -51,6 +51,10 @@
   list-style-image: url("chrome://global/skin/icons/tb_dropdown.png");
 }
 
+#main-window[privatebrowsingmode=temporary] .searchbar-dropmarker-image {
+  list-style-image: url("chrome://global/skin/icons/n_tb_dropdown.png");
+}
+
 /* ::::: search-go-button ::::: */
 
 .search-go-container {
@@ -66,14 +70,40 @@
 
 .search-go-button {
   list-style-image: url("chrome://browser/skin/search-magnifying-glass.png");
-  -moz-image-region: rect(0px 19px 19px 0px);
-  opacity: 0.3;
+  -moz-image-region: rect(0px 18px 18px 0px);
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 500ms;
+  border-radius: 3px;
 }
 
-.search-go-button:hover {
-  opacity: 1;
+#main-window[privatebrowsingmode=temporary] .search-go-button {
+  list-style-image: url("chrome://browser/skin/n_search-magnifying-glass.png");
 }
 
+.search-go-button:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+#main-window[privatebrowsingmode=temporary] .search-go-button:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-go-button:hover:active:not([disabled="true"]) {
+  border-radius: 500em;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 200ms;
+}
+
+#main-window[privatebrowsingmode=temporary] .search-go-button:hover:active:not([disabled="true"]) {
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+	
 .searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
   font-weight: bold;
 }

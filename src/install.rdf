@@ -3,13 +3,11 @@
 <!-- This Source Code is subject to the terms of the Mozilla Public License
    - version 2.0 (the "License"). You can obtain a copy of the License at
    - http://mozilla.org/MPL/2.0/. -->
-
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  
+   
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">  
   <Description about="urn:mozilla:install-manifest">
     <em:id>materialmoon@franklindm</em:id>
-    <em:version>2.6.3</em:version>
+    <em:version>2.6.4</em:version>
     <em:name>Material Moon</em:name>
     <em:description>Material Chrome-like theme for Pale Moon. Fork of "PMChrome" (Lootyhoof) and "FXChrome" (dkgo)</em:description>
     <em:creator>FranklinDM</em:creator>
@@ -31,5 +29,4 @@
       </Description>
     </em:targetApplication>
   </Description>
-
 </RDF>
