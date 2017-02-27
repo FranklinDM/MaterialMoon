@@ -500,7 +500,7 @@
 #appmenuSecondaryPane > splitmenu > .splitmenu-menuitem,
 #appmenuSecondaryPane > splitmenu > .splitmenu-menu {
   -moz-appearance: none;
-  height: 23px;
+  height: 25px;
 }
 
 #appmenuPrimaryPane > menu[_moz-menuactive="true"],
@@ -968,18 +968,18 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):not(#addon-bar) {
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1 {
   padding: 0px;
-  margin-top: 0px; 
-  margin-bottom: 0px; 
   background: transparent;
   background-clip: padding-box;
   border: 1px solid;
   border-color: transparent;
-  border-width: 7px; /* former: 5px */
+  border-width: 4px; /* former: 5px */
   color: black;
-  box-shadow: none;
   border-radius: 3px;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
+  margin: 7px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
 }
 
 #main-window[privatebrowsingmode=temporary] toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1 {
@@ -1410,6 +1410,42 @@ window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back
   padding: 0px 2px;
 }
 
+/* urlbar icon animation */
+.urlbar-icon,
+.urlbar-history-dropmarker {
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 500ms;
+}
+
+.urlbar-icon:hover,
+.urlbar-history-dropmarker:hover {
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+#main-window[privatebrowsingmode=temporary] .urlbar-icon:hover,
+#main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.urlbar-icon:hover:active,
+.urlbar-history-dropmarker:hover:active {
+  border-radius: 500em;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 200ms;
+}
+
+#main-window[privatebrowsingmode=temporary] .urlbar-icon:hover:active,
+#main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker:hover:active {
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 #urlbar-search-splitter {
   min-width: 4px;
   -moz-margin-start: -3px;
@@ -1506,15 +1542,6 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 
 #main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker {
   list-style-image: url("chrome://global/skin/icons/n_addr_dropdown.png");
-}
-
-.urlbar-history-dropmarker:hover {
-  -moz-image-region: rect(0, 30px, 15px, 15px);
-}
-
-.urlbar-history-dropmarker:hover:active,
-.urlbar-history-dropmarker[open="true"] {
-  -moz-image-region: rect(0, 45px, 15px, 30px);
 }
 
 /* page proxy icon */
@@ -1624,6 +1651,10 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   -moz-image-region: rect(0px, 57px, 19px, 38px);
 }
 
+#main-window[privatebrowsingmode=temporary] #go-button {
+  list-style-image: url("chrome://browser/skin/n_reload-stop-go.png");
+}
+
 #urlbar > toolbarbutton {
   -moz-appearance: none;
   padding: 0 2px;
@@ -1634,6 +1665,11 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   border-image: none;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
+  border-radius: 3px;
+}
+
+#main-window[privatebrowsingmode=temporary] #urlbar > toolbarbutton {
+  list-style-image: url("chrome://browser/skin/n_reload-stop-go.png");
 }
 
 #urlbar-go-button {
@@ -1655,19 +1691,29 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 }
 
 #urlbar > toolbarbutton:hover {
-  border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 0, 0, 0.1);
 }
 
+#main-window[privatebrowsingmode=temporary] #urlbar > toolbarbutton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 #urlbar > toolbarbutton:hover:active {
-  border-image: none;
   border-radius: 500em;
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 0, 0, 0.1);
   transition-duration: 200ms;
 }
+
+#main-window[privatebrowsingmode=temporary] #urlbar > toolbarbutton:hover:active {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
 
 /* popup blocker button */
 

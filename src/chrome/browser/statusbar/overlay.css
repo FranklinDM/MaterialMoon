@@ -203,7 +203,7 @@ splitter.status4evar-status-splitter:not(:hover)
 }
 
 /*
- * Location bar status transisions
+ * Location bar status transitions
  */
 
 #urlbar .urlbar-over-link-layer
@@ -215,7 +215,7 @@ splitter.status4evar-status-splitter:not(:hover)
 #urlbar .urlbar-input-layer[overlinkstate="fade-in"] html|input.urlbar-input::-moz-placeholder
 {
 	-moz-transition-property: color;
-	-moz-transition-duration: 150ms;
+	-moz-transition-duration: 100ms;
 	color: transparent;
 }
 
@@ -223,7 +223,7 @@ splitter.status4evar-status-splitter:not(:hover)
 #urlbar .urlbar-input-layer[overlinkstate="fade-out"] html|input.urlbar-input::-moz-placeholder
 {
 	-moz-transition-property: color;
-	-moz-transition-duration: 150ms;
+	-moz-transition-duration: 100ms;
 	-moz-transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);
 }
 
@@ -236,14 +236,14 @@ splitter.status4evar-status-splitter:not(:hover)
 #urlbar .urlbar-over-link-layer[overlinkstate="fade-in"]
 {
 	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
+	-moz-transition-duration: 100ms;
 	opacity: 1;
 }
 
 #urlbar .urlbar-over-link-layer[overlinkstate="fade-out"]
 {
 	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
+	-moz-transition-duration: 100ms;
 	-moz-transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);
 }
 
@@ -255,14 +255,14 @@ splitter.status4evar-status-splitter:not(:hover)
 #urlbar .urlbar-input-layer-children[overlinkstate="fade-in"]
 {
 	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
+	-moz-transition-duration: 100ms;
 	opacity: 0;
 }
 
 #urlbar .urlbar-input-layer-children[overlinkstate="fade-out"]
 {
 	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
+	-moz-transition-duration: 100ms;
 	-moz-transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);
 }
 
