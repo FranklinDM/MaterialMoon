@@ -1118,11 +1118,9 @@ div.CodeMirror span.eval-text {
 }
 
 .theme-light .devtools-tabbar {
-  box-shadow: 0 -2px 0 rgba(170,170,170,.1) inset;
 }
 
 .theme-dark .devtools-tabbar {
-  box-shadow: 0 -2px 0 rgba(0,0,0,.1) inset;
 }
 
 #toolbox-tabs {
@@ -1140,7 +1138,7 @@ div.CodeMirror span.eval-text {
   padding: 0;
   border-style: solid;
   border-width: 0;
-  -moz-border-start-width: 1px;
+  -moz-border-start-width: 0px;
   -moz-box-align: center;
 }
 
@@ -1163,15 +1161,6 @@ div.CodeMirror span.eval-text {
   background-color: rgba(170,170,170,.2);
 }
 
-.theme-dark .devtools-tab:hover:active {
-  background-color: hsla(206,37%,4%,.4);
-  color: var(--theme-selection-color);
-}
-
-.theme-light .devtools-tab:hover:active {
-  background-color: rgba(170,170,170,.4);
-}
-
 .theme-dark .devtools-tab:not([selected])[highlighted] {
   background-color: hsla(99,100%,14%,.2);
   box-shadow: 0 2px 0 #7bc107 inset;
@@ -1184,29 +1173,21 @@ div.CodeMirror span.eval-text {
 .devtools-tab > image {
   border: none;
   -moz-margin-end: 0;
-  -moz-margin-start: 4px;
-  opacity: 0.6;
-  max-height: 16px;
-  width: 16px; /* Prevents collapse during theme switching */
+  opacity: 1;
+  max-height: 0px;
+  width: 0px;	
+  -moz-margin-start: 0px;
+  visibility: collapse;
 }
 
 .devtools-tab > label {
   white-space: nowrap;
 }
 
-.devtools-tab:hover > image {
-  opacity: 0.8;
-}
-
-.devtools-tab:active > image,
-.devtools-tab[selected] > image {
-  opacity: 1;
-}
-
 .devtools-tabbar .devtools-tab[selected],
 .devtools-tabbar .devtools-tab[selected]:hover:active {
-  color: var(--theme-selection-color);
-  background-color: var(--theme-selection-background);
+  color: black; /*var(--theme-selection-color);*/
+  background-color: transparent;
 }
 
 .theme-dark .devtools-tabbar .devtools-tab[selected] {
@@ -1216,9 +1197,7 @@ div.CodeMirror span.eval-text {
 }
 
 .theme-light .devtools-tabbar .devtools-tab[selected] {
-  box-shadow: 0 2px 0 #d7f1ff inset,
-              0 8px 3px -5px #2b82bf inset,
-              0 -2px 0 rgba(0,0,0,.06) inset;
+  box-shadow: 0px -1px 0px rgb(62, 130, 247) inset;
 }
 
 #toolbox-tabs .devtools-tab[selected],
@@ -1261,6 +1240,9 @@ div.CodeMirror span.eval-text {
   border-color: transparent;
   border-width: 0;
   -moz-padding-start: 1px;
+}
+#toolbox-option-container .devtools-tab:after {
+  content: "Options" !important;
 }
 #toolbox-tab-options > image {
   margin: 0 8px;

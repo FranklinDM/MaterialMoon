@@ -18,9 +18,9 @@
 #ub-feed-button,
 #ub-feed-button > .button-box,
 #ub-feed-button:hover:active > .button-box {
-  padding: 0px;
+/*  padding: 0px;
   margin: 0px;
-  border: 0px;
+  border: 0px;*/
   background-color: transparent !important;
 }
 
@@ -703,6 +703,18 @@
   -moz-padding-end: 1px;
 }
 
+#main-window[privatebrowsingmode=temporary] #PersonalToolbar toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#main-window[privatebrowsingmode=temporary] #PersonalToolbar toolbarbutton:hover:active:not([disabled="true"]),
+#main-window[privatebrowsingmode=temporary] #PersonalToolbar toolbarbutton[checked="true"]:not([disabled="true"]),
+#main-window[privatebrowsingmode=temporary] #PersonalToolbar toolbarbutton[open="true"]:not([disabled="true"]) {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
 #main-window[privatebrowsingmode=temporary] #PersonalToolbar .toolbarbutton-1,
 #main-window[privatebrowsingmode=temporary] #PersonalToolbar toolbarbutton {
   color: white !important;
@@ -793,23 +805,13 @@ menuitem.bookmark-item {
   -moz-padding-start: 0px;
 }
 
+
+
 /* ::::: bookmark items ::::: */
 
 .bookmark-item {
   list-style-image: url("chrome://global/skin/icons/folder-item.png");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
-}
-
-#main-window[privatebrowsingmode=temporary] .bookmark-item:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-#main-window[privatebrowsingmode=temporary] .bookmark-item:hover:active:not([disabled="true"]),
-#main-window[privatebrowsingmode=temporary] .bookmark-item[checked="true"]:not([disabled="true"]),
-#main-window[privatebrowsingmode=temporary] .bookmark-item[open="true"]:not([disabled="true"]) {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.2);
 }
 
 #main-window[privatebrowsingmode=temporary] .bookmark-item:not(:-moz-any([livemark], [query], [tagContainer], [dayContainer], [hostContainer])),
@@ -1412,26 +1414,30 @@ window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back
 
 /* urlbar icon animation */
 .urlbar-icon,
-.urlbar-history-dropmarker {
+.urlbar-history-dropmarker,
+#ub-feed-button {
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
 }
 
 .urlbar-icon:hover,
-.urlbar-history-dropmarker:hover {
+.urlbar-history-dropmarker:hover,
+#ub-feed-button:hover {
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.1) !important;
   border-color: rgba(0, 0, 0, 0.1);
 }
 
 #main-window[privatebrowsingmode=temporary] .urlbar-icon:hover,
-#main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker:hover {
+#main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker:hover,
+#main-window[privatebrowsingmode=temporary] #ub-feed-button:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
   border-color: rgba(255, 255, 255, 0.1);
 }
 
 .urlbar-icon:hover:active,
-.urlbar-history-dropmarker:hover:active {
+.urlbar-history-dropmarker:hover:active,
+#ub-feed-button:hover:active {
   border-radius: 500em;
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
@@ -1440,7 +1446,8 @@ window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back
 }
 
 #main-window[privatebrowsingmode=temporary] .urlbar-icon:hover:active,
-#main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker:hover:active {
+#main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker:hover:active,
+#main-window[privatebrowsingmode=temporary] #ub-feed-button:hover:active {
   box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.1);
@@ -2218,10 +2225,10 @@ toolbar[brighttext] .tabbrowser-arrowscrollbox > .scrollbutton-down {
 
 #new-tab-button {
   -moz-appearance: none; 
-  -moz-padding-start: 4px !important;
-  -moz-padding-end: 4px !important;	
+/*  -moz-padding-start: 4px !important;
+  -moz-padding-end: 4px !important;	*/
   list-style-image: url(chrome://browser/skin/tabbrowser/newtab.png);
-  -moz-image-region: rect(0px, 16px, 18px, 0px) !important;
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
 }
 
 toolbar[brighttext] #new-tab-button,
@@ -2239,7 +2246,7 @@ toolbar[brighttext] #alltabs-button,
   list-style-image: url("chrome://browser/skin/tabbrowser/mainwindow-dropdown-arrow.png");
 }
 
-@media (-moz-os-version: windows-vista),
+/*@media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
   #TabsToolbar[tabsontop=true] > #new-tab-button,
   #TabsToolbar[tabsontop=true] > toolbarpaletteitem > #new-tab-button {
@@ -2249,7 +2256,7 @@ toolbar[brighttext] #alltabs-button,
   #TabsToolbar[tabsontop=true] > #alltabs-button {
     list-style-image: url("chrome://browser/skin/tabbrowser/mainwindow-dropdown-arrow-inverted.png");
   }
-}
+}*/
 
 #alltabs-button > .toolbarbutton-icon {
   margin: 0 6px;
@@ -4288,4 +4295,9 @@ menupopup[sticky="true"] {
 findbar[movetotop]:before,
 findbar[movetotop]:after {
   margin-top: -1px !important;
+}
+
+/* MozArchiver */
+#mafArchiveInfoUrlbarButton {
+  padding: 2px 3px 3px 3px;
 }

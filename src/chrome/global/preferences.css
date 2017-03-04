@@ -72,7 +72,6 @@ radio[pane] {
 }
 
 radio[pane]:hover {
-  /* color: rgb(70, 78, 90); */
   cursor: pointer;
 }
 

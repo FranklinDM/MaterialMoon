@@ -14,18 +14,16 @@
   padding: 5px 3px 1px 3px;
   margin: 0 1px;
   min-width: 4.5em;
-  border-top: 6px solid transparent;
+  font-weight: bold;
   color: #777;
 }
 
 #viewGroup > radio:hover {
-  color: rgb(70, 78, 90);
   cursor: pointer;
 }
 
 #viewGroup > radio[selected="true"] {
-  border-top-color: rgb(78, 87, 100);
-  color: rgb(70, 78, 90);
+  color: rgb(66, 133, 244);
   cursor: default;
 }
 
@@ -75,7 +73,10 @@
 }
 
 deck {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 3px;
 }
 
 /* Misc */
