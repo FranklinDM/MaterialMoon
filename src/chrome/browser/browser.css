@@ -1407,7 +1407,7 @@ window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back
 }
 
 .urlbar-icon {
-  padding: 0px 2px;
+  padding: 1px 2px; /* unify urlbar icon - 2 */
 }
 
 /* urlbar icon animation */
@@ -1533,7 +1533,7 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 .urlbar-history-dropmarker {
   -moz-appearance: none;
   padding: 0 3px;
-  margin: 0;
+  margin: 2px 2px 2px 0px; /* unify urlbar icon - 1*/
   border: none;
   list-style-image: url("chrome://global/skin/icons/addr_dropdown.png");
   -moz-image-region: rect(0, 15px, 15px, 0);
@@ -2027,10 +2027,10 @@ window[sizemode="maximized"] #navigator-toolbox {
 }
 
 .tabbrowser-tab[pinned][titlechanged] > .tab-stack > .tab-content {
-  -moz-border-image: url("chrome://browser/skin/tabbrowser/attention.png") 2 15 fill stretch stretch !important;
+  -moz-border-image: url("chrome://browser/skin/tabbrowser/attention.png") 2 15 fill repeat stretch !important;
 }
 .tabbrowser-tab[pinned][titlechanged]:hover > .tab-stack > .tab-content:not([selected="true"]) {
-  -moz-border-image: url("chrome://browser/skin/tabbrowser/attention_hover.png") 2 15 fill stretch stretch !important;
+  -moz-border-image: url("chrome://browser/skin/tabbrowser/attention_hover.png") 2 15 fill repeat stretch !important;
 }
 
 .tabbrowser-tabbox {
@@ -2589,6 +2589,11 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 .notification-anchor-icon:-moz-focusring {
   outline: 1px dotted -moz-DialogText;
   outline-offset: -3px;
+}
+
+/* turn image to white during private browing mode */
+#main-window[privatebrowsingmode=temporary] .notification-anchor-icon {
+  filter: invert(100%) brightness(1000%) !important;
 }
 
 .default-notification-icon,
