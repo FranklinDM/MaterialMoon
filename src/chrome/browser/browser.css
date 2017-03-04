@@ -18,9 +18,9 @@
 #ub-feed-button,
 #ub-feed-button > .button-box,
 #ub-feed-button:hover:active > .button-box {
-/*  padding: 0px;
-  margin: 0px;
+/* margin: 0px;
   border: 0px;*/
+  padding: 3px;
   background-color: transparent !important;
 }
 
@@ -1499,13 +1499,13 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity,
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedDomain {
   background: transparent;
-  border-right-color: gray;
+  border-right-color: #A9A9A9;
 }
 
 #main-window[privatebrowsingmode=temporary] #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity, 
 #main-window[privatebrowsingmode=temporary] #urlbar[pageproxystate="valid"] > #identity-box.verifiedDomain {
   background: transparent;
-  border-right-color: #FFFFFF;
+  border-right-color: #383838;
 }
 
 #main-window[privatebrowsingmode=temporary] #identity-box.verifiedIdentity #identity-icon-labels,
