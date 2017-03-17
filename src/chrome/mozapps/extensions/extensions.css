@@ -75,6 +75,7 @@
   box-shadow: none!important;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 #back-btn[disabled="true"] .toolbarbutton-icon,
@@ -103,7 +104,8 @@
 }
 
 .nav-button:hover:not([disabled="true"]),
-#header-utils-btn:hover {
+#header-utils-btn:hover,
+#header-utils-btn[open="true"] {
   /*border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch !important;*/
     border-image: none !important;
     border-radius: 3px !important;
@@ -112,8 +114,7 @@
 }
 
 .nav-button:hover:active:not([disabled="true"]),
-#header-utils-btn:hover:active,
-#header-utils-btn[open="true"] {
+#header-utils-btn:hover:active {
   /*border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch !important;*/
     border-image: none !important;
     border-radius: 500em !important;

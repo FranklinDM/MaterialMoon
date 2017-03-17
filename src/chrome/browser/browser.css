@@ -390,7 +390,7 @@
        (-moz-os-version: windows-win7) {
   @media not all and (-moz-windows-compositor) {
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) {
-      -moz-margin-start: 42px !important; 
+      /* -moz-margin-start: 42px !important;  */
       padding-bottom: 4px !important; 
     }
 
@@ -400,8 +400,8 @@
 
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
       margin-top: -4px !important;
-      -moz-padding-start: 46px !important; 
-      -moz-padding-end: 112px !important; 
+/*       -moz-padding-start: 46px !important; 
+      -moz-padding-end: 112px !important;  */
     }
   }
 }
@@ -416,12 +416,12 @@
     padding-bottom: 4px !important; 
   }
 
-  #main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
-    /*margin-top: -2px !important;
-    margin-bottom: -3px !important;*/
+/*   #main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
+    margin-top: -2px !important;
+    margin-bottom: -3px !important;
     -moz-padding-start: 46px !important; 
     -moz-padding-end: 145px !important; 
-  }
+  } 
   
   @media (-moz-os-version: windows-vista),
          (-moz-os-version: windows-win7),
@@ -429,7 +429,7 @@
 	#main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
 	  -moz-padding-end: 110px !important;
 	}
-  }
+  }*/
 }
 
 #appmenu-button > .button-box {
@@ -979,6 +979,7 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon
   border-radius: 3px;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
   margin: 7px !important;
   margin-left: 4px !important;
   margin-right: 4px !important;
@@ -1103,10 +1104,6 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #forward-button[disabled=true]:n
 
 window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icons] > :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"],#nav-bar:not([currentset])) > #unified-back-forward-button:not([switchingtabs]) > #forward-button {
   transition: opacity 150ms ease-out;
-}
-
-window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icons] > :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"],#nav-bar:not([currentset])) > #unified-back-forward-button:not(:hover) > #forward-button[disabled] {
-  opacity: 0;
 }
 
 #stop-button {
