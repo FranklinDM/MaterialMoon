@@ -1,5 +1,19 @@
 # Changelog
 
+### 2.6.5
+- Fix for invisible forward button
+- Removed large margin on tab browser
+- Added transition timing function
+
+### 2.6.4
+- New icon (again)
+- Reworked toolbar icons (much smoother now)
+- Browser DevTools styling separated
+- Material click animation no lonoger bleeds through tabs
+- Preferences are now themed
+- Urlbar icons now have the material click animation
+- AppMenu popup's margines were adjusted
+
 ### 2.6.3
 - Ported commits from PMChrome
   - improve menubar appearance on Linux
