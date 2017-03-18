@@ -9,4 +9,4 @@ This one contains the material version of the browser and contains a different G
 Simply download the contents of the "src" folder  and pack the contents into a .zip file. Then, rename the file to .xpi and drag into the browser.
 
 ## Download
-Check the releases section of this repository.
+Check the releases page of this repository or visit its page on the [Pale Moon Add-ons Site] (https://addons.palemoon.org/themes/material-moon/).
