@@ -75,7 +75,6 @@
   box-shadow: none!important;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
-  transition-timing-function: ease-in-out;
 }
 
 #back-btn[disabled="true"] .toolbarbutton-icon,

@@ -392,6 +392,7 @@
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) {
       /* -moz-margin-start: 42px !important;  */
       padding-bottom: 4px !important; 
+	  -moz-margin-start: 5px !important;
     }
 
     #main-window[tabsontop="true"][sizemode="maximized"] #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
@@ -400,6 +401,7 @@
 
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
       margin-top: -4px !important;
+	  -moz-padding-start: 5px !important;
 /*       -moz-padding-start: 46px !important; 
       -moz-padding-end: 112px !important;  */
     }
@@ -412,24 +414,18 @@
   }	
 	
   #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) {
-    -moz-margin-start: 42px !important; 
+    /* -moz-margin-start: 42px !important;  */
+    -moz-margin-start: 5px !important;
     padding-bottom: 4px !important; 
   }
 
-/*   #main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
-    margin-top: -2px !important;
+   #main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
+/*     margin-top: -2px !important;
     margin-bottom: -3px !important;
     -moz-padding-start: 46px !important; 
-    -moz-padding-end: 145px !important; 
+    -moz-padding-end: 145px !important;  */
+	-moz-padding-start: 5px !important;
   } 
-  
-  @media (-moz-os-version: windows-vista),
-         (-moz-os-version: windows-win7),
-         (-moz-os-version: windows-win8) {
-	#main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
-	  -moz-padding-end: 110px !important;
-	}
-  }*/
 }
 
 #appmenu-button > .button-box {
@@ -979,7 +975,6 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon
   border-radius: 3px;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
-  transition-timing-function: ease-in-out;
   margin: 7px !important;
   margin-left: 4px !important;
   margin-right: 4px !important;
@@ -1019,7 +1014,10 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon
 
 #main-window[privatebrowsingmode=temporary] toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
 #main-window[privatebrowsingmode=temporary] toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[checked="true"]:not([disabled="true"]),
-#main-window[privatebrowsingmode=temporary] toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[open="true"]:not([disabled="true"]) {
+#main-window[privatebrowsingmode=temporary] toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[open="true"]:not([disabled="true"]),
+toolbar[brighttext]:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
+toolbar[brighttext]:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[checked="true"]:not([disabled="true"]),
+toolbar[brighttext]:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[open="true"]:not([disabled="true"]) {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.1);	
 }
@@ -1033,7 +1031,8 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon
   transition-duration: 200ms;
 }
 
-#main-window[privatebrowsingmode=temporary] toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]) {
+#main-window[privatebrowsingmode=temporary] toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]),
+toolbar[brighttext]:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]) {
   box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.1);
@@ -1612,22 +1611,44 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 
 .ac-comment {
   font-size: 1.06em;
-  color: #000000;
+  color: #3367D6;
 }
 
 .ac-url-text,
 .ac-action-text {
   font-size: 1.06em;
-  color: #009933;
+  color: #66727F;
 }
 
-.autocomplete-richlistitem:hover:active .ac-comment {
-  color: #161D22;
+#main-window[privatebrowsingmode=temporary]  .autocomplete-richlistbox {
+  background-color: #282828 !important;	
+}
+#main-window[privatebrowsingmode=temporary] .autocomplete-richlistitem:hover {
+  background-color: #333333 !important;
+}
+#main-window[privatebrowsingmode=temporary] .autocomplete-richlistitem[selected="true"] {
+  background-color: #393939 !important;
+}
+.autocomplete-richlistitem:hover {
+  background-color: #cce5ff !important;
+}
+.autocomplete-richlistitem[selected="true"] {
+  background-color: #3399ff !important;
+}
+#main-window[privatebrowsingmode=temporary] .ac-comment {
+  color: #7BAAF7;
+}
+#main-window[privatebrowsingmode=temporary] .ac-url-text,
+#main-window[privatebrowsingmode=temporary] .ac-action-text {
+  color: #939393;
+}
+.autocomplete-richlistitem[selected="true"] .ac-comment {
+  color: #FFFFFF;
 }
 
 .autocomplete-richlistitem[selected="true"] .ac-url-text,
 .autocomplete-richlistitem[selected="true"] .ac-action-text {
-  color: #006622;
+  color: #99c8ff;
 }
 
 richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-icon {
@@ -1637,7 +1658,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 .autocomplete-treebody::-moz-tree-cell-text(treecolAutoCompleteComment) {
   color: GrayText;
 }
-
+		
 .autocomplete-treebody::-moz-tree-cell-text(suggesthint, treecolAutoCompleteComment), 
 .autocomplete-treebody::-moz-tree-cell-text(suggestfirst, treecolAutoCompleteComment) {
   color: GrayText;
@@ -3219,6 +3240,10 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 
 #navigator-toolbox[tabsontop=false] #TabsToolbar {
   box-shadow: 0 -1px 0 #F4F4F4 inset, 0 -2px 0 rgba(0,0,0,.28) inset;
+}
+
+#main-window[privatebrowsingmode=temporary] #navigator-toolbox[tabsontop=false] #TabsToolbar {
+  box-shadow: 0 -1px 0 #5D5D5D inset, 0 -2px 0 rgba(0,0,0,.28) inset;
 }
 
 #navigator-toolbox[tabsontop=false] #TabsToolbar:not(:-moz-lwtheme) {
