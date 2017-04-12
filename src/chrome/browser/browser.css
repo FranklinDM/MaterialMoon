@@ -402,8 +402,8 @@
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
       margin-top: -4px !important;
 	  -moz-padding-start: 5px !important;
-/*       -moz-padding-start: 46px !important; 
-      -moz-padding-end: 112px !important;  */
+/*       -moz-padding-start: 46px !important; */ 
+      -moz-padding-end: 112px !important;  
     }
   }
 }
@@ -4185,14 +4185,20 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   background-color: #CCCCCC !important;
 }
 
-/* Toolbar Appmenu Button */
+/* Toolbar Appmenu Button & Toolbarize */
 toolbar:not([brighttext]) #toolbar-appmenu-button > .toolbarbutton-icon,
-toolbar:not([brighttext]) #appmenu-toolbar-button > .toolbarbutton-icon {
+toolbar:not([brighttext]) #appmenu-toolbar-button > .toolbarbutton-icon,
+toolbar:not([brighttext]) #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities2.png") !important;
 }
-
+	
 toolbar[brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
-toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon {
+toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
+toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities2-inverted.png") !important;
 }
 
@@ -4305,4 +4311,4 @@ findbar[movetotop]:after {
 /* MozArchiver */
 #mafArchiveInfoUrlbarButton {
   padding: 2px 3px 3px 3px;
-}
+}	

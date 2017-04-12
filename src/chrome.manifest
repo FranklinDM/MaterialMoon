@@ -1,9 +1,10 @@
-skin browser      MMChrome chrome/browser/  
-skin communicator      MMChrome chrome/communicator/  
-skin mozapps      MMChrome chrome/mozapps/   
-skin global      MMChrome chrome/global/  
-skin os          MMChrome chrome/os/winnt/ os=WINNT
-skin os          MMChrome chrome/os/linux/ os=Linux
+skin 	browser				MMChrome			chrome/browser/  
+skin 	mozapps				MMChrome 			chrome/mozapps/
+skin 	global				MMChrome 			chrome/global/
+skin	abouthome 			MMChrome			chrome/abouthome/
+
+skin 	os					MMChrome 			chrome/os/winnt/ os=WINNT
+skin 	os					MMChrome 			chrome/os/linux/ os=Linux
 
 override chrome://browser/skin/appmenu-icon.png chrome://browser/skin/appmenu-icon-flat.png os=WINNT osversion>=6.2
-override chrome://browser/skin/pb-icon.png chrome://browser/skin/pb-icon-flat.png os=WINNT osversion>=6.2
+override chrome://browser/skin/pb-icon.png 		chrome://browser/skin/pb-icon-flat.png 		os=WINNT osversion>=6.2

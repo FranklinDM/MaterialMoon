@@ -1,4 +1,4 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
+	/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
@@ -81,15 +81,30 @@
 
 /* TOGGLE */
 #newtab-toggle {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   padding: 0;
   border: none;
-  background: -216px 0 transparent url(chrome://browser/skin/newtab/controls.png);
+  /* background: -216px 0 transparent url(chrome://browser/skin/newtab/controls.png); */
+  background: -48px 0 transparent url(chrome://browser/skin/newtab/controls-2.png);
+  border-radius: 4px;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 200ms;
+}
+
+#newtab-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#newtab-toggle:hover:active {
+  border-radius: 600em;
+  box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #newtab-toggle[page-disabled] {
-  background-position: -232px 0;
+  /* background-position: -232px 0; */
+  background-position: -24px 0;
 }
 
 /* ROWS */
@@ -104,11 +119,13 @@
 /* CELLS */
 .newtab-cell {
   -moz-margin-end: 20px;
-  background-color: rgba(255,255,255,.2);
+  box-shadow: 0px 2px 1px -1px rgba(167, 167, 167, 0.45);
+  background-color: #FAFAFA;
   border: 1px solid;
   border-color: rgba(8,22,37,.12) rgba(8,22,37,.14) rgba(8,22,37,.16);
-  border-radius: 1px;
+  border-radius: 3px;
   transition: border-color 100ms ease-out;
+  margin-bottom: 15px;
 }
 
 .newtab-cell:empty {
@@ -131,7 +148,9 @@
 }
 
 .newtab-site[dragged] {
-  background-color: transparent;
+  box-shadow: 0px 2px 3px 2px rgba(167, 167, 167, 0.45);
+  background-color: #FAFAFA;
+  border-radius: 3px;
 }
 
 /* THUMBNAILS */
@@ -140,15 +159,17 @@
   background-clip: padding-box;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 3px;
 }
 
 /* TITLES */
 .newtab-title {
   padding: 0 8px;
-  background-color: rgba(248,249,251,.95);
-  color: #1f364c;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: black;
+  margin-bottom: -25px;
   line-height: 24px;
-  bottom: 84px !important;
 }
 
 /* CONTROLS */
