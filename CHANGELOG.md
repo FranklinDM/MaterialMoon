@@ -1,5 +1,17 @@
 # Changelog
 
+### 2.7.0
+- Support for Home Styler
+- Scrollbar styling
+- Auto-complete styling
+- Add small margin to tabs-toolbar
+- Remove white line when tabs are not on top while on private browsing mode
+- Remove timing function on toolbar buttons (not really needed)
+- Remove communicator/communicator.css
+- Materialize some parts of about:newtab
+- Fixes for Toolbarize menu button
+- Add abouthome to chrome manifest
+
 ### 2.6.5
 - Fix for invisible forward button
 - Removed large margin on tab browser
