@@ -7,7 +7,7 @@
 
 .controlBar {
   height: 28px;
-  background-color: rgba(35,31,32,.74);
+  background-color: #FAFAFA;
 }
 
 .playButton,
@@ -23,19 +23,6 @@
   min-width: 28px;
   border: none;
   box-shadow: none;
-  opacity: 0.7;
-}
-
-.playButton:hover,
-.muteButton:hover,
-.fullscreenButton:hover {
-  opacity: 1;
-}
-
-.playButton:hover:active,
-.muteButton:hover:active,
-.fullscreenButton:hover:active {
-  opacity: 0.4;
 }
 
 .playButton {
@@ -111,7 +98,7 @@
   margin-left: -22px; /* 1/2 of scrubber thumb width, for overhang. */
   padding-left: 8px; /* don't bump into the scrubber bar */
   padding-top: 0; /* center vertically with scrubber bar */
-  color: rgba(255,255,255,.75);
+  color: #595959;
   font-size: 11px;
   font-family: Arial, sans-serif;
 }
@@ -123,8 +110,8 @@
 .backgroundBar {
   /* margin top/bottom: make bar 8px tall (control height = 28, minus 2 * 10 margin) */
   /* margin left/right: 1/2 of scrubber thumb width, for overhang. */
-  margin: 10px 22px;
-  background-color: rgba(255,255,255,.5);
+  margin: 13px 22px;
+  background-color: #595959;
   border-radius: 2.5px;
 }
 
@@ -132,7 +119,7 @@
 .progressBar {
   /* margin top/bottom: make bar 8px tall (control height = 28, minus 2 * 10 margin) */
   /* margin left/right: 1/2 of scrubber thumb width, for overhang. */
-  margin: 10px 22px;
+  margin: 13px 22px;
   -moz-appearance: none;
   border: none;
   background-color: transparent;
@@ -147,14 +134,12 @@
    * has the same background-color specified, the semitransparent
    * compositing gives it a different visual appearance.
    */
-  background-color: rgba(255,255,255,.5);
-  border-radius: 2.5px;
+  background-color: #595959;
   -moz-appearance: none;
 }
 
 .progressBar .progress-bar {
-  background-color: white;
-  border-radius: 2.5px;
+  background-color: #4285f4;
   -moz-appearance: none;
 }
 
@@ -182,7 +167,7 @@
   border: none;
 }
 
-.timeThumb {
+.timeThumb {	
   background: url(chrome://global/skin/media/scrubberThumb.png) no-repeat center;
   min-width: 45px;
   min-height: 28px;

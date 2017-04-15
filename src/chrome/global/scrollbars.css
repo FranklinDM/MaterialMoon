@@ -48,7 +48,7 @@ thumb:hover {
   background-color: #a8a8a8;
 }
 
-thumb:hover:active, thumb[active="true"] {
+thumb:hover:active, thumb:active, thumb[active="true"], thumb:focus {
   background-color: #787878;
 }
 

@@ -18,8 +18,6 @@
 #ub-feed-button,
 #ub-feed-button > .button-box,
 #ub-feed-button:hover:active > .button-box {
-/* margin: 0px;
-  border: 0px;*/
   padding: 3px;
   background-color: transparent !important;
 }
@@ -1413,13 +1411,13 @@ window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back
 .urlbar-history-dropmarker,
 #ub-feed-button {
   transition-property: background-color, border-color, box-shadow;
+  border-radius: 3px;
   transition-duration: 500ms;
 }
 
 .urlbar-icon:hover,
 .urlbar-history-dropmarker:hover,
 #ub-feed-button:hover {
-  border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.1) !important;
   border-color: rgba(0, 0, 0, 0.1);
 }
@@ -1571,9 +1569,6 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 }
 
 #page-proxy-favicon[src][pageproxystate="valid"] {
-/*  opacity: 0;
-  height: .1px;
-  width: .1px*/
   padding: 1.5px;
 }
 
@@ -4311,4 +4306,13 @@ findbar[movetotop]:after {
 /* MozArchiver */
 #mafArchiveInfoUrlbarButton {
   padding: 2px 3px 3px 3px;
-}	
+}
+
+/* Tab Icons workaround */
+/* currently patchable tab images for private browsing mode */
+#main-window[privatebrowsingmode=temporary] .tab-icon-image[src="chrome://global/skin/icons/warning-16.png#-moz-resolution=16,16"],
+#main-window[privatebrowsingmode=temporary] .tab-icon-image[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png#-moz-resolution=16,16"],
+#main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="chrome://global/skin/icons/warning-16.png"],
+#main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png"]{
+  filter: invert(100%) contrast(160%);
+}

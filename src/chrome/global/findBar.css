@@ -11,6 +11,15 @@
   -moz-border-image: none !important;
 }
 
+#main-window[privatebrowsingmode=temporary] .close-icon {
+  list-style-image: url("chrome://global/skin/icons/n_close.png") !important;
+}
+
+#main-window[privatebrowsingmode=temporary] .toolbarbutton-text,
+#main-window[privatebrowsingmode=temporary] findbar {
+  color: white;
+}
+
 findbar {
   padding-top: 1px;
   min-width: 1px;
@@ -34,51 +43,72 @@ findbar:not(:-moz-lwtheme) {
   background-repeat: no-repeat;
 }
 
-.findbar-find-next.tabbable > .toolbarbutton-text ,
+.findbar-find-next.tabbable > .toolbarbutton-text,
 .findbar-find-previous.tabbable > .toolbarbutton-text {
   display: none !important;
+}
+
+/* toolbar image for find buttons */ 
+
+.findbar-find-next,
+.findbar-find-previous {
+  -moz-appearance: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  border-radius: 3px;
+  list-style-image: url("chrome://global/skin/icons/find_nb.png") !important;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 500ms;
+}
+
+#main-window[privatebrowsingmode=temporary] .findbar-find-next,
+#main-window[privatebrowsingmode=temporary] .findbar-find-previous {
+  list-style-image: url("chrome://global/skin/icons/n_find_nb.png") !important;
+}
+
+/* find buttons material animation */
+
+.findbar-find-next:hover:not([disabled="true"]),
+.findbar-find-previous:hover:not([disabled="true"]) {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+#main-window[privatebrowsingmode=temporary] .findbar-find-next:hover:not([disabled="true"]),
+#main-window[privatebrowsingmode=temporary] .findbar-find-previous:hover:not([disabled="true"]) {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);	
+}
+
+.findbar-find-next:hover:active:not([disabled="true"]), .findbar-find-previous:hover:active:not([disabled="true"]) {
+  border-radius: 500em;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 200ms;
+}
+
+#main-window[privatebrowsingmode=temporary] .findbar-find-next:hover:active:not([disabled="true"]),
+#main-window[privatebrowsingmode=temporary] .findbar-find-previous:hover:active:not([disabled="true"]) {
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* find-next button */
 
 .findbar-find-next {
-  -moz-appearance: none !important;
-  border: 0 !important;
-  padding: 0 !important;
-  -moz-margin-start: -4px !important;
-  list-style-image: url("chrome://global/skin/icons/find_Prev_normal.png") !important;
   -moz-image-region: rect(0 28px 27px 0) !important;
 }
 
-.findbar-find-next:hover {
-  -moz-image-region: rect(0 56px 27px 28px) !important;
-}
-
-.findbar-find-next:hover:active {
-  -moz-image-region: rect(0 84px 27px 56px) !important;
-}
-
 .findbar-find-next[disabled="true"] {
-  -moz-image-region: rect(0 112px 27px 84px) !important;
+  -moz-image-region: rect(0 84px 27px 56px) !important;
 }
 
 /* find-previous button */
 
 .findbar-find-previous {
-  -moz-appearance: none !important;
-  border: 0 !important;
-  padding: 0 !important;
-  -moz-margin-start: -2px !important;
-  list-style-image: url("chrome://global/skin/icons/find_next_normal.png") !important;
-  -moz-image-region: rect(0 28px 27px 0) !important;
-}
-
-.findbar-find-previous:hover {
   -moz-image-region: rect(0 56px 27px 28px) !important;
-}
-
-.findbar-find-previous:hover:active {
-  -moz-image-region: rect(0 84px 27px 56px) !important;
 }
 
 .findbar-find-previous[disabled="true"] {
@@ -139,15 +169,16 @@ findbar:not(:-moz-lwtheme) {
 .findbar-textbox.findbar-find-fast {
   -moz-appearance: none !important;
   height: 25px !important;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-radius: 3px;
   border: 1px solid;
-  border-color: #919192 #A2A2A3 #9D9D9E;
-  border-right: 0px solid;
+  border-color: #A9A9A9;
   background-color: #FFFFFF;
-  box-shadow: 0 1px 0 0px rgba(226,226,226,.82) inset, 0 1px 0 0px rgba(255, 255, 255, .47), 0 -1px 0 0px rgba(255, 255, 255, .2), -1px 0 0 0px rgba(255, 255, 255, .29);
+}
+
+#main-window[privatebrowsingmode=temporary] .findbar-textbox.findbar-find-fast {
+  background-color: #626262;
+  border-color: #383838;
+  color: #FFFFFF;
 }
 
 .find-status-icon[status="pending"] {

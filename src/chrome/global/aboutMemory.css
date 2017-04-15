@@ -1,4 +1,4 @@
- /* This Source Code Form is subject to the terms of the Mozilla Public
+/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
@@ -9,7 +9,7 @@
  */
 
 html {
-  background: #f7f7f7;
+  background: #F7F7F7;
   font-size: 12px;
   font-family: 'Segoe UI', Tahoma, sans-serif !important;
 }
@@ -31,7 +31,7 @@ div.section {
   padding: 1em;
   margin: 1em 0em;
   margin-right: 6px;
-  background-color: lightyellow !important;
+  background-color: InfoBackground !important;
   box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
   border: solid 1px lightgray;
 
@@ -42,7 +42,7 @@ div.opsRow {
   margin-right: 0.5em;
   margin-bottom: 1.5em;
   border-radius: 1px;
-  background-color: white !important;;
+  background-color: white !important;
   box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
   border: solid 1px lightgray;
 }
