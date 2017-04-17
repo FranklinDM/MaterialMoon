@@ -3,7 +3,7 @@
 ### 2.8.0 [planned]
 - Use CSS variables
 
-### 2.7.1
+### 2.7.5
 - Findbar styling
 - Workaround for private browsing mode tab icons (ex. dark error icon on dark tab)
 - Material media controls
@@ -15,6 +15,13 @@
 - Sync dev tools styling with default
 - Fix folder icon appearing as a "file" on private browsing mode
 - Style image document page proxy favicon
+
+- Fixes that applies ONLY for uncomposited window
+	- Toolbar button radius no longer applies to titlebar button
+	- Improve menubar styling (no longer uses ugly text shadow)
+	- Address the titlebar -> nav toolbar overlapping when toolbarizer addon is enabled (tradeoff: larger gap when app menu is available)
+	- Titlebar border appearance improved
+	- (these changes may not apply to other platforms)
 
 ### 2.7.0
 - Support for Home Styler
