@@ -15,9 +15,9 @@
 - Sync dev tools styling with default
 - Fix folder icon appearing as a "file" on private browsing mode
 - Style image document page proxy favicon
+- Toolbar button radius and transition no longer applies to titlebar buttons
 
-- Fixes that applies ONLY for uncomposited window
-	- Toolbar button radius no longer applies to titlebar button
+- Fixes that applies only for non-composited windows
 	- Improve menubar styling (no longer uses ugly text shadow)
 	- Address the titlebar -> nav toolbar overlapping when toolbarizer addon is enabled (tradeoff: larger gap when app menu is available)
 	- Titlebar border appearance improved
