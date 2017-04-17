@@ -22,7 +22,7 @@
 	- Address the titlebar -> nav toolbar overlapping when toolbarizer addon is enabled (tradeoff: larger gap when app menu is available)
 	- Titlebar border appearance improved
 	- (these changes may not apply to other platforms)
-
+	
 ### 2.7.0
 - Support for Home Styler
 - Scrollbar styling
