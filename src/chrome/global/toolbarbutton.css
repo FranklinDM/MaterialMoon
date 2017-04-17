@@ -19,8 +19,8 @@ toolbarbutton {
 
 toolbarbutton {
   padding: 0 3px;
-  margin-top: 0px; 
-  margin-bottom: 0px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
   background: transparent;
   background-clip: padding-box;
   border: 1px solid;
@@ -29,6 +29,10 @@ toolbarbutton {
   border-radius: 0px;
   transition-property: border-radius, background-color, border-color;
   transition-duration: 500ms;
+}
+
+toolbarbutton:not(.titlebar-button) {
+  border-radius: 3px;
 }
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) toolbarbutton {
@@ -68,9 +72,7 @@ toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-dropmarker {
 }
 
 toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
-/*  border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch; */
     border-image: none;
-    border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 0, 0, 0.1);
 }
@@ -78,9 +80,7 @@ toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):no
 toolbarbutton:hover:active:not([disabled="true"]),
 toolbarbutton[checked="true"]:not([disabled="true"]),
 toolbarbutton[open="true"]:not([disabled="true"]) {
-/*  border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch; */
     border-image: none;
-    border-radius: 3px; 
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(0, 0, 0, 0.2);
 }

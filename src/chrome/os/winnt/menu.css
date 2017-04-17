@@ -104,6 +104,9 @@ menuitem.menuitem-iconic > .menu-iconic-left,
 /* ::::: menu/menuitems in menubar ::::: */
 
 menubar > menu {
+  border-radius: 3px;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 500ms;
   border: 2px solid transparent;
 }
 
@@ -113,7 +116,7 @@ menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
 }
 
 menubar > menu[_moz-menuactive="true"][open="true"] {
-  border-width: 3px 1px 1px 3px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 menubar > menu:-moz-lwtheme {
@@ -127,7 +130,6 @@ menubar > menu:-moz-lwtheme:not([disabled="true"]) {
 
 menubar > menu:-moz-lwtheme[_moz-menuactive="true"]:not([disabled="true"]) {
   background-color: rgba(0, 0, 0, 0.1);
-  color: Black !important;
   text-shadow: none;
 }
 
