@@ -26,13 +26,12 @@ toolbarbutton {
   border: 1px solid;
   border-color: transparent;
   border-width: 5px;
-  border-radius: 0px;
-  transition-property: border-radius, background-color, border-color;
-  transition-duration: 500ms;
 }
 
 toolbarbutton:not(.titlebar-button) {
   border-radius: 3px;
+  transition-property: border-radius, background-color, border-color;
+  transition-duration: 500ms;
 }
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) toolbarbutton {
