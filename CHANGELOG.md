@@ -1,5 +1,21 @@
 # Changelog
 
+### 2.8.0 [planned]
+- Use CSS variables
+
+### 2.7.1
+- Findbar styling
+- Workaround for private browsing mode tab icons (ex. dark error icon on dark tab)
+- Material media controls
+- Fix for scrollbar focused state
+- Minor adjustments to header search on add-ons and sync tabs pages
+- Feed material style
+- Resize notification icons on urlbar to 16px
+- Minor improvements to new tab page
+- Sync dev tools styling with default
+- Fix folder icon appearing as a "file" on private browsing mode
+- Style image document page proxy favicon
+
 ### 2.7.0
 - Support for Home Styler
 - Scrollbar styling

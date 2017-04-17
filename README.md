@@ -1,9 +1,9 @@
 # Material Moon
 ![Preview](https://github.com/FranklinDM/MaterialMoon/blob/master/src/preview.png)
 
-A fork of [PMChrome](https://github.com/Lootyhoof/pmchrome/), which is a fork of the theme [FXChrome](https://addons.mozilla.org/en-US/firefox/addon/fxchrome/) by dkgo for Pale Moon.
+A material chrome-like theme. Remember the material design in the new edition of Chrome? Well then, they have already arrived here in Pale Moon.
 
-This one contains the material version of the browser and contains a different GUID so that it doesn't replace PMChrome.
+A fork of [PMChrome](https://github.com/Lootyhoof/pmchrome/), which is a fork of the theme [FXChrome](https://addons.mozilla.org/en-US/firefox/addon/fxchrome/) by dkgo.
 
 ## Building
 Simply download the contents of the "src" folder  and pack the contents into a .zip file. Then, rename the file to .xpi and drag into the browser.
