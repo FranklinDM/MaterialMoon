@@ -811,13 +811,11 @@ menuitem.bookmark-item {
 #main-window[privatebrowsingmode=temporary] .bookmark-item:not(:-moz-any([livemark], [query], [tagContainer], [dayContainer], [hostContainer])),
 toolbar[brighttext] .bookmark-item:not(:-moz-any([livemark], [query], [tagContainer], [dayContainer], [hostContainer])) {
   list-style-image: url("chrome://global/skin/icons/n_folder-item.png");
-  -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 
 #main-window[privatebrowsingmode=temporary] .bookmark-item[container][livemark],
 toolbar[brighttext] .bookmark-item[container][livemark]  { 
   list-style-image: url("chrome://browser/skin/n_livemark-folder.png");
-  -moz-image-region: auto;
 }
 
 #main-window[privatebrowsingmode=temporary] .bookmark-item[container][query],
@@ -905,8 +903,7 @@ toolbar[brighttext] .toolbarbutton-1,
 @media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
   #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
-  #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
-  
+  #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),  
   #main-window[privatebrowsingmode=temporary] #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
   #main-window[privatebrowsingmode=temporary] #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
     list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
@@ -2600,20 +2597,15 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 }
 
 .notification-anchor-icon {
-  width: 19px;
-  height: 19px;
-  margin: 0 2px;
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
   -moz-margin-end: 4px;
 }
 
 .notification-anchor-icon:-moz-focusring {
   outline: 1px dotted -moz-DialogText;
   outline-offset: -3px;
-}
-
-/* turn image to white during private browing mode */
-#main-window[privatebrowsingmode=temporary] .notification-anchor-icon {
-  filter: invert(100%) brightness(1000%) !important;
 }
 
 .default-notification-icon,
@@ -2623,7 +2615,7 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 
 .identity-notification-icon,
 #identity-notification-icon {
-  list-style-image: url(chrome://mozapps/skin/profile/profileicon.png);
+  list-style-image: url(chrome://mozapps/skin/profile/profile-16.png);
 }
 
 .geo-notification-icon,
@@ -2637,7 +2629,7 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 
 .indexedDB-notification-icon,
 #indexedDB-notification-icon {
-  list-style-image: url(chrome://global/skin/icons/help_h1.png);
+  list-style-image: url(chrome://global/skin/icons/indexdb-16.png);
 }
 
 #password-notification-icon {
@@ -4312,7 +4304,9 @@ findbar[movetotop]:after {
 /* currently patchable tab images for private browsing mode */
 #main-window[privatebrowsingmode=temporary] .tab-icon-image[src="chrome://global/skin/icons/warning-16.png#-moz-resolution=16,16"],
 #main-window[privatebrowsingmode=temporary] .tab-icon-image[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png#-moz-resolution=16,16"],
+#main-window[privatebrowsingmode=temporary] .tabbrowser-tab[label="about:config"] .tab-icon-image,
 #main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="chrome://global/skin/icons/warning-16.png"],
-#main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png"]{
+#main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png"],
+#main-window[privatebrowsingmode=temporary] .notification-anchor-icon {
   filter: invert(100%) contrast(160%);
 }

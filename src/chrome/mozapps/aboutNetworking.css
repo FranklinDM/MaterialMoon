@@ -1,3 +1,61 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+body {
+  min-width: 330px;
+  max-width: 100%;
+  min-height: 330px;
+  max-height: 100%;
+}
+
+#menu {
+  position: absolute;
+  top: 5px;
+  color: gray;
+}
+
+.warningBackground {
+  display: none;
+  background: #F7F7F7;
+  width:100%;
+  height:100%;
+  z-index:10;
+  top:0;
+  left:0;
+  position:fixed;
+}
+
+.warningMessage {
+  color: #646464;
+  position: relative;
+  min-width: 330px;
+  max-width: 50em;
+  margin: 4em auto;
+  padding: 3em;
+  -moz-padding-start: 30px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.tab {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+#menu .selected {
+ color: blue;
+}
+
+#refreshdiv {
+  top: 5px;
+  position: absolute;
+  right: 30px;
+}
+
 table {
   margin-top: 1em;
   background-color: white;

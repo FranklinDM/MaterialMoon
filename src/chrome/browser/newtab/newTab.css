@@ -10,7 +10,7 @@
 
 /* SCROLLBOX */
 #newtab-scrollbox:not([page-disabled]) {
-  background-color: #eeeeee;
+  background-color: #F7F7F7;
 }
 
 /* UNDO */
@@ -84,28 +84,37 @@
   width: 24px;
   height: 24px;
   padding: 0;
-  border: none;
-  /* background: -216px 0 transparent url(chrome://browser/skin/newtab/controls.png); */
   background: -48px 0 transparent url(chrome://browser/skin/newtab/controls-2.png);
+}
+
+#newtab-toggle[page-disabled] {
+  background-position: -24px 0;
+}
+
+/* TRANSITIONS */
+.newtab-control-pin,
+.newtab-control-block,
+#newtab-toggle {
   border-radius: 4px;
-  transition-property: background-color, border-color, box-shadow;
+  border: none;
+  transition-property: background-color, border-color, box-shadow, opacity;
   transition-duration: 200ms;
 }
 
+.newtab-control-pin:hover,
+.newtab-control-block:hover,
 #newtab-toggle:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.newtab-control-pin:hover:active,
+.newtab-control-block:hover:active,
 #newtab-toggle:hover:active {
   border-radius: 600em;
   box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-#newtab-toggle[page-disabled] {
-  /* background-position: -232px 0; */
-  background-position: -24px 0;
-}
 
 /* ROWS */
 .newtab-row {
@@ -179,48 +188,24 @@
   padding: 1px 2px 3px;
   border: none;
   background: transparent url(chrome://browser/skin/newtab/controls.png);
-  transition: opacity 500ms ease-in-out;
   opacity: 0;
+  transform: scale(0.75);
 }
 
 .newtab-site:hover .newtab-control {
-  transition-delay: 500ms;
   opacity: 1;
 }
 
 .newtab-control-pin {
+  background-position: -48px 0;
   margin: -3px;
 }
 
-.newtab-control-pin:hover {
-  background-position: -24px 0;
-}
-
-.newtab-control-pin:active {
-  background-position: -48px 0;
-}
-
 .newtab-control-pin[pinned] {
-  background-position: -72px 0;
-}
-
-.newtab-control-pin[pinned]:hover {
-  background-position: -96px 0;
-}
-
-.newtab-control-pin[pinned]:active {
   background-position: -120px 0;
 }
 
 .newtab-control-block {
-  margin: -5px;
+  margin: -4px;
   background-position: -144px 0;
-}
-
-.newtab-control-block:hover {
-  background-position: -168px 0;
-}
-
-.newtab-control-block:active {
-  background-position: -192px 0;
 }
