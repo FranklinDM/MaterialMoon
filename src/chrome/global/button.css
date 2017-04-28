@@ -12,9 +12,9 @@
 
 button {
   -moz-appearance: none;
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.26);
+  border: 3px solid #FFFFFF;
   color: rgb(34, 34, 34);
   font: inherit;
   margin: 2px 2px 3px 2px;
@@ -23,11 +23,12 @@ button {
   -moz-padding-start: 8px;
   -moz-padding-end: 8px;
   transition-property: background-color, border-color, box-shadow, color;
-  transition-duration: 300ms;
+  transition-duration: 250ms;
 }
 
 button:not([disabled="true"]):hover {
-  background-color: white;
+  background-color: #FAFAFA;
+  border-color: #FAFAFA;
   color: #222;
   box-shadow: 0px 1px 1px 0px rgba(167, 167, 167, 0.45);
 }
@@ -36,28 +37,30 @@ button:not([disabled="true"]):hover:active,
 button:not([disabled="true"])[open="true"],
 button:not([disabled="true"])[checked="true"] {
   background-color: #E6E6E6;
-  border: 1px solid rgba(0, 0, 0, 0.286);
+  border-color: #E6E6E6;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 0 1px 0 #DADADA;
   color: #333;
 }
 
 button[default=true] {
   background-color: #4285f4;
-  border: 1px solid #4285f4;
-  color: white;
+  border-color: #4285f4;
+  color: #FFFFFF;
 }
 
 button[default=true]:not([disabled="true"]):hover {
   background-color: #4c8bf5;
   border-color: #4c8bf5;
-  color: white;
+  box-shadow: none;
+  color: #FFFFFF;
 }
 button[default=true]:not([disabled="true"]):hover:active,
 button[default=true]:not([disabled="true"])[open="true"],
 button[default=true]:not([disabled="true"])[checked="true"] {
   background-color: #659bf6;
   border-color: #659bf6;
-  color: white;
+  color: #FFFFFF;
+  box-shadow: none;
 }
 
 .button-box {
@@ -73,7 +76,7 @@ button[default=true]:not([disabled="true"])[checked="true"] {
 /* .......... focused state .......... */
 
 button:-moz-focusring {
-  border-color: rgb(77, 144, 254);
+  border: 3px solid #FAFAFA;
   outline: none;
 }
 
@@ -81,7 +84,7 @@ button:-moz-focusring {
 
 button[disabled="true"] {
   background-color: rgb(250, 250, 250);
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgb(250, 250, 250);
   color: rgb(150, 150, 150);
 }
 

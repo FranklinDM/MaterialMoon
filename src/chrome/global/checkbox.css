@@ -39,7 +39,7 @@ checkbox {
 checkbox:not([disabled="true"]):-moz-focusring .checkbox-check,
 checkbox:not([disabled="true"]):-moz-focusring:hover .checkbox-check,
 checkbox:not([disabled="true"]):-moz-focusring:hover:active .checkbox-check  {
-  border-color: rgb(77, 144, 254);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .15);
   outline: none;
 }
 
@@ -59,28 +59,24 @@ checkbox[disabled="true"] {
 .checkbox-check {
   -moz-appearance: none;
   -moz-box-align: center;
-  min-width: 14px;
-  min-height: 14px;
-  background-color: #F9F9F9;
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 0 0 1px #FEFEFE;
-  padding: 0px;
+  min-width: 15px;
+  min-height: 15px;
+  list-style-image: url("chrome://global/skin/checkbox/checkbox.svg#state");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+  transition-duration: 250ms;
+  transition-property: transform, box-shadow;
 }
 
 checkbox:not([disabled="true"]):hover > .checkbox-check {
-  background-color: #FCFCFC;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .15);
 }
 
 checkbox:not([disabled="true"]):hover:active > .checkbox-check {
-  background-color: #E6E6E6;
-  border: 1px solid rgba(0, 0, 0, 0.286);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 0 1px 0 #DADADA;
+  transform: scale(.9);
 }
 
 /* ..... checked state ..... */
 
 checkbox[checked="true"] .checkbox-check {
-  list-style-image: url("chrome://global/skin/checkbox/check.png");
-  -moz-image-region: rect(0, 12px, 12px, 0);
+  list-style-image: url("chrome://global/skin/checkbox/checkbox-marked.svg#state-ac");
 }

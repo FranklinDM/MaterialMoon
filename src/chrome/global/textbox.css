@@ -2,10 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
 /* ===== textbox.css ==================================================
   == Styles used by the XUL textbox element.
   ======================================================================= */
@@ -21,16 +17,14 @@ textbox {
   margin: 2px 4px;
   padding: 2px 2px 3px;
   -moz-padding-start: 4px;
-  background-color: -moz-Field;
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: lightgray transparent;
+  background-color: transparent;
   color: -moz-FieldText;
-  border: 1px solid #BFBFBF;
-  border-radius: 2px;
-  box-shadow: none;
 }
 
 textbox:not([disabled="true"])[focused] {
-  transition: border-color 200ms;
-  border-color: #4D90FE;
+  -moz-border-bottom-colors: #3367D6 #3367D6;
 }
 
 html|*.textbox-input, 

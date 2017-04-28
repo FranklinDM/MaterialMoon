@@ -34,6 +34,8 @@
   /* urlbar border colors */
   --urlbar-border-rg-color: #A9A9A9;
   --urlbar-border-pv-color: #383838;
+  --urlbar-rg-color: #FFFFFF;
+  --urlbar-pv-color: #626262;
   /* non-composited window */
   --nc-mwbg-color: #CCC;
   --nc-mwbg-rg-color: #DCDCDC
@@ -1375,16 +1377,16 @@ toolbar[brighttext] #tabview-button {
   margin: 0px 4px 1px 4px;
   padding: 0 !important;
   background-clip: padding-box;
-  border: 1px solid;
-  border-color: var(--urlbar-border-rg-color);
-  border-radius: 3	px;
+  border: 1px solid var(--urlbar-border-rg-color);
+  background-color: var(--urlbar-rg-color);
+  border-radius: 2px;
   font-size: 13px;
   min-height: 27px;
 }
 
 #main-window[privatebrowsingmode=temporary] #urlbar,
 #main-window[privatebrowsingmode=temporary] .searchbar-textbox {
-  background-color: #626262;
+  background-color: var(--urlbar-pv-color);
   border-color: var(--urlbar-border-pv-color);
   color: var(--general-pv-color);
 }

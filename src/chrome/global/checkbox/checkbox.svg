@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="16" height="16" viewBox="0 0 24 24">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ac"] {
+		  fill: #4285F4;
+		}
+	</style>
+	<defs>
+		<path id="check-shape" stroke-width="0.2" stroke-linejoin="round" d="M 21.333335,-1.335e-5 H 2.6666652 C 1.1933327,-1.335e-5 0,1.1933194 0,2.6666519 V 21.333348 c 0,1.473332 1.1933327,2.666665 2.6666652,2.666665 H 21.333335 C 22.805334,24.000013 24,22.80668 24,21.333348 V 2.6666519 C 24,1.1933194 22.805334,-1.335e-5 21.333335,-1.335e-5 Z m 0,2.66666525 V 21.333348 l -18.6666698,0.0013 V 2.6666519 Z"/>
+	</defs>
+    <use id="state" xlink:href="#check-shape"/>
+    <use id="state-ac" xlink:href="#check-shape"/>
+</svg>

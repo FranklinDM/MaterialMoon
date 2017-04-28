@@ -40,58 +40,40 @@ radio {
 radio:not([disabled="true"])[focused="true"] .radio-check-box1,
 radio:not([disabled="true"])[focused="true"]:hover .radio-check-box1,
 radio:not([disabled="true"])[focused="true"]:hover:active .radio-check-box1  {
-  border-color: rgb(77, 144, 254);
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, .15));
   outline: none;
 }
 
 /* ..... disabled state ..... */
-
-radio[focused="true"] .radio-check-box2 {
-  background-color: -moz-Dialog;
-}
 
 radio[disabled="true"] {
   color: rgb(150, 150, 150);
   opacity: .75;
 }
 
-/* ::::: checkmark image ::::: */
+/* ::::: radio image ::::: */
 
 .radio-check-box1 {
   -moz-appearance: none;
   -moz-box-align: center;
-  min-width: 13px;
-  min-height: 13px;
-  background-color: #F9F9F9;
-  border-radius: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 0 0 1px #FEFEFE;
-  padding: 0px;
+  min-width: 16px;
+  min-height: 16px;
+  list-style-image: url("chrome://global/skin/radio/radio.svg#state");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+  transition-duration: 250ms;
+  transition-property: transform, filter;
 }
 
 radio:not([disabled="true"]):hover > .radio-check-box1 {
-  background-color: #FCFCFC;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, .15));
 }
 
 radio:not([disabled="true"]):hover:active > .radio-check-box1 {
-  background-color: #E6E6E6;
-  border: 1px solid rgba(0, 0, 0, 0.286);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 0 1px 0 #DADADA;
-}
-
-.radio-check-box2 {
-  min-width: 12px;
-  min-height: 12px;
-  -moz-appearance: none;
-  -moz-box-align: center;
-  background: transparent !important;
-  border: 3px solid transparent;
-  list-style-image: none;
+  transform: scale(.9);
 }
 
 /* ..... selected state ..... */
 
-radio[selected="true"] > .radio-check-box1 > .radio-check-box2 {
-  list-style-image: url("chrome://global/skin/radio/radio.png");
-  -moz-image-region: rect(0, 6px, 6px, 0);
+radio[selected="true"] > .radio-check-box1 {
+  list-style-image: url("chrome://global/skin/radio/radio-marked.svg#state-ac");
 }

@@ -23,18 +23,6 @@ scrollbar[orient="vertical"]
    -moz-appearance: none;
 }
 
-/* ::::: borders for thumb and buttons ::::: */
-
-thumb,
-scrollbarbutton {
-/*   border: 2px solid;
-  -moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
-  background-color: -moz-Dialog; */
-}
-
 /* ::::: thumb (horizontal) ::::: */
 
 thumb {

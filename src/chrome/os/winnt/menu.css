@@ -252,7 +252,7 @@ menuitem[type="radio"][checked=true] > .menu-iconic-left {
 }
 
 menuitem[type="radio"][checked="true"] > .menu-iconic-left {
-  background-image: url("chrome://global/skin/radio/menu-radio.png");	
+  background-image: url("chrome://global/skin/radio/radio-marked.svg#state");	
 }
 
 menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon,

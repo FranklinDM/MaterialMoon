@@ -368,10 +368,6 @@
   background-image: url("chrome://global/skin/icons/Search-mt.png");
 }
 
-#header-search[focused] {
-  background-color: transparent;
-}
-
 #header-utils-btn {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state-wt");
   -moz-margin-end: 8px;
@@ -1232,6 +1228,7 @@ button.button-link:not([disabled="true"]):active:hover {
 @media (max-width: 650px) {
   #header-search {
     min-width: 20px;
+    background-color: transparent;
   }
   #view-port-container {
     padding: 0px;

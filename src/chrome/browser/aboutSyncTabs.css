@@ -22,10 +22,6 @@ textbox[type="search"] {
   background-image: url("chrome://global/skin/icons/Search-mt.png");
 }
 
-textbox[type="search"][focused] {
-  background-color: transparent;
-}
-
 .textbox-search-clear {
   margin-top: 3px;
   list-style-image: url(chrome://global/skin/icons/Search-close-mt.png);
@@ -132,5 +128,6 @@ richlistitem.desktop[type="client"] {
 @media (max-width: 670px) {
   textbox[type="search"] {
     min-width: 50px;
+    background-color: transparent;
   }
 }

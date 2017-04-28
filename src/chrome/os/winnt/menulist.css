@@ -12,16 +12,17 @@
 /* :::::::::: menulist :::::::::: */
 
 menulist {
-  -moz-appearance: menulist;
+  -moz-appearance: none;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: lightgray transparent transparent;
+  background-color: transparent;
   color: -moz-FieldText;
   text-shadow: none;
+}
+
+menulist:focus {
+  -moz-border-bottom-colors: #3367D6 #3367D6;
 }
 
 .menulist-label-box {
