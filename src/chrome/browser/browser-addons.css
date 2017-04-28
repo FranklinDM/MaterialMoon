@@ -1,0 +1,417 @@
+/* TMP */
+#btn_undoclose .toolbarbutton-icon,
+#uctb-toolbar-button .toolbarbutton-icon {
+  list-style-image: url("chrome://global/skin/icons/nav_undo.png") !important;
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+#TabsToolbar[tabsontop=true] #btn_undoclose .toolbarbutton-icon,
+#TabsToolbar[tabsontop=true] #uctb-toolbar-button .toolbarbutton-icon,
+#btn_undoclose:-moz-lwtheme-brighttext .toolbarbutton-icon,
+#uctb-toolbar-button:-moz-lwtheme-brighttext .toolbarbutton-icon {
+  list-style-image: url("chrome://global/skin/icons/nav_undo2.png") !important;
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.tab-progress-container {
+  margin-top: 7px !important;
+  -moz-margin-start: 16px !important;
+  -moz-margin-end: 0px !important;
+  pointer-events: none !important;
+  -moz-box-ordinal-group: 100 !important;
+}
+
+.tab-progress {
+  height: 2px !important;
+}
+
+.tab-progress > .progress-bar {
+  border-top: 0px solid rgba(0,0,0,.4) !important;
+  border-bottom: 0px solid rgba(0,0,0,.3) !important;
+  background-origin: border-box !important;
+  background: transparent !important;
+  background-image: linear-gradient(to right, #73767A 70%, #D1D2D3) !important;
+}
+
+.tab-progress > .progress-bar:-moz-locale-dir(rtl) {
+  background-image: linear-gradient(to left, #73767A 70%, #D1D2D3) !important;
+}
+
+.tab-protect-icon {
+  list-style-image: url("chrome://global/skin/icons/protected.png") !important;
+}
+
+.tab-lock-icon {
+  list-style-image: url("chrome://global/skin/icons/locked.png") !important;
+}
+
+#TabsToolbar[multibar] .tabs-newtab-button,
+#TabsToolbar[multibar] #new-tab-button {
+  padding-top: 1px !important;
+  min-height: 29px !important;
+  background: transparent !important;
+  list-style-image: url(chrome://browser/skin/tabbrowser/tab_new.png) !important;
+  -moz-image-region: rect(0px, 34px, 18px, 0px) !important;
+}
+
+#main-window[privatebrowsingmode=temporary] #TabsToolbar[multibar] .tabs-newtab-button,
+#main-window[privatebrowsingmode=temporary] #TabsToolbar[multibar] #new-tab-button {
+  list-style-image: url(chrome://browser/skin/tabbrowser/n-tab_new.png) !important;
+}
+
+#TabsToolbar[multibar] .tabs-newtab-button:hover,
+#TabsToolbar[multibar] #new-tab-button:hover {
+  -moz-image-region: rect(0px, 68px, 18px, 34px) !important;
+}
+
+#TabsToolbar[multibar] .tabs-newtab-button:hover:active,
+#TabsToolbar[multibar] #new-tab-button:hover:active {
+  -moz-image-region: rect(0px, 102px, 18px, 68px) !important;
+}
+
+.tabbrowser-tab:not([pinned]) .tab-icon .tab-icon-image:not([src]) {
+  visibility: visible !important;
+}
+
+/* Tab Utilities */
+#undoclosetab-button .toolbarbutton-icon {
+  list-style-image: url("chrome://global/skin/icons/nav_undo.png") !important;
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
+  transform: scaleX(1) rotate(0deg) !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+#TabsToolbar[tabsontop=true] #undoclosetab-button .toolbarbutton-icon,
+#undoclosetab-button:-moz-lwtheme-brighttext .toolbarbutton-icon {
+  list-style-image: url("chrome://global/skin/icons/nav_undo2.png") !important;
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
+  transform: scaleX(1) rotate(0deg) !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+#PersonalToolbar #undoclosetab-button .toolbarbutton-icon {
+  margin: -3px 0 !important;
+}
+
+#closetab-button .toolbarbutton-icon {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[protected] .tab-close-button > .toolbarbutton-icon{
+  list-style-image: url("chrome://global/skin/icons/tab_secure.png") !important;
+}
+
+.tabbrowser-tabs[multirow] .tabs-newtab-button {
+  min-height: 27px !important;
+}
+
+#PinnedTabsBar .tab-content {
+  -moz-margin-end: -20px !important;
+}
+
+.tabbrowser-tabs[showPhantom="true"][haspinned] #PinnedTabsBar,
+.tabbrowser-tabs[showPhantom="true"][haspinned] #PinnedTabsBarItems {
+  -moz-margin-end: -9px !important;
+}
+
+/* dwhelper */
+#navigator-toolbox[iconsize=large] #dwhelper-button {
+  height: 35px !important;
+}
+
+/* Vertical Toolbar */
+#vertical-toolbar {
+  -moz-appearance: none !important;
+  background-color: #E6E6E6 !important;
+}
+
+#vertical-toolbar toolbarbutton > .toolbarbutton-icon {
+  margin: -1px 0 !important;
+}
+
+#vertical-toolbar .bookmark-item > .toolbarbutton-icon {
+  margin: -4px 0 !important;
+}
+
+/* Download Statusbar */
+#downbarMiniImage,
+#downbarMainMenuImage {
+  list-style-image: url("chrome://browser/skin/preferences/saveFile.png") !important;
+  -moz-image-region: rect(0, 16px, 16px, 0px) !important;
+  min-height: 16px !important;
+  max-width: 16px !important;
+}
+
+/* Omnibar */
+#omnibar-in-urlbar {
+  margin-top: 1px !important;
+}
+#omnibar-in-urlbar label {
+  margin-top: 0px !important;
+}
+
+@media not all and (-moz-windows-compositor) {
+  #omnibar-in-urlbar {
+    margin-top: 1px !important;
+  }
+
+  #omnibar-in-urlbar label {
+    margin-top: 3px !important;
+  }
+}
+
+/* All-in-One Sidebar */
+#aios-toolbar toolbarbutton {
+  margin: 0 1px !important;
+  padding: 0 !important;
+}
+
+#sidebars-titlebutton > label {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+}
+
+#aios-toolbox-left > #aios-toolbar {
+  padding-left: 0px !important;
+  padding-right: 1px !important;
+  background-color: var(--main-navbg-color) !important;
+  box-shadow: -1px 0 0 0 #C9C9C9 inset !important;
+}
+
+#aios-toolbox-right > #aios-toolbar {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+  background-color: var(--main-navbg-color) !important;
+  box-shadow: 1px 0 0 0 #C9C9C9 inset !important;
+}
+
+#aios-toolbox-sidebartop > #aios-toolbar {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  border-bottom: 1px solid #A3A3A3 !important;
+  background-color: var(--main-navbg-color) !important;
+}
+
+#aios-toolbox-sidebartop2 > #aios-toolbar,
+#aios-toolbox-sidebarbottom > #aios-toolbar {
+  background-color: var(--main-navbg-color) !important;
+}
+
+#addons-page[aios-appOS="WINNT"] {
+  padding: 0 !important;
+}
+
+#addons-page[aios-appOS="WINNT"] .name-container,
+#addons-page[aios-appOS="WINNT"] .name-container > .name {
+  font-size: 11px !important;
+}
+
+#addons-page[aios-appOS="WINNT"] #categories,
+#addons-page[aios-appOS="WINNT"] #header {
+  background: var(--main-navbg-color) !important;
+}
+
+#addons-page[aios-appOS="WINNT"] .category-icon {
+  display: inline !important;
+}
+
+#addons-page[aios-appOS="WINNT"] #view-port-container {
+  padding: 0px;
+}
+
+#addons-page[aios-appOS="WINNT"] #header-utils-btn {
+  list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state");
+}
+
+#addons-page[aios-appOS="WINNT"] #header-search {
+  min-width: auto;
+  color: black;
+  background-image: url("chrome://global/skin/icons/Search-glass.png");
+}
+
+#addons-page[aios-appOS="WINNT"] .category {
+  margin: 2px !important;
+  padding: 0px !important;
+  border-radius: 2px !important;
+  border: 1px solid transparent !important;
+}
+
+#addons-page[aios-appOS="WINNT"] .category:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8),
+                                            rgba(255, 255, 255, 0))!important;
+  background-color: hsl(214, 91%, 97%)!important;
+  border-color: hsl(214, 91%, 85%)!important;
+}
+
+#addons-page[aios-appOS="WINNT"] .category[selected] {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8),
+                                            rgba(255, 255, 255, 0))!important;
+  background-color: hsl(214, 91%, 89%)!important;
+  border-color: hsl(214, 91%, 65%)!important;
+}
+
+#addons-page[aios-appOS="WINNT"] #header-utils-btn > .toolbarbutton-menu-dropmarker {
+  -moz-margin-start: -2px !important;
+  -moz-margin-end: 4px !important;
+}
+
+#addons-page[aios-appOS="WINNT"] #view-port-container {
+  -moz-margin-start: -1px !important;
+  border-radius: 0px !important;
+}
+
+#aios-toggle-toolbar {
+  padding: 0px !important;
+}
+
+#aios-toggle-button {
+  border-width: 0 2px !important;
+  border-style: solid !important;
+  -moz-border-left-colors: transparent transparent !important;
+  -moz-border-right-colors: #D7D7D7 transparent !important;
+  background: linear-gradient(to left, var(--main-navbg-color), #EAEAEA, #E1E1E1) !important;
+}
+
+#aios-toggle-button:hover {
+  background-color: #F2F3F2 !important;
+}
+
+#aios-toggle-button:hover:active {
+  background-color: #CCCCCC !important;
+}
+
+/* Toolbar Appmenu Button & Toolbarize */
+toolbar:not([brighttext]) #toolbar-appmenu-button > .toolbarbutton-icon,
+toolbar:not([brighttext]) #appmenu-toolbar-button > .toolbarbutton-icon,
+toolbar:not([brighttext]) #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state") !important;
+}
+	
+toolbar[brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
+toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
+toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state-ic") !important;
+}
+
+#toolbar-appmenu-button > .toolbarbutton-icon,
+#appmenu-toolbar-button > .toolbarbutton-icon {
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -moz-padding-start: 2px !important;
+  -moz-padding-end: 1px !important;
+}
+
+#appmenu-toolbar-button > label,
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  display: none !important;
+}
+
+/* CoolPreviews */
+.subSearchWord {
+  border: none !important;
+}
+
+.subSearchText {
+  box-shadow: none !important;
+}
+
+/* NoScript */
+.noscript-bottom-notify notification {
+  background: linear-gradient(#E5E5E5, #D9D9D9) !important;
+}
+
+menupopup[sticky="true"] {
+  border-image: none !important;
+  background-color: #FCFCFC !important;
+  border: 2px solid #BBBBBB !important;
+  padding: 3px !important;
+}
+
+/* Personal Titlebar */
+#main-window[sizemode=normal] #personal-titlebar {
+  -moz-margin-start: 42px !important;
+}
+
+/* ColorZilla */
+#colorzilla-top-statusbar-display .statuspanel-label {
+  margin-bottom: -4px !important;
+}
+
+/* WebConsole */
+.hud-console-filter-toolbar {
+  padding: 1px 2px !important;
+  -moz-box-align: center !important;
+  -moz-appearance: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  background: linear-gradient(#E5E5E5, #D9D9D9)!important;
+}
+
+/* ABP */
+#abp-sidebar-close {
+  border: none !important;
+}
+
+/* User Agent Switcher */
+#useragentswitcher-button {
+  margin: 3px 0px !important;
+}
+
+/* Forecastfox Weather */
+#PersonalToolbar > #forecastfox-toolbar {
+  margin-top: -4px !important;
+}
+
+/* FireIE */
+#fireie-urlbar-switch-image,
+#fireie-urlbar-switch-label {
+  margin: -1px 1px 0 1px !important;
+}
+
+/* Location Bar Enhancer */
+#UIEnhancer_URLBar {
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+  -moz-margin-start: 0 !important;
+}
+
+#UIEnhancer_StatusBar {
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+}
+
+/* Greasemonkey */
+#greasemonkey-notification-notification .popup-notification-icon {
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Booky */
+#com_sppad_booky_noLaunchersArea {
+  font-size: smaller !important;
+  margin-top: -2px !important;
+}
+
+/* FindBar Tweak */
+findbar[movetotop]:before,
+findbar[movetotop]:after {
+  margin-top: -1px !important;
+}
+
+/* MozArchiver */
+#mafArchiveInfoUrlbarButton {
+  padding: 2px 3px 3px 3px;
+}

@@ -44,7 +44,7 @@
 #alertImage {
   max-width: 48px;
   max-height: 48px;
-  list-style-image: url(chrome://global/skin/alerts/notification-48.png);
+  list-style-image: url(chrome://global/skin/alerts/notification.svg);
 }
 
 #alertNotification[clickable="true"] {

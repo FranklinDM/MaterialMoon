@@ -28,21 +28,12 @@
 }
 
 #view-port-container {
-  padding-top: 14px;
-  border: none !important;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 14px;
-  margin-right: 14px;
+  padding: 14px;
 }
 
-/* box-shadow for the list views */
-#search-list, #discover-view,
-#updates-list, #addon-list,
-#detail-view, #search-list-empty,
-#search-loading {
+#view-port {
   border-radius: 3px;
-  background-color: white !important;;
+  background-color: white !important;
   box-shadow: 0px 2px 2px 0px rgba(167, 167, 167, 0.45);
 }
 
@@ -50,9 +41,7 @@
 #userstyle-sorting, #greasemonkey-sort-bar, #search-filter,
 .view-header.global-warning-container {
   padding: 5px;
-  background-color: white !important;
-  box-shadow: 0px .5px 2px 1px rgba(167, 167, 167, 0.45);
-  margin-bottom: -1px; 
+  border-bottom: 1px solid #D3D3D3;
 }
 
 #userstyle-footer {
@@ -105,8 +94,6 @@
 .nav-button:hover:not([disabled="true"]),
 #header-utils-btn:hover,
 #header-utils-btn[open="true"] {
-  /*border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch !important;*/
-    border-image: none !important;
     border-radius: 3px !important;
     background-color: rgba(0, 0, 0, 0.22) !important;
     border-color: rgba(0, 0, 0, 0.22) !important;
@@ -114,8 +101,6 @@
 
 .nav-button:hover:active:not([disabled="true"]),
 #header-utils-btn:hover:active {
-  /*border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch !important;*/
-    border-image: none !important;
     border-radius: 500em !important;
 	box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.22) !important;
     background-color: rgba(0, 0, 0, 0.22) !important;
@@ -290,37 +275,72 @@
 }
 
 #category-search > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-search.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-search.svg#state");
 }
 #category-discover > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-discover.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-discover.svg#state");
 }
 #category-locale > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-languages.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-languages.svg#state");
 }
 #category-searchengine > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-searchengines.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-searchengines.svg#state");
 }
 #category-extension > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-extensions.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-extensions.svg#state");
 }
 #category-service > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-service.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-service.svg#state");
 }
 #category-theme > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-themes.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-themes.svg#state");
 }
 #category-plugin > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-plugins.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-plugins.svg#state");
 }
 #category-dictionary > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-dictionaries.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-dictionaries.svg#state");
 }
 #category-availableUpdates > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-available.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-available.svg#state");
 }
 #category-recentUpdates > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-recent.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/category-recent.svg#state");
+}
+
+/* selected states */
+#category-search[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-search.svg#state-ac");
+}
+#category-discover[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-discover.svg#state-ac");
+}
+#category-locale[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-languages.svg#state-ac");
+}
+#category-searchengine[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-searchengines.svg#state-ac");
+}
+#category-extension[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-extensions.svg#state-ac");
+}
+#category-service[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-service.svg#state-ac");
+}
+#category-theme[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-themes.svg#state-ac");
+}
+#category-plugin[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-plugins.svg#state-ac");
+}
+#category-dictionary[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-dictionaries.svg#state-ac");
+}
+#category-availableUpdates[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-available.svg#state-ac");
+}
+#category-recentUpdates[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-recent.svg#state-ac");
 }
 
 /*** header ***/
@@ -329,8 +349,6 @@
   padding: 0px;
   margin: 0px; 
   min-height: 56px;
-  /*-moz-padding-start: 25px;
-  -moz-padding-end: 25px;*/
   -moz-padding-start: 2em;
   -moz-padding-end: 2em;
   background-color: #3367d6;
@@ -340,7 +358,7 @@
 #header-search {
   padding-left: 30px;
   font-size: 14px;
-  min-height: 40px;
+  height: 40px;
   min-width: 580px;
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.22);
@@ -355,7 +373,7 @@
 }
 
 #header-utils-btn {
-  list-style-image: url("chrome://mozapps/skin/extensions/utilities.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state-wt");
   -moz-margin-end: 8px;
 }
 
@@ -1209,4 +1227,27 @@ button.button-link:not([disabled="true"]):active:hover {
                                             rgba(255, 255, 255, 0))!important;
   background-color: hsl(214, 91%, 89%)!important;
   border-color: hsl(214, 91%, 65%)!important;
+}
+
+@media (max-width: 650px) {
+  #header-search {
+    min-width: 20px;
+  }
+  #view-port-container {
+    padding: 0px;
+  }
+  #view-port {
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  #categories {
+    min-width: 0px;
+  }
+  .category-name {
+    visibility: collapse;
+  }
+  #userstyle-sorting, #greasemonkey-sort-bar, #search-filter,
+  .view-header.global-warning-container {
+    padding: 0px;
+  }
 }

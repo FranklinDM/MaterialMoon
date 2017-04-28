@@ -11,8 +11,6 @@
   -moz-box-orient: vertical;
   -moz-box-align: center;
   -moz-appearance: none;
-  padding: 5px 3px 1px 3px;
-  margin: 0 1px;
   min-width: 4.5em;
   font-weight: bold;
   color: #777;
@@ -36,7 +34,7 @@
   -moz-image-region: rect(0px, 32px, 32px, 0px)
 }
 
-#generalTab:hover, #generalTab[selected="true"] {
+#generalTab[selected="true"] {
   -moz-image-region: rect(32px, 32px, 64px, 0px)
 }
 
@@ -44,7 +42,7 @@
   -moz-image-region: rect(0px, 64px, 32px, 32px)
 }
 
-#mediaTab:hover, #mediaTab[selected="true"] {
+#mediaTab[selected="true"] {
   -moz-image-region: rect(32px, 64px, 64px, 32px)
 }
 
@@ -52,7 +50,7 @@
   -moz-image-region: rect(0px, 96px, 32px, 64px)
 }
 
-#feedTab:hover, #feedTab[selected="true"] {
+#feedTab[selected="true"] {
   -moz-image-region: rect(32px, 96px, 64px, 64px)
 }
 
@@ -60,7 +58,7 @@
   -moz-image-region: rect(0px, 128px, 32px, 96px)
 }
 
-#permTab:hover, #permTab[selected="true"] {
+#permTab[selected="true"] {
   -moz-image-region: rect(32px, 128px, 64px, 96px)
 }
 
@@ -68,15 +66,13 @@
   -moz-image-region: rect(0px, 160px, 32px, 128px)
 }
 
-#securityTab:hover, #securityTab[selected="true"] {
+#securityTab[selected="true"] {
   -moz-image-region: rect(32px, 160px, 64px, 128px)
 }
 
 deck {
-  padding: 10px 10px 0px 10px;
   background-color: white;
-  margin: 5px;
-  border-radius: 3px;
+  padding: 5px;
 }
 
 /* Misc */

@@ -12,7 +12,7 @@
 textbox[type="search"] {
   padding-left: 30px;
   font-size: 14px;
-  min-height: 40px;
+  height: 40px;
   min-width: 580px;
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.22);
@@ -122,4 +122,15 @@ richlistitem.desktop[type="client"] {
 .tabIcon {
   -moz-padding-start: 2px;
   padding-top: 2px;
+}
+
+@media (max-width: 830px) {
+  #tabsListHeading {
+	display: none;
+  }
+}
+@media (max-width: 670px) {
+  textbox[type="search"] {
+    min-width: 50px;
+  }
 }

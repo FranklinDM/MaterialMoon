@@ -25,13 +25,13 @@ toolbarbutton {
   background-clip: padding-box;
   border: 1px solid;
   border-color: transparent;
-  border-width: 5px;
 }
 
 toolbarbutton:not(.titlebar-button) {
   border-radius: 3px;
   transition-property: border-radius, background-color, border-color;
   transition-duration: 500ms;
+  border-width: 5px;
 }
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) toolbarbutton {

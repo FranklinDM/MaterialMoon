@@ -254,13 +254,13 @@ toolbar[brighttext] #downloads-indicator-icon,
 }
 
 #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
-  background: url("chrome://browser/skin/downloads/favicon_downloads.png") no-repeat center;
+  background: url("chrome://browser/skin/downloads/download-indicator.svg#state") no-repeat center;
 }
 
 toolbar[brighttext] #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
 #main-window[privatebrowsingmode=temporary] #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
 #TabsToolbar #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
-  background: url("chrome://browser/skin/downloads/favicon_downloads2.png") no-repeat center !important;
+  background: url("chrome://browser/skin/downloads/downloads-indicator.svg#state-ic") no-repeat center !important;
 }
 
 #downloads-indicator:not([counter])[attention] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {

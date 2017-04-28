@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="16" height="16" viewBox="0 0 24 24">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ic"] {
+		  fill: #cecece;
+		}
+	</style>
+	<defs>
+		<path id="download-shape" stroke-width="0.2" stroke-linejoin="round" d="M 4.9994,19.9981L 18.9994,19.9981L 18.9994,17.9981L 4.9994,17.9981M 18.9994,8.99807L 14.9994,8.99807L 14.9994,2.99807L 8.9994,2.99807L 8.9994,8.99807L 4.9994,8.99807L 11.9994,15.9981L 18.9994,8.99807 Z "/>
+	</defs>
+    <use id="state" xlink:href="#download-shape"/>
+    <use id="state-ic" xlink:href="#download-shape"/>
+</svg>

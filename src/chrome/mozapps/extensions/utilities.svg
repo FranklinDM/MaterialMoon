@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="18" height="18" viewBox="0 0 18 18">
+    <style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ic"] {
+		  fill: #cecece;
+		}
+		use[id$="-wt"] {
+		  fill: #FFFFFF;
+		}
+	</style>
+	<defs>
+		<path id="mmenu-shape" d="M9 5.5c.83 0 1.5-.67 1.5-1.5S9.83 2.5 9 2.5 7.5 3.17 7.5 4 8.17 5.5 9 5.5zm0 2c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5zm0 5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/>
+	</defs>
+    <use id="state" xlink:href="#mmenu-shape"/>
+    <use id="state-ic" xlink:href="#mmenu-shape"/>
+    <use id="state-wt" xlink:href="#mmenu-shape"/>
+</svg>

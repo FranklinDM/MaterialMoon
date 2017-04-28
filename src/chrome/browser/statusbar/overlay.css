@@ -38,12 +38,22 @@
 
 #status4evar-options-button
 {
-	list-style-image: url("chrome://browser/skin/statusbar/pms24.png");
+	list-style-image: url("chrome://browser/skin/statusbar/pms24.svg#state");
+}
+
+#main-window[privatebrowsingmode=temporary] #status4evar-options-button
+{
+	list-style-image: url("chrome://browser/skin/statusbar/pms24.svg#state-ic");
 }
 
 toolbar[iconsize="small"] #status4evar-options-button
 {
-	list-style-image: url("chrome://browser/skin/statusbar/pms16.png");
+	list-style-image: url("chrome://browser/skin/statusbar/pms.svg#state");
+}
+
+#main-window[privatebrowsingmode=temporary] toolbar[iconsize="small"] #status4evar-options-button
+{
+	list-style-image: url("chrome://browser/skin/statusbar/pms.svg#state-ic");
 }
 
 /*

@@ -8,6 +8,10 @@
   background-color: transparent;
 }
 
+input::-moz-focus-inner { 
+  border:0;
+}
+
 /* SCROLLBOX */
 #newtab-scrollbox:not([page-disabled]) {
   background-color: #F7F7F7;
