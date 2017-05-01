@@ -173,6 +173,10 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   padding: 0 !important;
 }
 
+#aios-toolbar .tabs-closebutton {
+  margin: 7px 4px 7px 0;
+}
+
 #sidebars-titlebutton > label {
   padding: 0 !important;
   margin: 0 !important;
@@ -234,7 +238,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 #addons-page[aios-appOS="WINNT"] #header-search {
   min-width: auto;
   color: black;
-  background-image: url("chrome://global/skin/icons/Search-glass.png");
+  background-image: url("chrome://global/skin/icons/search-item.svg#state");
 }
 
 #addons-page[aios-appOS="WINNT"] .category {

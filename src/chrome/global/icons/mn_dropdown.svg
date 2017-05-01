@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="16" height="16" viewBox="0 0 24 24">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ic"] {
+		  fill: #cecece;
+		}
+		use[id$="-ds"] {
+		  fill: #595959;
+		  opacity: .5;
+		}
+	</style>
+	<defs>
+		<path id="adrop-shape" stroke-linejoin="miter" d="M 7,10L 12,15L 17,10L 7,10 Z "/>
+	</defs>
+    <use id="state" xlink:href="#adrop-shape"/>
+    <use id="state-ic" xlink:href="#adrop-shape"/>
+	<use id="state-ds" xlink:href="#adrop-shape"/>
+</svg>

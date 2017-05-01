@@ -235,7 +235,7 @@ menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
 }
 
 menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
-  background-image: url("chrome://global/skin/arrow/check.png");	
+  background: url("chrome://global/skin/checkbox/check.svg#state") no-repeat;	
 }
 
 menuitem[type="radio"] {
@@ -252,7 +252,7 @@ menuitem[type="radio"][checked=true] > .menu-iconic-left {
 }
 
 menuitem[type="radio"][checked="true"] > .menu-iconic-left {
-  background-image: url("chrome://global/skin/radio/radio-marked.svg#state");	
+  background: url("chrome://global/skin/radio/radio-marked.svg#state") no-repeat;
 }
 
 menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon,

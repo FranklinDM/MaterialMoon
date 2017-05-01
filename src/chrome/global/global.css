@@ -321,7 +321,7 @@ label[disabled="true"]:-moz-system-metric(windows-classic) {
 
 .close-icon {
   border-radius: 3px;
-  list-style-image: url("chrome://global/skin/icons/close.svg");
+  list-style-image: url("chrome://global/skin/icons/close.svg#state");
   border: 5px solid transparent;
 }
 

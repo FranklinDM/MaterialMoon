@@ -18,14 +18,11 @@ datepicker, timepicker {
 }
 
 .datetimepicker-input-box {
-  -moz-appearance: textfield;
+  -moz-appearance: none;
   cursor: text;
   -moz-margin-end: 2px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: lightgray transparent;
   padding: 2px 0 3px 0;
   -moz-padding-start: 4px;
   -moz-padding-end: 2px;

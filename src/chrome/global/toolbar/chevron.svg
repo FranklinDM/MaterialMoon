@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="9" height="8" viewBox="0 0 13.41 12">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ic"] {
+		  fill: #cecece;
+		}
+	</style>
+	<defs>
+		<path id="chev-shape" d="M -0.045,1.41398 1.3780655,0 7.4165327,6 1.3780655,12 -0.045,10.586 4.5704018,6 Z m 6.0384673,1e-5 L 7.4165327,1e-5 13.455,6 7.4165327,12 5.9934673,10.586 10.608869,6 Z"/>
+	</defs>
+    <use id="state" xlink:href="#chev-shape"/>
+    <use id="state-ic" xlink:href="#chev-shape"/>
+</svg>

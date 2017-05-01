@@ -22,6 +22,11 @@ dialog {
 .dialog-button {
   font: menu;
   margin-top: 6px;
+  box-shadow: none;
+}
+
+.dialog-button:-moz-any(:hover, :hover:active) {
+  box-shadow: none;
 }
 
 /* ::::: dialog header ::::: */

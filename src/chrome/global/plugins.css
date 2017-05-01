@@ -10,6 +10,7 @@ body {
   background: #f7f7f7;
   color: #646464;
   font: message-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 div#outside {
@@ -21,13 +22,11 @@ div#outside {
 
 #plugs {
   text-align: center;
-  font-size: xx-large;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 #noplugs {
-  font-size: x-large;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 div#findpluginupdates {

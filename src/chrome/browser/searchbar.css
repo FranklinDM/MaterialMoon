@@ -48,11 +48,12 @@
 }
 
 .searchbar-dropmarker-image {
-  list-style-image: url("chrome://global/skin/icons/tb_dropdown.png");
+  list-style-image: url("chrome://global/skin/icons/mn_dropdown.svg#state");
+  margin-left: -2px;
 }
 
 #main-window[privatebrowsingmode=temporary] .searchbar-dropmarker-image {
-  list-style-image: url("chrome://global/skin/icons/n_tb_dropdown.png");
+  list-style-image: url("chrome://global/skin/icons/mn_dropdown.svg#state-ic");
 }
 
 /* ::::: search-go-button ::::: */
@@ -69,7 +70,7 @@
 }
 
 .search-go-button {
-  list-style-image: url("chrome://browser/skin/search-item.svg#state");
+  list-style-image: url("chrome://global/skin/icons/search-item.svg#state");
   -moz-image-region: rect(0px 18px 18px 0px);
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
@@ -77,7 +78,7 @@
 }
 
 #main-window[privatebrowsingmode=temporary] .search-go-button {
-  list-style-image: url("chrome://browser/skin/search-item.svg#state-ic");
+  list-style-image: url("chrome://global/skin/icons/search-item.svg#state-ic");
 }
 
 .search-go-button:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {

@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="16" height="16" viewBox="0 0 24 24">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ac"] {
+		  fill: #4285F4;
+		}	
+		use[id$="-dc"] {
+		  fill: #595959;
+		  opacity: .5;
+		}	
+	</style>
+	<defs>
+		<path id="check-shape" stroke-width="0.2" stroke-linejoin="round" d="M 21,7L 9,19L 3.5,13.5L 4.91421,12.0858L 9,16.1716L 19.5858,5.58579L 21,7 Z "/>
+	</defs>
+    <use id="state" xlink:href="#check-shape"/>
+    <use id="state-ac" xlink:href="#check-shape"/>
+    <use id="state-dc" xlink:href="#check-shape"/>
+</svg>

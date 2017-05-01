@@ -11,8 +11,8 @@
   -moz-border-image: none !important;
 }
 
-#main-window[privatebrowsingmode=temporary] .close-icon {
-  list-style-image: url("chrome://global/skin/icons/n_close.png") !important;
+#main-window[privatebrowsingmode=temporary] .findbar-closebutton {
+  list-style-image: url("chrome://global/skin/icons/close.svg#state-ic") !important;
 }
 
 #main-window[privatebrowsingmode=temporary] .toolbarbutton-text,
@@ -118,20 +118,11 @@ findbar:not(:-moz-lwtheme) {
 /* highlight button */
 
 .findbar-highlight {
-  list-style-image: url("chrome://global/skin/icons/find.png") !important;
-  -moz-image-region: rect(0px 48px 16px 32px) !important;
+  list-style-image: url("chrome://global/skin/icons/highlight.svg#state") !important;
 }
 
-.findbar-highlight[disabled="true"] {
-  -moz-image-region: rect(32px 48px 48px 32px) !important;
-}
-
-.findbar-highlight:active, .findbar-highlight[checked="true"] {
-  -moz-image-region: rect(48px 48px 64px 32px);
-}
-
-.findbar-highlight[checked="true"]:hover {
-  -moz-image-region: rect(64px 48px 80px 32px);
+#main-window[privatebrowsingmode=temporary] .findbar-highlight {
+  list-style-image: url("chrome://global/skin/icons/highlight.svg#state-ic") !important;
 }
 
 .find-status-icon {

@@ -1,8 +1,3 @@
-
-html {
-
-}
-
 body {
   text-align: center;
 }
@@ -35,11 +30,11 @@ treechildren::-moz-tree-image(noicon) {
   list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png");
 }
 treechildren::-moz-tree-image(container, noicon) {
-  list-style-image: url("chrome://browser/skin/aboutSessionRestore-window-icon.png");
+  list-style-image: url("chrome://browser/skin/window.svg");
 }
 treechildren::-moz-tree-image(checked) {
-  list-style-image: url("chrome://global/skin/checkbox/cbox-check.gif");
+  list-style-image: url("chrome://global/skin/checkbox/check.svg#state");
 }
 treechildren::-moz-tree-image(partial) {
-  list-style-image: url("chrome://global/skin/checkbox/cbox-check-dis.gif");
+  list-style-image: url("chrome://global/skin/checkbox/check.svg#state-dc");
 }

@@ -13,11 +13,9 @@ filefield {
 
 .fileFieldContentBox {
   -moz-padding-start: 4px;
-  background-color: white;
-  color: #444;
-  border: 1px solid #bfbfbf;
-  border-radius: 2px;
-  box-shadow: none;
+  color: -moz-FieldText;
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: lightgray transparent;
 }
 
 .fileFieldContentBox[disabled="true"] {

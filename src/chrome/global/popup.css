@@ -8,11 +8,7 @@
 
 menupopup,
 panel {
-  border: 1px solid transparent;
-  -moz-border-top-colors   : #bababa;
-  -moz-border-left-colors  : #bababa;
-  -moz-border-right-colors : #bababa;
-  -moz-border-bottom-colors: #bababa;
+  border: 1px solid #bababa;
   padding: 0px;
   min-width: 1px;
   background: #FFFFFF;

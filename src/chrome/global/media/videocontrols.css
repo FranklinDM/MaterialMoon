@@ -112,7 +112,6 @@
   /* margin left/right: 1/2 of scrubber thumb width, for overhang. */
   margin: 13px 22px;
   background-color: #595959;
-  border-radius: 2.5px;
 }
 
 .bufferBar,

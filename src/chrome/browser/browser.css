@@ -944,10 +944,10 @@ toolbar[brighttext] .bookmark-item[container][livemark] .bookmark-item {
 }
 
 toolbar[brighttext] .toolbarbutton-1,
-#main-window[privatebrowsingmode=temporary] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button, #social-share-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
+#main-window[privatebrowsingmode=temporary] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
   list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
-
+	
 @media (-moz-os-version: windows-vista),
        (-moz-os-version: windows-win7) {
   #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
@@ -1576,13 +1576,13 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   padding: 0 3px;
   margin: 2px 2px 2px 0px; /* unify urlbar icon - 1*/
   border: none;
-  list-style-image: url("chrome://global/skin/icons/addr_dropdown.png");
-  -moz-image-region: rect(0, 15px, 15px, 0);
+  list-style-image: url("chrome://global/skin/icons/mn_dropdown.svg#state");
+  -moz-image-region: rect(0, 16px, 16px, 0);
   background: transparent;
 }
 
 #main-window[privatebrowsingmode=temporary] .urlbar-history-dropmarker {
-  list-style-image: url("chrome://global/skin/icons/n_addr_dropdown.png");
+  list-style-image: url("chrome://global/skin/icons/mn_dropdown.svg#state-ic");
 }
 
 /* page proxy icon */
@@ -1592,7 +1592,7 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   height: 19px;
   -moz-margin-start: -2px;
   -moz-margin-end: -1px;
-  -moz-image-region: rect(0, 19px, 19px, 0);
+  -moz-image-region: rect(0, 18px, 18px, 0);
   list-style-image: url(chrome://browser/skin/info-item.svg#state);
 }
 
@@ -1601,11 +1601,11 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 }
 
 #page-proxy-favicon[pageproxystate="invalid"] {
-  list-style-image: url(chrome://browser/skin/search-item.svg#state);
+  list-style-image: url(chrome://global/skin/icons/search-item.svg#state);
 }
 
 #main-window[privatebrowsingmode=temporary] #page-proxy-favicon[pageproxystate="invalid"] {
-  list-style-image: url(chrome://browser/skin/search-item.svg#state-ic);
+  list-style-image: url(chrome://global/skin/icons/search-item.svg#state-ic);
 }
 
 #page-proxy-favicon[src][pageproxystate="valid"] {
@@ -2154,7 +2154,7 @@ window[sizemode="maximized"] #navigator-toolbox {
 .tab-close-button {
   -moz-appearance: none;
   border: none;
-  padding: 0px; 
+  padding: 0px !important;
 }
 
 .tab-close-button:not([selected]):not(:hover):not(:active) {
@@ -2330,16 +2330,9 @@ toolbar[brighttext] #alltabs-button,
 /* Tabstrip close button */
 .tabs-closebutton {
   -moz-appearance: none;
-  margin: 7px 4px 7px 0;
   border: none;
-  list-style-image: url("chrome://global/skin/icons/close.svg");
+  list-style-image: url("chrome://global/skin/icons/close.svg#state");
   transition-property: background-color, border-color, box-shadow;
-}
-
-.tabs-closebutton:hover:active {
-  box-shadow: 0px 0px 0px 5px var(--toolbarbutton-rg-hover);
-  border-radius: 500em;
-  transition-duration: 200ms;  
 }
 
 .tabs-closebutton > .toolbarbutton-icon {
@@ -2353,11 +2346,11 @@ toolbarbutton.chevron {
   -moz-box-align: center;
   -moz-box-pack: center;
   padding: 0 2px !important;
-  list-style-image: url("chrome://global/skin/toolbar/chevron.png");
+  list-style-image: url("chrome://global/skin/toolbar/chevron.svg#state");
 }
 
 #main-window[privatebrowsingmode=temporary] toolbarbutton.chevron {
-  list-style-image: url("chrome://global/skin/toolbar/n_chevron.png");
+  list-style-image: url("chrome://global/skin/toolbar/chevron.svg#state-ic");
 }
 
 toolbarbutton.chevron:-moz-locale-dir(rtl) > .toolbarbutton-icon {
@@ -2409,16 +2402,15 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
   height: 64px;
   width: 64px;
   padding: 0;
-  list-style-image: url("chrome://browser/skin/identity.png");
-  -moz-image-region: rect(0px, 64px, 64px, 0px);
+  list-style-image: url("chrome://browser/skin/identity.svg#state");
 }
 
 #identity-popup.verifiedDomain > #identity-popup-container > #identity-popup-icon {
-  -moz-image-region: rect(64px, 64px, 128px, 0px);
+  list-style-image: url("chrome://browser/skin/identity.svg#state-dm");
 }
 
 #identity-popup.verifiedIdentity > #identity-popup-container > #identity-popup-icon {
-  -moz-image-region: rect(128px, 64px, 192px, 0px);
+  list-style-image: url("chrome://browser/skin/identity.svg#state-om");
 }
 
 /* Popup Body Text */
