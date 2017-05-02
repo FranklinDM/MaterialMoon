@@ -1,5 +1,5 @@
 # Material Moon
-![Preview](https://github.com/FranklinDM/MaterialMoon/blob/master/src/preview.png)
+![Preview](https://github.com/FranklinDM/MaterialMoon/blob/master/preview.png)
 
 A material chrome-like theme. Remember the material design in the new edition of Chrome? Well then, they have already arrived here in Pale Moon.
 
