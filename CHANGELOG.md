@@ -1,7 +1,15 @@
 # Changelog
 
-### 2.8.0 [planned]
-- Use CSS variables
+### 2.8.0
+- Partially use CSS variables for parts of the theme
+- Fix duplicate learn more link
+- Cleaner looking layout for add-ons page and tabs from other devices page
+- Use and change the references to SVG for some files
+- Restore old prefpane styling (removes the excessive margins and paddings)
+- Style about:config
+- Materialize most of the controls (button, radio, checkbox, textbox)
+- Remove userstyles from tree
+- Reduction in theme package file size (-80.5kb)
 
 ### 2.7.5
 - Findbar styling
