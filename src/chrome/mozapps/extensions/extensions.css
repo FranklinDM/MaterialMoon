@@ -308,6 +308,14 @@
   list-style-image: url("chrome://mozapps/skin/extensions/category-recent.svg#state");
 }
 
+/* add-on categories */
+#category-userstyle > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-stylish.svg#state") !important;
+}
+#category-greasemonkey-user-script > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-uscript.svg#state") !important;
+}
+
 /* selected states */
 #category-search[selected] > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-search.svg#state-ac");
@@ -341,6 +349,14 @@
 }
 #category-recentUpdates[selected] > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-recent.svg#state-ac");
+}
+
+/* add-on categories */
+#category-userstyle[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-stylish.svg#state-ac") !important;
+}
+#category-greasemonkey-user-script[selected] > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-uscript.svg#state-ac") !important;
 }
 
 /*** header ***/
