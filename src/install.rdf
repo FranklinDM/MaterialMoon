@@ -7,9 +7,9 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">  
   <Description about="urn:mozilla:install-manifest">
     <em:id>materialmoon@franklindm</em:id>
-    <em:version>2.8.0</em:version>
+    <em:version>dev-build</em:version>
     <em:name>Material Moon</em:name>
-    <em:description>Material Chrome-like theme for Pale Moon. Fork of "PMChrome" (Lootyhoof) and "FXChrome" (dkgo)</em:description>
+    <em:description>Material Chrome-like theme for Pale Moon. Fork of PMChrome by Lootyhoof.</em:description>
     <em:creator>FranklinDM</em:creator>
     <em:type>4</em:type>
 	<em:internalName>MMChrome</em:internalName>

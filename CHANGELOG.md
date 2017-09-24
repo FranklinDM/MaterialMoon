@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.8.1
+- Drop support for versions lower than PM 27.4
+- Use custom icons for Stylish and Greasemonkey categories
+- Add white box for update notification on add-ons manager
+
 ### 2.8.0
 - Partially use CSS variables for parts of the theme
 - Fix duplicate learn more link
