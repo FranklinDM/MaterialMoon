@@ -1,9 +1,15 @@
 # Changelog
 
+### 2.8.2
+- Support PM 27.5's Win10 window styling implementation
+- Minor tweaks to add-on categories (a highlight on hover) and update to sidebar style (TGS)
+- Drop support for versions lower than PM 27.5
+
 ### 2.8.1
 - Drop support for versions lower than PM 27.4
 - Use custom icons for Stylish and Greasemonkey categories
 - Add white box for update notification on add-ons manager
+- Update devtools styling
 
 ### 2.8.0
 - Partially use CSS variables for parts of the theme
