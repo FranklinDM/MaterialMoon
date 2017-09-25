@@ -167,7 +167,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   }
 }
 
-/* All-in-One Sidebar */
+/* The Good 'ol Sidebar */
 #aios-toolbar toolbarbutton {
   margin: 0 1px !important;
   padding: 0 !important;
@@ -209,65 +209,49 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   background-color: var(--main-navbg-color) !important;
 }
 
-#addons-page[aios-appOS="WINNT"] {
+#addons-page[aios-inSidebar] {
   padding: 0 !important;
 }
 
-#addons-page[aios-appOS="WINNT"] .name-container,
-#addons-page[aios-appOS="WINNT"] .name-container > .name {
+#addons-page[aios-inSidebar] .name-container,
+#addons-page[aios-inSidebar] .name-container > .name {
   font-size: 11px !important;
 }
 
-#addons-page[aios-appOS="WINNT"] #categories,
-#addons-page[aios-appOS="WINNT"] #header {
+#addons-page[aios-inSidebar] #categories,
+#addons-page[aios-inSidebar] #header {
   background: var(--main-navbg-color) !important;
 }
 
-#addons-page[aios-appOS="WINNT"] .category-icon {
+#addons-page[aios-inSidebar] .category-icon {
   display: inline !important;
 }
 
-#addons-page[aios-appOS="WINNT"] #view-port-container {
+#addons-page[aios-inSidebar] .category {
+  transform: scale(1.2);
+  margin-left: 5px;
+}
+
+#addons-page[aios-inSidebar] #view-port-container {
   padding: 0px;
 }
 
-#addons-page[aios-appOS="WINNT"] #header-utils-btn {
+#addons-page[aios-inSidebar] #header-utils-btn {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state");
 }
 
-#addons-page[aios-appOS="WINNT"] #header-search {
+#addons-page[aios-inSidebar] #header-search {
   min-width: auto;
   color: black;
   background-image: url("chrome://global/skin/icons/search-item.svg#state");
 }
 
-#addons-page[aios-appOS="WINNT"] .category {
-  margin: 2px !important;
-  padding: 0px !important;
-  border-radius: 2px !important;
-  border: 1px solid transparent !important;
-}
-
-#addons-page[aios-appOS="WINNT"] .category:hover {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8),
-                                            rgba(255, 255, 255, 0))!important;
-  background-color: hsl(214, 91%, 97%)!important;
-  border-color: hsl(214, 91%, 85%)!important;
-}
-
-#addons-page[aios-appOS="WINNT"] .category[selected] {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8),
-                                            rgba(255, 255, 255, 0))!important;
-  background-color: hsl(214, 91%, 89%)!important;
-  border-color: hsl(214, 91%, 65%)!important;
-}
-
-#addons-page[aios-appOS="WINNT"] #header-utils-btn > .toolbarbutton-menu-dropmarker {
+#addons-page[aios-inSidebar] #header-utils-btn > .toolbarbutton-menu-dropmarker {
   -moz-margin-start: -2px !important;
   -moz-margin-end: 4px !important;
 }
 
-#addons-page[aios-appOS="WINNT"] #view-port-container {
+#addons-page[aios-inSidebar] #view-port-container {
   -moz-margin-start: -1px !important;
   border-radius: 0px !important;
 }

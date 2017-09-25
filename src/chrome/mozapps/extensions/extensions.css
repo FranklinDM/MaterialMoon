@@ -228,6 +228,10 @@
   overflow: hidden;
 }
 
+.category:hover {
+  filter: brightness(.8);
+}
+
 @media not all and (-moz-windows-compositor) {
   .category {
     padding: 4px 0 18px 12px;
