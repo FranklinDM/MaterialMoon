@@ -84,6 +84,20 @@ toolbarbutton[open="true"]:not([disabled="true"]) {
     border-color: rgba(0, 0, 0, 0.2);
 }
 
+#main-window[privatebrowsingmode=temporary] toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
+    border-image: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#main-window[privatebrowsingmode=temporary] toolbarbutton:hover:active:not([disabled="true"]),
+#main-window[privatebrowsingmode=temporary] toolbarbutton[checked="true"]:not([disabled="true"]),
+#main-window[privatebrowsingmode=temporary] toolbarbutton[open="true"]:not([disabled="true"]) {
+    border-image: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
 .toolbarbutton-icon[label]:not([label=""]),
 .toolbarbutton-icon[type="menu"] {
   -moz-margin-end: 2px;

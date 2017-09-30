@@ -187,20 +187,20 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   padding-left: 0px !important;
   padding-right: 1px !important;
   background-color: var(--main-navbg-color) !important;
-  box-shadow: -1px 0 0 0 #C9C9C9 inset !important;
+  box-shadow: -1px 0 0 0 var(--main-border-color) inset !important;
 }
 
 #aios-toolbox-right > #aios-toolbar {
   padding-left: 1px !important;
   padding-right: 1px !important;
   background-color: var(--main-navbg-color) !important;
-  box-shadow: 1px 0 0 0 #C9C9C9 inset !important;
+  box-shadow: 1px 0 0 0 var(--main-border-color) inset !important;
 }
 
 #aios-toolbox-sidebartop > #aios-toolbar {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  border-bottom: 1px solid #A3A3A3 !important;
+  border-bottom: 1px solid var(--main-border-color) !important;
   background-color: var(--main-navbg-color) !important;
 }
 
@@ -216,6 +216,13 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 #addons-page[aios-inSidebar] .name-container,
 #addons-page[aios-inSidebar] .name-container > .name {
   font-size: 11px !important;
+}
+
+#addons-page[aios-inSidebar] #updates-container {
+  padding: none;
+  box-shadow: none;
+  margin: none;
+  border-radius: 0px;
 }
 
 #addons-page[aios-inSidebar] #categories,
@@ -264,16 +271,35 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   border-width: 0 2px !important;
   border-style: solid !important;
   -moz-border-left-colors: transparent transparent !important;
-  -moz-border-right-colors: #D7D7D7 transparent !important;
-  background: linear-gradient(to left, var(--main-navbg-color), #EAEAEA, #E1E1E1) !important;
+  -moz-border-right-colors: var(--main-border-color) transparent !important;
+  background: var(--main-navbg-color) !important;
 }
 
-#aios-toggle-button:hover {
-  background-color: #F2F3F2 !important;
+#contentAreaDownloadsView #clearListButton {
+  background: url('chrome://mozapps/skin/extensions/trash1.png') 0 0 no-repeat !important;
+  background-position: center center !important;
+  list-style-image: url('chrome://mozapps/skin/extensions/trash2.png');
+  -moz-image-region: auto;
+  margin-top: -5px;
+  border: none !important;
 }
 
-#aios-toggle-button:hover:active {
-  background-color: #CCCCCC !important;
+#contentAreaDownloadsView #clearListButton > .toolbarbutton-icon {
+   transition: all 250ms !important;
+}
+
+#contentAreaDownloadsView #clearListButton:hover > .toolbarbutton-icon {
+  transform-origin: 15% 50% !important;
+  transform: rotate(-45deg) !important;
+  transition: transform 250ms !important;
+}
+
+#webpanels-window #mini-bar .toolbarbutton-1 {
+  border: none !important;
+}
+
+#webpanels-window #commandBar {
+  border-bottom: var(--main-border-color) 1px solid !important;
 }
 
 /* Toolbar Appmenu Button & Toolbarize */
