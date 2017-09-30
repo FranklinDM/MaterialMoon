@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.8.3
+- Remove unused urlbar progress bar styles (as of PM 27.5)
+  - This causes problems with the status bar progress meter
+- (Win10) Default accent color changed to black-on-white
+- Style cleanup and changes
+  - Simplify usage of CSS variables, reduce redundancy
+  - Unify usage of CSS variables (somehow)
+  - Improve appearance of TGS toolbar
+  - Remove roundness of sides
+
 ### 2.8.2
 - Support PM 27.5's Win10 window styling implementation
 - Minor tweaks to add-on categories (a highlight on hover) and update to sidebar style (TGS)
