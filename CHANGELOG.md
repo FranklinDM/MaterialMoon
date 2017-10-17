@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.8.4
+- Improve lightweight themes appearance (brighttext, use white glow)
+  - Add bright new toolbar image (for lwtheme)
+- Fix broken close button on all tabs
+- Remove crude workarounds applied in the past
+
 ### 2.8.3
 - Remove unused urlbar progress bar styles (as of PM 27.5)
   - This causes problems with the status bar progress meter
