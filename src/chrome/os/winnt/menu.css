@@ -104,7 +104,6 @@ menuitem.menuitem-iconic > .menu-iconic-left,
 /* ::::: menu/menuitems in menubar ::::: */
 
 menubar > menu {
-  border-radius: 3px;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
   border: 2px solid transparent;

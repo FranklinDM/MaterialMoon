@@ -1,5 +1,16 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+:root {
+  --toolbarbutton-rg-hover: rgba(0, 0, 0, 0.1);
+  --toolbarbutton-rg-open: rgba(0, 0, 0, 0.1);
+}
+
+#main-window[privatebrowsingmode=temporary]:root,
+:root:-moz-lwtheme-brighttext {
+  --toolbarbutton-rg-hover: rgba(255, 255, 255, 0.1);
+  --toolbarbutton-rg-open: rgba(255, 255, 255, 0.2);
+}
+
 .findbar-closebutton {
   padding: 0;
   -moz-margin-start: 7px;
@@ -58,7 +69,7 @@ findbar:not(:-moz-lwtheme) {
   border-radius: 3px;
   list-style-image: url("chrome://global/skin/icons/find_nb.png") !important;
   transition-property: background-color, border-color, box-shadow;
-  transition-duration: 500ms;
+  transition-duration: 200ms;
 }
 
 #main-window[privatebrowsingmode=temporary] .findbar-find-next,
@@ -68,31 +79,26 @@ findbar:not(:-moz-lwtheme) {
 
 /* find buttons material animation */
 
+toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
+toolbarbutton[checked="true"]:not([disabled="true"]),
+toolbarbutton[open="true"]:not([disabled="true"]),
 .findbar-find-next:hover:not([disabled="true"]),
 .findbar-find-previous:hover:not([disabled="true"]) {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--toolbarbutton-rg-hover);
+  border-color: var(--toolbarbutton-rg-hover);
 }
 
-#main-window[privatebrowsingmode=temporary] .findbar-find-next:hover:not([disabled="true"]),
-#main-window[privatebrowsingmode=temporary] .findbar-find-previous:hover:not([disabled="true"]) {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.1);	
+toolbarbutton:hover:active:not([disabled="true"]),
+.findbar-find-next:hover:active:not([disabled="true"]),
+.findbar-find-previous:hover:active:not([disabled="true"]) {
+  background-color: var(--toolbarbutton-rg-open);
+  border-color:  var(--toolbarbutton-rg-open);
 }
 
-.findbar-find-next:hover:active:not([disabled="true"]), .findbar-find-previous:hover:active:not([disabled="true"]) {
+.findbar-find-next:hover:active:not([disabled="true"]),
+.findbar-find-previous:hover:active:not([disabled="true"]) {
+  box-shadow: 0px 0px 0px 5px var(--toolbarbutton-rg-open);
   border-radius: 500em;
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.1);
-  transition-duration: 200ms;
-}
-
-#main-window[privatebrowsingmode=temporary] .findbar-find-next:hover:active:not([disabled="true"]),
-#main-window[privatebrowsingmode=temporary] .findbar-find-previous:hover:active:not([disabled="true"]) {
-  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* find-next button */

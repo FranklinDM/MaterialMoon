@@ -1,6 +1,6 @@
 @media not all and (-moz-windows-compositor) {
   #navigator-toolbox[tabsontop=false] #toolbar-menubar:not([autohide="true"]) {
-    margin-top: 5px !important;
-    margin-bottom: 0px !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
   }
 }
