@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.8.5
+- Use native styling for context menus on Windows
+- Fixes to Win10 window implementation
+  - Caption buttons are missing when inactive
+  - Fix squeezed caption buttons
+
 ### 2.8.4
 - Improve lightweight themes appearance (brighttext, use white glow)
   - Add bright new toolbar image (for lwtheme)
