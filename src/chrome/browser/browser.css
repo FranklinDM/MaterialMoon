@@ -1944,7 +1944,7 @@ window[sizemode="maximized"] #navigator-toolbox {
 }
 
 .tabbrowser-tab:-moz-lwtheme {
-  /*color: black;*/
+  color: black;
   text-shadow: none;
 }
 
@@ -1952,7 +1952,6 @@ window[sizemode="maximized"] #navigator-toolbox {
   margin-top: 0 !important;
 }
 
-/* formerly respects lwtheme (might get reinstated soon) */
 .tabbrowser-tab .tab-text[selected="true"] {
   color: var(--tab-rg-text-color);
 }
@@ -2002,7 +2001,7 @@ window[sizemode="maximized"] #navigator-toolbox {
   -moz-margin-start: 5px !important;
 }
 
-.tab-text:not([selected="true"]):not(:-moz-lwtheme) {
+.tab-text:not([selected="true"]) {
   color: var(--tabun-rg-text-color);
 }
 
