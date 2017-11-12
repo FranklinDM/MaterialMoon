@@ -46,31 +46,31 @@ dl {
 }
 
 table {
-  box-shadow: .5px .5px 2px 1px rgba(50, 50, 50, 0.14);
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
+  background-color: #fff;
+  color: #000;
   font: message-box;
   text-align: start;
   width: 100%;
   border-spacing: 0px;
-  border-color: white;
-  border-bottom: white;
-  border-right: white;
+  border: none;
 }
 
 th, td {
-  border: none;
   padding: 3px;
+  border: solid 1px lightgray;
+  border-bottom-style: none;
 }
 
 th {
   text-align: center;
-  background-color: lightgray;
+  background-color: #FAFAFA;
   color: black;
 }
 
 th + th,
 td + td {
+  -moz-border-start: 0px;
 }
 
 td {

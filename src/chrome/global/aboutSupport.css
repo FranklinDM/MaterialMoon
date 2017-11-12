@@ -28,9 +28,9 @@ body {
 }
 
 table {
-  box-shadow: .5px .5px 2px 1px rgba(50, 50, 50, 0.14);
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
+  background-color: #fff;
+  color: #000;
   font: message-box;
   text-align: start;
   width: 100%;
@@ -39,6 +39,9 @@ table {
 
 th, td {
   padding: 3px;
+  border: solid 1px lightgray;
+  border-right-style: none;
+  border-bottom-style: none;
 }
 
 thead th {
@@ -47,20 +50,17 @@ thead th {
 
 th {
   text-align: start;
-  background-color: lightgray;
+  background-color: #FAFAFA;
   color: black;
 }
 
 th.column {
-  border-top: 1px solid gray;
-  background-color: lightgray;
   white-space: nowrap;
   width: 0px;
 }
 
 td {
   text-align: start;
-  border-top: 1px solid lightgray;
 }
 
 .prefs-table {
@@ -81,9 +81,10 @@ td {
 }
 
 #reset-box {
-  background-color: -moz-Dialog;
-  box-shadow: .5px .5px 2px 1px rgba(50, 50, 50, 0.14);
-  color: -moz-DialogText;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
+  border: solid 1px lightgray;
+  color: #000;
   float: right;
   margin-top: 2em;
   margin-bottom: 20px;
