@@ -884,15 +884,15 @@ toolbar[brighttext] .bookmark-item[container][livemark] .bookmark-item {
 /* ::::: primary toolbar buttons ::::: */
 
 .toolbarbutton-1 {
-  list-style-image: url("chrome://browser/skin/Toolbar.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
 }
 
 toolbar[brighttext] .toolbarbutton-1 {
-  list-style-image: url("chrome://browser/skin/Toolbar-lw.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-lw");
 }
 
 #main-window[privatebrowsingmode=temporary] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
-  list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
 }
 	
 @media (-moz-os-version: windows-vista),
@@ -901,7 +901,7 @@ toolbar[brighttext] .toolbarbutton-1 {
   #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),  
   #main-window[privatebrowsingmode=temporary] #toolbar-menubar :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme),
   #main-window[privatebrowsingmode=temporary] #TabsToolbar[tabsontop=true] :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#new-tab-button,#sync-button[status])) > .toolbarbutton-icon:not(:-moz-lwtheme) {
-    list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
+    list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
   }
 }
 
@@ -1069,15 +1069,15 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #reload-button[disabled=true]:no
 }
 
 #home-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
 }
 
 #main-window[privatebrowsingmode=temporary] #home-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
 }
 
 toolbar[brighttext] #home-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar-lw.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-lw");
 }
 
 #home-button.bookmark-item > .toolbarbutton-icon {
@@ -1105,15 +1105,15 @@ toolbar[brighttext] #home-button.bookmark-item {
 }
 
 #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
 }
 
 #main-window[privatebrowsingmode=temporary] #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
 }
 
 toolbar[brighttext] #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar-lw.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-lw");
 }
 
 #print-button {
@@ -1863,11 +1863,11 @@ window[sizemode="maximized"] #navigator-toolbox {
 }
 
 .tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab:not(:first-child) > .tab-stack > .tab-content:not([selected="true"]) {
-  border-image: url("chrome://browser/skin/tabbrowser/tab2.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab2.svg#state") 2 15 fill repeat stretch;
 }
 
 #main-window[privatebrowsingmode=temporary] .tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab:not(:first-child) > .tab-stack > .tab-content:not([selected="true"]) {
-  border-image: url("chrome://browser/skin/tabbrowser/n_tab2.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab2.svg#state-ic") 2 15 fill repeat stretch;
 }
 
 #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-stack > .tab-content:not([selected="true"]),
@@ -1876,7 +1876,7 @@ window[sizemode="maximized"] #navigator-toolbox {
 #PinnedTabsBarItems > toolbarbutton:first-child > .tab-stack > .tab-content:not([selected="true"]),
 #tabbrowser-tabs > .tabbrowser-tab:first-child > .tab-stack > .tab-content:not([selected="true"]),
 .tabbrowser-tabs[movingtab] .tabbrowser-tab + .tabbrowser-tab:not([selected="true"]) > .tab-stack > .tab-content {
-  border-image: url("chrome://browser/skin/tabbrowser/tab.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state") 2 15 fill repeat stretch;
 }
 
 #main-window[privatebrowsingmode=temporary] #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-stack > .tab-content:not([selected="true"]),
@@ -1885,15 +1885,15 @@ window[sizemode="maximized"] #navigator-toolbox {
 #main-window[privatebrowsingmode=temporary] #PinnedTabsBarItems > toolbarbutton:first-child > .tab-stack > .tab-content:not([selected="true"]),
 #main-window[privatebrowsingmode=temporary] #tabbrowser-tabs > .tabbrowser-tab:first-child > .tab-stack > .tab-content:not([selected="true"]),
 #main-window[privatebrowsingmode=temporary] .tabbrowser-tabs[movingtab] .tabbrowser-tab + .tabbrowser-tab:not([selected="true"]) > .tab-stack > .tab-content {
-  border-image: url("chrome://browser/skin/tabbrowser/n_tab.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state-ic") 2 15 fill repeat stretch;
 }
 
 .tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab:hover:not(:first-child) > .tab-stack > .tab-content:not([selected="true"]) {
-  border-image: url("chrome://browser/skin/tabbrowser/tab_hover2.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab2.svg#state-hov") 2 15 fill repeat stretch;
 }
 
 #main-window[privatebrowsingmode=temporary] .tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab:hover:not(:first-child) > .tab-stack > .tab-content:not([selected="true"]) {
-  border-image: url("chrome://browser/skin/tabbrowser/n_tab_hover2.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab2.svg#state-ic-hov") 2 15 fill repeat stretch;
 }
 
 
@@ -1901,22 +1901,26 @@ window[sizemode="maximized"] #navigator-toolbox {
 #TabsToolbar[multibar] .tab-stack > .tab-content:not([selected="true"]):hover,
 .tabbrowser-tabs[multirow] .tab-stack > .tab-content:not([selected="true"]):hover,
 #tabbrowser-tabs > .tabbrowser-tab:first-child > .tab-stack > .tab-content:not([selected="true"]):hover {
-  border-image: url("chrome://browser/skin/tabbrowser/tab_hover.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state-hov") 2 15 fill repeat stretch;
 }
 
 #main-window[privatebrowsingmode=temporary] #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-stack > .tab-content:not([selected="true"]):hover,
 #main-window[privatebrowsingmode=temporary] #TabsToolbar[multibar] .tab-stack > .tab-content:not([selected="true"]):hover,
 #main-window[privatebrowsingmode=temporary] .tabbrowser-tabs[multirow] .tab-stack > .tab-content:not([selected="true"]):hover,
 #main-window[privatebrowsingmode=temporary] #tabbrowser-tabs > .tabbrowser-tab:first-child > .tab-stack > .tab-content:not([selected="true"]):hover {
-  border-image: url("chrome://browser/skin/tabbrowser/n_tab_hover.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state-ic-hov") 2 15 fill repeat stretch;
 }
   
 .tabbrowser-tab > .tab-stack > .tab-content[selected="true"] {
-  border-image: url("chrome://browser/skin/tabbrowser/tab_active.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab_active.svg#state") 2 15 fill repeat stretch;
+}
+
+.tabbrowser-tab:-moz-lwtheme > .tab-stack > .tab-content[selected="true"] {
+  border-image: url("chrome://browser/skin/tabbrowser/tab_active.svg#state-lw") 2 15 fill repeat stretch;
 }
 
 #main-window[privatebrowsingmode=temporary] .tabbrowser-tab > .tab-stack > .tab-content[selected="true"] {
-  border-image: url("chrome://browser/skin/tabbrowser/n_tab_active.png") 2 15 fill repeat stretch;
+  border-image: url("chrome://browser/skin/tabbrowser/tab_active.svg#state-ic") 2 15 fill repeat stretch;
 }
 
 /* preloading hack */
@@ -1924,18 +1928,20 @@ window[sizemode="maximized"] #navigator-toolbox {
   content: '';
   display: block;
   background-image:
-    url(chrome://browser/skin/tabbrowser/tab.png),
-    url(chrome://browser/skin/tabbrowser/tab_hover.png),
-    url(chrome://browser/skin/tabbrowser/tab2.png),
-    url(chrome://browser/skin/tabbrowser/tab_hover2.png),
-    url(chrome://browser/skin/tabbrowser/tab_active.png),
-    url(chrome://browser/skin/tabbrowser/attention.png),
-    url(chrome://browser/skin/tabbrowser/attention_hover.png),
-	url(chrome://browser/skin/tabbrowser/n_tab.png),
-	url(chrome://browser/skin/tabbrowser/n_tab_hover.png),
-	url(chrome://browser/skin/tabbrowser/n_tab2.png),
-	url(chrome://browser/skin/tabbrowser/n_tab_hover2.png),
-	url(chrome://browser/skin/tabbrowser/n_tab_active.png);
+    url(chrome://browser/skin/tabbrowser/tab.svg#state),
+    url(chrome://browser/skin/tabbrowser/tab.svg#state-hov),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state-hov),
+    url(chrome://browser/skin/tabbrowser/tab_active.svg#state),
+    url(chrome://browser/skin/tabbrowser/tab.svg#state-attn-hov),
+    url(chrome://browser/skin/tabbrowser/tab.svg#state-ic-attn-hov),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state-attn-hov),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state-ic-attn-hov),
+    url(chrome://browser/skin/tabbrowser/tab.svg#state-ic),
+    url(chrome://browser/skin/tabbrowser/tab.svg#state-ic-hov),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state-ic),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state-ic-hov),
+    url(chrome://browser/skin/tabbrowser/tab_active.svg#state-ic);
 }
 
 .tabbrowser-tab[selected="true"] > .tab-stack {
@@ -1957,10 +1963,17 @@ window[sizemode="maximized"] #navigator-toolbox {
 }
 
 .tabbrowser-tab[pinned][titlechanged] > .tab-stack > .tab-content {
-  -moz-border-image: url("chrome://browser/skin/tabbrowser/attention.png") 2 15 fill repeat stretch !important;
+  -moz-border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state-attn") 2 15 fill repeat stretch !important;
 }
 .tabbrowser-tab[pinned][titlechanged]:hover > .tab-stack > .tab-content:not([selected="true"]) {
-  -moz-border-image: url("chrome://browser/skin/tabbrowser/attention_hover.png") 2 15 fill repeat stretch !important;
+  -moz-border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state-attn-hov") 2 15 fill repeat stretch !important;
+}
+
+#main-window[privatebrowsingmode=temporary] .tabbrowser-tab[pinned][titlechanged] > .tab-stack > .tab-content {
+  -moz-border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state-ic-attn") 2 15 fill repeat stretch !important;
+}
+#main-window[privatebrowsingmode=temporary] .tabbrowser-tab[pinned][titlechanged]:hover > .tab-stack > .tab-content:not([selected="true"]) {
+  -moz-border-image: url("chrome://browser/skin/tabbrowser/tab.svg#state-ic-attn-hov") 2 15 fill repeat stretch !important;
 }
 
 .tabbrowser-tabbox {

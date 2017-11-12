@@ -2,10 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
 /* Toolbar */
 #placesToolbar {
   padding: 3px;
@@ -22,7 +18,7 @@
 
 #back-button,
 #forward-button {
-  list-style-image: url("chrome://browser/skin/Toolbar.png");
+  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
 }
 
 #back-button {
@@ -61,8 +57,6 @@
 }
 
 #placesMenu > menu:hover {
-/*  border-image: url("chrome://global/skin/icons/browser_action_hot.png") 5 fill repeat stretch; */
-  border-image: none;
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 0, 0, 0.1);
@@ -70,8 +64,6 @@
 
 #placesMenu > menu:hover:active,
 #placesMenu > menu[open="true"] {
-/*  border-image: url("chrome://global/skin/icons/browser_action_pressed.png") 5 fill repeat stretch; */
-  border-image: none;
   border-radius: 3px; 
   background-color: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.2);

@@ -55,7 +55,7 @@ a {
   font-size: 1.6em;
   font-weight: normal;
   line-height: 1.25em;
-  background: url('chrome://global/skin/icons/error_network_generic.png') no-repeat;
+  background: url('chrome://global/skin/icons/error_network_generic.svg') no-repeat;
   text-align: left;
 }
 

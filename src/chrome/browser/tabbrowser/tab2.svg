@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="32" height="30" viewBox="0 0 8.4666665 7.9375002">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #cfcfcf;
+		  stroke: #b6b4b6;
+		  fill-opacity: 0.70;
+		}
+		use[id$="-hov"] {
+		  fill: #e2e2e2;
+		  stroke: #b6b4b6;
+		  fill-opacity: 0.70;
+		}
+		use[id$="-ic"] {
+		  fill: #363636;
+		  stroke: #3D3D3D;
+		  fill-opacity: 0.70;
+		}
+		use[id$="-ic-hov"] {
+		  fill: #4f4f4f;
+		  stroke: #3D3D3D;
+		  fill-opacity: 0.70;
+		}
+		use[id$="-lw"] {
+		  fill: #fff;
+		  stroke: #000;
+		  fill-opacity: 0.20;
+		}
+	</style>
+<defs>
+  <g id="tab"
+     transform="translate(0,-289.06248)">
+    <path id="tab-shape" style="stroke-width:0.26528323px;"
+		  d="m 3.4052437,296.60275 4.8751653,-1.1e-4 -3.3714184,-7.40752 H 3.7622482 l -1.9101649,3.97041 z" />
+  </g>
+</defs>
+    <use id="state" xlink:href="#tab"/>
+    <use id="state-hov" xlink:href="#tab"/>
+    <use id="state-ic" xlink:href="#tab"/>
+    <use id="state-ic-hov" xlink:href="#tab"/>
+	<use id="state-lw" xlink:href="#tab"/>
+</svg>

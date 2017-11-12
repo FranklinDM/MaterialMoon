@@ -237,15 +237,18 @@ richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:acti
 /*** Main indicator icon ***/
 
 #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"),
+  background: -moz-image-rect(url("chrome://browser/skin/toolbar_vector.svg#state"),
                               0, 108, 18, 90) center no-repeat;
   min-width: 18px;
   min-height: 18px;
 }
 
-toolbar[brighttext] #downloads-indicator-icon,
+toolbar[brighttext] #downloads-indicator-icon {
+  background: -moz-image-rect(url("chrome://browser/skin/toolbar_vector.svg#state-lw"),
+                              0, 108, 18, 90) center no-repeat;
+}
 #main-window[privatebrowsingmode=temporary] #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-inverted.png"),
+  background: -moz-image-rect(url("chrome://browser/skin/toolbar_vector.svg#state-ic"),
                               0, 108, 18, 90) center no-repeat;
 }
 
