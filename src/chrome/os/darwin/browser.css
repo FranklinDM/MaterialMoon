@@ -1,0 +1,8 @@
+#titlebar {
+  display: none;
+}
+
+.tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) > * > * > .tab-text {
+  color: black;
+  text-shadow: none;
+}
