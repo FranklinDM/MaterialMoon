@@ -311,11 +311,13 @@ toolbar:not([brighttext]) #toolbarize-menu-button-toolbar-button > .toolbarbutto
 	
 toolbar[brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
 toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
-toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon,
-#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
-#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
-#main-window[privatebrowsingmode=temporary] toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon,
-#main-window[privatebrowsingmode=temporary] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
+toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state-lw") !important;
+}
+
+#main-window[privatebrowsingmode=temporary] toolbar:not([brighttext]) #toolbar-appmenu-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar:not([brighttext]) #appmenu-toolbar-button > .toolbarbutton-icon,
+#main-window[privatebrowsingmode=temporary] toolbar:not([brighttext]) #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state-ic") !important;
 }
 

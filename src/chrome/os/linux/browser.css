@@ -1,4 +1,4 @@
-#toolbar-menubar {
+#toolbar-menubar:not(:-moz-lwtheme) {
   -moz-appearance: menubar !important;
 }
 

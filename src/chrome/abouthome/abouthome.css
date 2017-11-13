@@ -176,6 +176,7 @@ body[narrow] #launcher[session] > .launchButton {
   height: 80px;
   margin: 15px 0;
   border-right: solid 1px #595959;
+  display: none;
 }
 
 body[narrow] #restorePreviousSessionSeparator {

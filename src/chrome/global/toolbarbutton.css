@@ -9,15 +9,11 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: toolbarbutton ::::: */
-
 toolbarbutton {
   -moz-appearance: none;
   -moz-box-align: center;
   -moz-box-pack: center;
   color: -moz-DialogText;
-}
-
-toolbarbutton {
   padding: 0 3px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -32,10 +28,6 @@ toolbarbutton:not(.titlebar-button) {
   transition-property: border-radius, background-color, border-color;
   transition-duration: 500ms;
   border-width: 5px;
-}
-
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) toolbarbutton {
-  padding: 0 1px;
 }
 
 toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-button {
@@ -71,7 +63,6 @@ toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-dropmarker {
 }
 
 toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
-    border-image: none;
     background-color: rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 0, 0, 0.1);
 }
@@ -79,14 +70,12 @@ toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):no
 toolbarbutton:hover:active:not([disabled="true"]),
 toolbarbutton[checked="true"]:not([disabled="true"]),
 toolbarbutton[open="true"]:not([disabled="true"]) {
-    border-image: none;
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(0, 0, 0, 0.2);
 }
 
 #main-window[privatebrowsingmode=temporary] toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
 toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover:-moz-lwtheme-brighttext {
-    border-image: none;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.1);
 }
