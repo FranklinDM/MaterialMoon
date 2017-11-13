@@ -11,7 +11,7 @@
 		  fill: #cecece;
 		}
 		use[id$="-wt"] {
-		  fill: #FFFFFF;
+		  fill: #fff;
 		}
 		use[id$="-lw"] {
 		  fill: #fff;

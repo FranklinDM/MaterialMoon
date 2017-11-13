@@ -308,11 +308,17 @@ toolbar:not([brighttext]) #appmenu-toolbar-button > .toolbarbutton-icon,
 toolbar:not([brighttext]) #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state") !important;
 }
-	
+
 toolbar[brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
 toolbar[brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
 toolbar[brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state-lw") !important;
+}
+
+toolbar[iconsize=large][brighttext] #toolbar-appmenu-button > .toolbarbutton-icon,
+toolbar[iconsize=large][brighttext] #appmenu-toolbar-button > .toolbarbutton-icon,
+toolbar[iconsize=large][brighttext] #toolbarize-menu-button-toolbar-button > .toolbarbutton-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#state-wt") !important;
 }
 
 #main-window[privatebrowsingmode=temporary] toolbar:not([brighttext]) #toolbar-appmenu-button > .toolbarbutton-icon,
