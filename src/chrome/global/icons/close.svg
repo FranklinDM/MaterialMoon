@@ -10,10 +10,18 @@
 		use[id$="-ic"] {
 		  fill: #cecece;
 		}
+		use[id$="-hov"] {
+		  fill: red;
+		}
+		use[id$="-hov-act"] {
+		  fill: darkred;
+		}
 	</style>
 	<defs>
 		<path id="cls-shape" d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/>
 	</defs>
     <use id="state" xlink:href="#cls-shape"/>
     <use id="state-ic" xlink:href="#cls-shape"/>
+	<use id="state-hov" xlink:href="#cls-shape"/>
+	<use id="state-hov-act" xlink:href="#cls-shape"/>
 </svg>

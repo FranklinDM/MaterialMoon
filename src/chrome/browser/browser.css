@@ -698,9 +698,11 @@ toolbar[mode="text"] toolbarbutton .toolbarbutton-text {
 }
 
 .toolbarbutton-1:not(:-moz-any(#colorzilla-navbar-button)) > .toolbarbutton-menubutton-button,
-.toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
+.toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
+.appmenu-edit-button > .toolbarbutton-icon {
   box-shadow: none !important;
   background: none !important;
+  border-color: transparent !important;
 }
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover .toolbarbutton-icon,
@@ -711,7 +713,7 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon
   border-color: var(--toolbarbutton-rg-hover);
 }
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]) .toolbarbutton-icon {
+toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]):not([open="true"]) .toolbarbutton-icon {
   border-radius: 500em;
   box-shadow: 0px 0px 0px 5px var(--toolbarbutton-rg-open);
   background-color: var(--toolbarbutton-rg-open);
@@ -1786,6 +1788,18 @@ window[sizemode="maximized"] #navigator-toolbox {
   outline: none !important;
 }
 
+#main-window[privatebrowsingmode=temporary] .close-icon {
+  list-style-image: url("chrome://global/skin/icons/close.svg#state-ic");
+}
+
+#main-window[privatebrowsingmode=temporary] .close-icon:hover {
+  list-style-image: url("chrome://global/skin/icons/close.svg#state-hov");
+}
+
+#main-window[privatebrowsingmode=temporary] .close-icon:hover:active {
+  list-style-image: url("chrome://global/skin/icons/close.svg#state-hov-act");
+}
+
 /* Tab scrollbox arrow, tabstrip new tab and all-tabs buttons */
 
 .tabbrowser-arrowscrollbox > .scrollbutton-up,
@@ -2851,6 +2865,8 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 #main-window[privatebrowsingmode=temporary] .tab-icon-image[src="chrome://global/skin/icons/warning-16.png#-moz-resolution=16,16"],
 #main-window[privatebrowsingmode=temporary] .tab-icon-image[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png#-moz-resolution=16,16"],
 #main-window[privatebrowsingmode=temporary] .tabbrowser-tab[label="about:config"] .tab-icon-image,
+#main-window[privatebrowsingmode=temporary] .tab-icon-image[src="https://assets-cdn.github.com/favicon.ico#-moz-resolution=16,16"],
+#main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="https://assets-cdn.github.com/favicon.ico"],
 #main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="chrome://global/skin/icons/warning-16.png"],
 #main-window[privatebrowsingmode=temporary] #page-proxy-favicon[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png"],
 #main-window[privatebrowsingmode=temporary] .notification-anchor-icon {

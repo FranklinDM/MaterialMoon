@@ -320,19 +320,18 @@ label[disabled="true"]:-moz-system-metric(windows-classic) {
 /* :::::: Close button icons ::::: */
 
 .close-icon {
-  border-radius: 3px;
   list-style-image: url("chrome://global/skin/icons/close.svg#state");
-  border: 5px solid transparent;
+  border: solid 4px transparent;
 }
 
 .close-icon:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.1);
+  list-style-image: url("chrome://global/skin/icons/close.svg#state-hov");
+  background: none;
 }
 
 .close-icon:hover:active {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-color: rgba(0, 0, 0, 0.2);
+  list-style-image: url("chrome://global/skin/icons/close.svg#state-hov-act");
+  background: none;
 }
 
 @media (min-resolution: 2dppx) {

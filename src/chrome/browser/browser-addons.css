@@ -302,6 +302,15 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   border-bottom: var(--main-border-color) 1px solid !important;
 }
 
+#main-window[privatebrowsingmode=temporary] sidebarheader {
+  background-color: var(--main-navbg-color);
+}
+
+#main-window[privatebrowsingmode=temporary] sidebarheader,
+#main-window[privatebrowsingmode=temporary] #sidebars-titlebutton {
+  color: var(--general-color);
+}
+
 /* Toolbar Appmenu Button & Toolbarize */
 toolbar:not([brighttext]) #toolbar-appmenu-button > .toolbarbutton-icon,
 toolbar:not([brighttext]) #appmenu-toolbar-button > .toolbarbutton-icon,
