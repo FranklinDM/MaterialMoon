@@ -1654,11 +1654,17 @@ window[sizemode="maximized"] #navigator-toolbox {
     url(chrome://browser/skin/tabbrowser/tab2.svg#state-hov),
     url(chrome://browser/skin/tabbrowser/tab_active.svg#state),
     url(chrome://browser/skin/tabbrowser/tab.svg#state-attn-hov),
-    url(chrome://browser/skin/tabbrowser/tab.svg#state-ic-attn-hov),
-    url(chrome://browser/skin/tabbrowser/tab2.svg#state-attn-hov),
-    url(chrome://browser/skin/tabbrowser/tab2.svg#state-ic-attn-hov),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state-attn-hov);
+}
+
+#main-window[privatebrowsingmode=temporary] #tabbrowser-tabs::after {
+  content: '';
+  display: block;
+  background-image:
     url(chrome://browser/skin/tabbrowser/tab.svg#state-ic),
     url(chrome://browser/skin/tabbrowser/tab.svg#state-ic-hov),
+    url(chrome://browser/skin/tabbrowser/tab.svg#state-ic-attn-hov),
+    url(chrome://browser/skin/tabbrowser/tab2.svg#state-ic-attn-hov),
     url(chrome://browser/skin/tabbrowser/tab2.svg#state-ic),
     url(chrome://browser/skin/tabbrowser/tab2.svg#state-ic-hov),
     url(chrome://browser/skin/tabbrowser/tab_active.svg#state-ic);
