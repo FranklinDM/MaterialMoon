@@ -1,0 +1,26 @@
+<svg version="1.1" width="4" height="7" viewBox="0 0 4 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+	use:not(:target) {
+	  display: none;
+	}
+	use {
+	  fill: #505050;
+	}
+	use[id$="-ac"] {
+	  fill: #fff;
+	}
+	use[id$="-ds"] {
+	  fill: #a3a3a3;
+	}
+</style>
+<defs>
+    <path id="arrow-r" d="M 0,7 V 3.5 4e-8 L 1.9999966,1.75 4,3.5 1.9999966,5.25 Z"/>
+	<path id="arrow-l" d="M 4,7 V 3.5 0 L 2.0000034,1.75 0,3.5 2.0000034,5.25 Z"/>
+</defs>
+<use id="right" xlink:href="#arrow-r"/>
+<use id="right-ac" xlink:href="#arrow-r"/>
+<use id="right-ds" xlink:href="#arrow-r"/>
+<use id="left" xlink:href="#arrow-l"/>
+<use id="left-ac" xlink:href="#arrow-l"/>
+<use id="left-ds" xlink:href="#arrow-l"/>
+</svg>

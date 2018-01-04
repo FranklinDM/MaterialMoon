@@ -77,61 +77,61 @@ scrollcorner {
 
 scrollbarbutton[type="increment"] {
   -moz-appearance: none;
-  background-image: url("chrome://global/skin/arrow-mt/arrow-rit.gif")
+  background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#right")
 }
 
 scrollbarbutton:hover:active[type="increment"], scrollbarbutton[type="increment"][active="true"] {
-  background-image: url("chrome://global/skin/arrow-mt/arrow-rit-ha.gif")
+  background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#right-ac")
 }
 
 scrollbarbutton[type="increment"][disabled="true"] {
-  background-image: url("chrome://global/skin/arrow-mt/arrow-rit-dis.gif")
+  background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#right-ds")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {
   -moz-appearance: none;
-  background-image: url("chrome://global/skin/arrow-mt/arrow-dn.gif")
+  background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#down")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton:hover:active[type="increment"],
 scrollbar[orient="vertical"] > scrollbarbutton[type="increment"][active="true"] {
   -moz-appearance: none;
-  background-image: url("chrome://global/skin/arrow-mt/arrow-dn-ha.gif")
+  background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#down-ac")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton[type="increment"][disabled="true"] {
-  background-image: url("chrome://global/skin/arrow-mt/arrow-dn-dis.gif")
+  background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#down-ds")
 }
 
 /* ..... decrement .... */
 
 scrollbarbutton[type="decrement"] {
   -moz-appearance: none;
-   background-image: url("chrome://global/skin/arrow-mt/arrow-lft.gif")
+   background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#left")
 }
 
 scrollbarbutton:hover:active[type="decrement"],
 scrollbarbutton[type="decrement"][active="true"] {
-   background-image: url("chrome://global/skin/arrow-mt/arrow-lft-ha.gif")
+   background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#left-ac")
 }
 
 scrollbarbutton[type="decrement"][disabled="true"] {
-   background-image: url("chrome://global/skin/arrow-mt/arrow-lft-dis.gif")
+   background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#left-ds")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {
   -moz-appearance: none;
-   background-image: url("chrome://global/skin/arrow-mt/arrow-up.gif")
+   background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#up")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton:hover:active[type="decrement"],
 scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][active="true"] {
   -moz-appearance: none;
-   background-image: url("chrome://global/skin/arrow-mt/arrow-up-ha.gif")
+   background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#up-ac")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"] {
-   background-image: url("chrome://global/skin/arrow-mt/arrow-up-dis.gif")
+   background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#up-ds")
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
