@@ -73,45 +73,37 @@ a {
 #searchText {
   -moz-box-flex: 1;
   padding: 6px 8px;
-  background: #F5F5F5 padding-box;
+  background: #fff padding-box;
   border: 1px solid transparent;
-  transition-property: border, background-color, box-shadow;
-  transition-duration: 150ms;
-  border-radius: 4px;
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
+#searchText:hover,
 #searchText:focus,
 #searchText[autofocus] {
-  border: 1px solid #E0E0E0;
-  background-color: white;
-  box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 #searchSubmit {
   -moz-margin-start: -1px;
-  background: #F5F5F5 padding-box;
+  background: #fff padding-box;
   padding: 0 9px;
   border: 1px solid transparent;
   border-radius: 2px;
   cursor: pointer;
-  transition-property: background-color, border-color, box-shadow;
-  transition-duration: 150ms;
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 4px;
 }
 
-#searchText:focus + #searchSubmit,
-#searchText[autofocus] + #searchSubmit,
-#searchText + #searchSubmit:hover {
-  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-#searchText + #searchSubmit:hover:active {
-  box-shadow: inset 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
-  background-color: rgba(0, 0, 0, 0.2);
-  border-color: rgba(0, 0, 0, 0.2);
-  transition-duration: 200ms;
+#searchSubmit {
+  background-image: url("chrome://global/skin/icons/search-item.svg#state-ac");
+  background-size: 110%;
+  padding-right: 15px;
+  margin-left: -35px;
+  transform: scaleX(-1) scale(.7);
+  font-size: 0;
 }
 	
 #launcher {
@@ -175,13 +167,11 @@ body[narrow] #launcher[session] > .launchButton {
   width: 3px;
   height: 80px;
   margin: 15px 0;
-  border-right: solid 1px #595959;
   display: none;
 }
 
 body[narrow] #restorePreviousSessionSeparator {
   margin: 0 auto;
-  border-right: solid 1px #595959;
 }
 
 #restorePreviousSession {
