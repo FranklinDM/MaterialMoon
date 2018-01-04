@@ -7,7 +7,7 @@
 /* View buttons */
 
 #viewGroup > radio {
-  list-style-image: url("chrome://browser/skin/pageInfo.png");
+  list-style-image: url("chrome://browser/skin/pageInfo.svg#state");
   -moz-box-orient: vertical;
   -moz-box-align: center;
   -moz-appearance: none;
@@ -18,10 +18,12 @@
 
 #viewGroup > radio:hover {
   cursor: pointer;
+  filter: brightness(.8);
 }
 
 #viewGroup > radio[selected="true"] {
-  color: rgb(66, 133, 244);
+  list-style-image: url("chrome://browser/skin/pageInfo.svg#state-ac");
+  color: #4285F4;
   cursor: default;
 }
 
@@ -34,40 +36,20 @@
   -moz-image-region: rect(0px, 32px, 32px, 0px)
 }
 
-#generalTab[selected="true"] {
-  -moz-image-region: rect(32px, 32px, 64px, 0px)
-}
-
 #mediaTab {
   -moz-image-region: rect(0px, 64px, 32px, 32px)
-}
-
-#mediaTab[selected="true"] {
-  -moz-image-region: rect(32px, 64px, 64px, 32px)
 }
 
 #feedTab {
   -moz-image-region: rect(0px, 96px, 32px, 64px)
 }
 
-#feedTab[selected="true"] {
-  -moz-image-region: rect(32px, 96px, 64px, 64px)
-}
-
 #permTab {
   -moz-image-region: rect(0px, 128px, 32px, 96px)
 }
 
-#permTab[selected="true"] {
-  -moz-image-region: rect(32px, 128px, 64px, 96px)
-}
-
 #securityTab {
   -moz-image-region: rect(0px, 160px, 32px, 128px)
-}
-
-#securityTab[selected="true"] {
-  -moz-image-region: rect(32px, 160px, 64px, 128px)
 }
 
 deck {

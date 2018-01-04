@@ -61,7 +61,7 @@ body.private > #errorPageContainer {
 }
 
 body.private #errorTitle {
-  background-image: url("chrome://browser/skin/pb-enabled.png") !important;
+  background-image: url("chrome://browser/skin/pb-enabled.svg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   height: 128px !important;

@@ -8,8 +8,17 @@
 /* Global Styles */
 
 #BrowserPreferences radio[pane] {
-  list-style-image: url("chrome://browser/skin/preferences/Options.png"); 
+  list-style-image: url("chrome://browser/skin/preferences/preferences.svg#state");
   padding: 5px 3px 1px;
+}
+
+#BrowserPreferences radio[pane]:hover {
+  cursor: pointer;
+  filter: brightness(.8);
+}
+
+#BrowserPreferences radio[pane][selected="true"] {
+  list-style-image: url("chrome://browser/skin/preferences/preferences.svg#state-ac");
 }
 
 radio[pane=paneMain] {
@@ -41,7 +50,7 @@ radio[pane=paneAdvanced] {
 }
 
 radio[pane=paneSync] {
-  list-style-image: url("chrome://browser/skin/preferences/Options-sync.png") !important;
+  -moz-image-region: rect(0, 256px, 32px, 224px);
 }
 
 /* Applications Pane */
