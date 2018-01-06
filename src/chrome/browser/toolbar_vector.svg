@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-     width="378" height="36" viewBox="0 0 378.00424 36">
+     width="378" height="36" viewBox="0 0 378 36">
 	<style>
 		use:not(:target) {
 		  display: none;
@@ -9,13 +9,6 @@
 		}
 		use[id$="-ic"] {
 		  fill: #cecece;
-		}
-		use[id$="-lw"] {
-		  fill: #fff;
-		  filter: drop-shadow(0px 0px 1px #000);
-		}
-		use[id$="-ff"] {
-		  fill: #fff;
 		}
 	</style>
 <defs>
@@ -146,6 +139,4 @@
 </defs>
     <use id="state" xlink:href="#g1"/>
     <use id="state-ic" xlink:href="#g1"/>
-	<use id="state-lw" xlink:href="#g1"/>
-	<use id="state-ff" xlink:href="#g1"/>
 </svg>

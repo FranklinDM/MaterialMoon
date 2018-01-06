@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="32" height="30" viewBox="0 0 8.4666665 7.9375002">
+	 width="32" height="30" viewBox="0 0 32 30">
 	<style>
 		use:not(:target) {
 		  display: none;
@@ -31,11 +31,9 @@
 		}
 	</style>
 <defs>
-  <g id="tab"
-     transform="translate(0,-289.06248)">
-    <path id="tab-shape" style="stroke-width:0.26528323px;"
-		  d="m 3.4052437,296.60275 4.8751653,-1.1e-4 -3.3714184,-7.40752 H 3.7622482 l -1.9101649,3.97041 z" />
-  </g>
+    <g id="tab">
+        <path id="tab-shape" d="m12.557 28.501 18.667-.000416-12.707-28.001h-4.3219l-6.6553 14.001z"/>
+    </g>
 </defs>
     <use id="state" xlink:href="#tab"/>
     <use id="state-hov" xlink:href="#tab"/>
