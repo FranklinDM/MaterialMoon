@@ -102,7 +102,7 @@ a {
   background-size: 110%;
   padding-right: 15px;
   margin-left: -35px;
-  transform: scaleX(-1) scale(.7);
+  transform: scale(.7);
   font-size: 0;
 }
 	
@@ -163,17 +163,6 @@ body[narrow] #launcher[session] > .launchButton {
   display: none;
 }
 
-#restorePreviousSessionSeparator {
-  width: 3px;
-  height: 80px;
-  margin: 15px 0;
-  display: none;
-}
-
-body[narrow] #restorePreviousSessionSeparator {
-  margin: 0 auto;
-}
-
 #restorePreviousSession {
   max-width: none;
   font-size: 90%;
@@ -216,7 +205,7 @@ body[narrow] #restorePreviousSession {
 }
 
 #restorePreviousSession::before {
-  content: url("chrome://browser/skin/abouthome/restore-large.svg");
+  content: url("chrome://browser/skin/abouthome/restore.svg");
   height: 48px; 
   width: 48px;
   display: inline-block; /* display on same line as text label */
@@ -230,7 +219,6 @@ body[narrow] #restorePreviousSession {
 }
 
 body[narrow] #restorePreviousSession::before {
-  content: url("chrome://browser/skin/abouthome/restore.svg");
   height: 32px;
   width: 32px;
 }
