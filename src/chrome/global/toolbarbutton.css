@@ -63,21 +63,21 @@ toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-dropmarker {
 }
 
 toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 toolbarbutton:hover:active:not([disabled="true"]),
 toolbarbutton[checked="true"]:not([disabled="true"]),
 toolbarbutton[open="true"]:not([disabled="true"]) {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
 #main-window[privatebrowsingmode=temporary] toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
 toolbarbutton:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover:-moz-lwtheme-brighttext {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 toolbarbutton:hover:active:not([disabled="true"]):-moz-lwtheme-brighttext,
@@ -86,9 +86,8 @@ toolbarbutton[open="true"]:not([disabled="true"]):-moz-lwtheme-brighttext,
 #main-window[privatebrowsingmode=temporary] toolbarbutton:hover:active:not([disabled="true"]),
 #main-window[privatebrowsingmode=temporary] toolbarbutton[checked="true"]:not([disabled="true"]),
 #main-window[privatebrowsingmode=temporary] toolbarbutton[open="true"]:not([disabled="true"]) {
-    border-image: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .toolbarbutton-icon[label]:not([label=""]),
@@ -184,8 +183,4 @@ toolbarbutton[type="menu-button"] {
   border: none;
   background-color: transparent;
   width: auto;
-}
-
-.toolbarbutton-menubutton-dropmarker, .toolbarbutton-menu-dropmarker {
-  border-radius: 0px !important;
 }

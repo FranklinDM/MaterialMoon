@@ -98,12 +98,7 @@ a {
 }
 
 #searchSubmit {
-  background-image: url("chrome://global/skin/icons/search-item.svg#state-ac");
-  background-size: 110%;
-  padding-right: 15px;
-  margin-left: -35px;
-  transform: scale(.7);
-  font-size: 0;
+  display: none;
 }
 	
 #launcher {

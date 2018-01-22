@@ -75,7 +75,7 @@
 
 #clearDownloadsButton {
   padding: 1px 3px;
-  list-style-image: url("chrome://global/skin/icons/black_trash.png");
+  list-style-image: url("chrome://browser/skin/places/black_trash.png");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 

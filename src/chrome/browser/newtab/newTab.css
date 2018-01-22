@@ -62,7 +62,7 @@ input::-moz-focus-inner {
   padding: 0;
   -moz-margin-start: 8px;
   border: none;
-  list-style-image: url("chrome://global/skin/icons/close.png");
+  list-style-image: url("chrome://global/skin/icons/close_circle.svg#state");
   -moz-image-region: rect(0, 16px, 16px, 0);
   -moz-user-focus: normal;
 }
@@ -132,26 +132,38 @@ input::-moz-focus-inner {
 /* CELLS */
 .newtab-cell {
   -moz-margin-end: 20px;
-  box-shadow: 0px 2px 1px -1px rgba(167, 167, 167, 0.45);
   background-color: #FAFAFA;
-  border: 1px solid;
-  border-color: rgba(8,22,37,.12) rgba(8,22,37,.14) rgba(8,22,37,.16);
   border-radius: 3px;
-  transition: border-color 100ms ease-out;
   margin-bottom: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-property: transform, box-shadow, margin, opacity, width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newtab-cell:empty {
   border: 1px dashed;
   border-color: rgba(8,22,37,.15) rgba(8,22,37,.17) rgba(8,22,37,.19);
+  box-shadow: none;
+  cursor: unset;
 }
 
 .newtab-cell:last-child {
   -moz-margin-end: 0;
 }
 
-.newtab-cell:hover:not(:empty):not([dragged]) {
-  border-color: rgba(8,22,37,.25) rgba(8,22,37,.27) rgba(8,22,37,.3);
+.newtab-cell:hover:not(:empty):not([dragged]):not(:active) {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.newtab-cell:focus:not(:empty):not([dragged]) {
+  filter: brightness(92%);
+}
+
+.newtab-cell:active:not(:empty):not([dragged]) {
+  filter: brightness(88%);
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.12);
 }
 
 /* SITES */
@@ -161,7 +173,8 @@ input::-moz-focus-inner {
 }
 
 .newtab-site[dragged] {
-  box-shadow: 0px 2px 3px 2px rgba(167, 167, 167, 0.45);
+  filter: brightness(92%);
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.12);
   background-color: #FAFAFA;
   border-radius: 3px;
 }
@@ -201,12 +214,12 @@ input::-moz-focus-inner {
 }
 
 .newtab-control-pin {
-  background-position: -48px 0;
+  background-position: -120px 0;
   margin: -3px;
 }
 
 .newtab-control-pin[pinned] {
-  background-position: -120px 0;
+  background-position: -48px 0;
 }
 
 .newtab-control-block {
