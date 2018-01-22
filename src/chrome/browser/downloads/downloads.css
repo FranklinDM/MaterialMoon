@@ -243,11 +243,8 @@ richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:acti
   min-height: 18px;
 }
 
-toolbar[brighttext] #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/toolbar_vector.svg#state-lw"),
-                              0, 108, 18, 90) center no-repeat;
-}
-#main-window[privatebrowsingmode=temporary] #downloads-indicator-icon {
+toolbar[brighttext] #downloads-indicator-icon,
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #downloads-indicator-icon {
   background: -moz-image-rect(url("chrome://browser/skin/toolbar_vector.svg#state-ic"),
                               0, 108, 18, 90) center no-repeat;
 }

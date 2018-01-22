@@ -9,20 +9,22 @@
 }
 
 notification {
-  background: linear-gradient(#E5E5E5, #D9D9D9 97%, #B6BAC0);
+  background: #E5E5E5;
   color: black;
+  text-shadow: none;
+  box-shadow: 0px 1px var(--main-border-color) inset;
 }
 
 notification[type="info"] { 
-  background: linear-gradient(#fff2b7, #fae691 97%, #878787);
+  background: #FAE691;
 }
 
 notification[type="critical"] {
-  background: linear-gradient(#FFAEAE, #FF8F8F 97%, #878787);
+  background: #FF8F8F;
 }
 
 #sync-notifications > notification {
-  background: linear-gradient(#fff2b7, #fae691);
+  background: #FAE691;
 }
 
 .messageImage {

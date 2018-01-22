@@ -32,20 +32,21 @@ tabbox tab {
   background: transparent;
   box-shadow: none;
   border: none;
-  border-bottom: 4px solid transparent;
+  border-bottom: 2px solid transparent;
   color: #7f7f7f;
   padding: 0 10px;
   min-width: 4em;
   text-align: center;
+  transition: border-color 200ms;
 }
 
 tabbox tab:not([selected="true"]):hover {
-  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 tabbox tab[selected="true"] {
-  border-bottom: 4px solid #7f7f7f;
-  color: #333;
+  border-bottom: 2px solid #4285F4;
+  color: #4285F4;
 }
 
 tabbox .tabs-left {
