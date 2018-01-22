@@ -49,7 +49,7 @@ a {
   font-weight: normal;
   line-height: 1.25em;
   text-align: left;
-  background: url('chrome://global/skin/icons/locked_page.png') no-repeat;
+  background: url('chrome://global/skin/icons/alert.svg') no-repeat;
 }
 
 #errorLongContent {
@@ -63,18 +63,19 @@ a {
   margin: 10px 0;
 }
 
+#whatShouldIDoContent > h2 {
+	font-weight: normal;
+}
+
 #errorShortDesc > p {
   white-space: pre-wrap;
 }
 
 .expander > button {
   background: url("chrome://browser/skin/section_expanded.png") left center no-repeat !important;
-  border: none !important;
   cursor: pointer;
   padding: 0px 16px;
-  color: rgb(66, 133, 244) !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
+  color: rgb(66, 133, 244);
   font-size: .875em;
 }
 

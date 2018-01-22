@@ -107,23 +107,11 @@ button:active {
 
 /* Custom styling for 'blacklist' error class */
 
-:root.blacklist #errorPageContainer {
-  border-radius: 5px;
-  margin-top: -10px;
-  max-width: 778px;
-  min-width: 718px;
-  background-image: url(chrome://global/skin/icons/malware_icon_v2.png);
-  background-position: right 30px top 100px;
-  background-repeat: no-repeat;
-  background-color: white;
-  border: 1px solid transparent;
-  box-shadow: none;
+:root.blacklist #errorPageContainer #errorTitleText {
+  background: url(chrome://global/skin/icons/alert.svg) no-repeat;
 }
 
 :root.blacklist {
-  background: url(chrome://global/skin/icons/stripe.png) rgb(140, 0, 0);
-  background-attachment:fixed;
-  margin: 50px 10px 20px 10px !important;
 }
 
 @media (max-width: 640px), (max-height: 640px) {
