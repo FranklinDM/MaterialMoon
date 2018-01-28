@@ -457,7 +457,7 @@ toolbar[brighttext] .bookmark-item[container][livemark] {
 
 #main-window[privatebrowsingmode=temporary] .bookmark-item[container][query],
 toolbar[brighttext] .bookmark-item[container][query] {
-  list-style-image: url("chrome://browser/skin/places/query.svg#state");
+  list-style-image: url("chrome://browser/skin/places/query.svg#state-ic");
 }
 
 #main-window[privatebrowsingmode=temporary] .bookmark-item[query][tagContainer],
