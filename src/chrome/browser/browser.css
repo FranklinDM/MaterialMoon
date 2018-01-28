@@ -1073,10 +1073,8 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 
 #identity-box {
   padding: 0 3px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin: 1px 0 1px 1px;
   border: 1px solid transparent;
-  -moz-margin-start: 1px;
   transition: background 200ms;
 }
 
@@ -1087,6 +1085,7 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 #identity-box:active, #identity-box[open] {
   background: var(--urlbar-rg-open);
 }
+
 #identity-box:hover,
 #identity-box:active,
 #identity-box[open] {
@@ -1103,6 +1102,7 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   border-image: linear-gradient(transparent 15%, var(--urlbar-border-rg-color) 15%, var(--urlbar-border-rg-color) 85%, transparent 85%);
   border-image-slice: 1;
   border-left-style: none;
+  margin-right: 3px;
 }
 
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #identity-box.verifiedIdentity #identity-icon-labels,
