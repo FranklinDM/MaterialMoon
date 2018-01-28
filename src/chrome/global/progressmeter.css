@@ -11,23 +11,16 @@
 /* ::::: progressmeter ::::: */
 
 progressmeter {
-  -moz-appearance: progressbar;
-  margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-right-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-bottom-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-left-colors: ThreeDShadow -moz-Dialog;
-  background-color: -moz-Dialog;
+  -moz-appearance: none;
+  background-color: #82B1FF;
   min-width: 128px;
-  min-height: 15px;
+  min-height: 6px;
 }
 
-.progress-bar 
-{
-  -moz-appearance: progresschunk;
+.progress-bar {
+  -moz-appearance: none;
   min-width: 0px;
-  background-color: ThreeDShadow;
+  background-color: #2962FF;
 }
 
 /* ::::: statusbar progressmeter ::::: */
@@ -35,9 +28,5 @@ progressmeter {
 .progressmeter-statusbar {
   margin: 0;
   border: 0px;
-  -moz-border-top-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-right-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-bottom-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-left-colors: ThreeDHighlight -moz-Dialog;
   min-width: 96px;
 }

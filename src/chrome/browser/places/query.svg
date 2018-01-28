@@ -1,0 +1,18 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ic"] {
+		  fill: #cecece;
+		}
+	</style>
+	<defs>
+		<path id="query" d="m14.4 3.2h-6.4l-1.6-1.6h-4.8c-.88 0-1.6.72-1.6 1.6v9.6c0 .88.72 1.6 1.6 1.6h12.8c.88 0 1.6-.72 1.6-1.6v-8c0-.88-.72-1.6-1.6-1.6zm-1.648 8.8-2.352-1.376-2.352 1.376.624-2.664-2.072-1.792 2.728-.232 1.072-2.512 1.072 2.512 2.728.232-2.072 1.792z"/>
+	</defs>
+    <use id="state" xlink:href="#query"/>
+    <use id="state-ic" xlink:href="#query"/>
+</svg>

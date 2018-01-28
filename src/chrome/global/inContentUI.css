@@ -12,11 +12,32 @@
 /* Page background */
 *|*:root {
   -moz-appearance: none;
-  padding: 18px;
   color: #000;
-  background-color: #F7F7F7
+  background-color: #F7F7F7;
+  --viewport-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+					 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+					 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --viewport-background: #fff;
+  --list-border-color: #F0F0F0;
 }
 
 html|html {
   font: message-box;
+}
+
+#permissions-header,
+#header {
+  min-height: 56px;
+  -moz-padding-start: 2em;
+  -moz-padding-end: 2em;
+  background-color: #3367d6;
+  color: white;
+  transition: min-height 500ms;
+}
+
+#permissions-pagetitle,
+#tabsListHeading {
+  font-size: 140%;
+  font-weight: 600;
+  color: white;
 }

@@ -65,10 +65,16 @@ checkbox[disabled="true"] {
   -moz-image-region: rect(0, 16px, 16px, 0);
   transition-duration: 250ms;
   transition-property: transform, box-shadow;
+  border-radius: 99999em;
 }
 
 checkbox:not([disabled="true"]):hover > .checkbox-check {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .15);
+}
+
+checkbox:not([disabled="true"]):active > .checkbox-check {
+  box-shadow: rgba(0, 0, 0, .1) 0px 0px 0px 10px;
+  transition-duration: 100ms;
 }
 
 checkbox:not([disabled="true"]):hover:active > .checkbox-check {

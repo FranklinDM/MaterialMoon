@@ -2,10 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
 /* Sidebars */
 .sidebar-placesTree {
   -moz-appearance: none;
@@ -88,7 +84,7 @@ treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
 
 /* query-nodes should be styled even if they're not expandable */
 treechildren::-moz-tree-image(title, query) {
-  list-style-image: url("chrome://browser/skin/places/query.png");
+  list-style-image: url("chrome://browser/skin/places/query.svg#state");
   -moz-image-region: auto;
 }
 

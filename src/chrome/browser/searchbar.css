@@ -79,8 +79,8 @@
   list-style-image: url("chrome://global/skin/icons/search-item.svg#state-ic");
 }
 
-.search-go-button:not([checked="true"]):not([disabled="true"]):-moz-any(:active, :hover:active, [open="true"]):hover,
-.searchbar-engine-button:not([checked="true"]):not([disabled="true"]):-moz-any(:active, :hover:active, [open="true"]):hover {
+.search-go-button:not([checked="true"]):not([disabled="true"]):hover:not(:-moz-any(:active, :hover:active, [open="true"])),
+.searchbar-engine-button:not([checked="true"]):not([disabled="true"]):hover:not(:-moz-any(:active, :hover:active, [open="true"])) {
   background-color: var(--urlbar-rg-hover);
   border-color: var(--urlbar-rg-hover);
 }

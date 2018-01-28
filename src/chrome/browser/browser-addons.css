@@ -219,9 +219,9 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 }
 
 #addons-page[aios-inSidebar] #updates-container {
-  padding: none;
+  padding: 0;
   box-shadow: none;
-  margin: none;
+  margin: 0;
   border-radius: 0px;
 }
 

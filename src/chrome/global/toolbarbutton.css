@@ -19,19 +19,14 @@ toolbarbutton {
   margin-bottom: 0px;
   background: transparent;
   background-clip: padding-box;
-  border: 1px solid;
-  border-color: transparent;
+  border: 1px solid transparent;
 }
 
 toolbarbutton:not(.titlebar-button) {
   border-radius: 3px;
   transition-property: border-radius, background-color, border-color;
   transition-duration: 500ms;
-  border-width: 5px;
-}
-
-toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-button {
-  border-image: none !important;
+  /* border-width: 5px; */
 }
 
 .toolbarbutton-menubutton-button,
@@ -111,9 +106,7 @@ toolbarbutton:-moz-focusring {
 /* ::::: toolbarbutton menu ::::: */
 
 .toolbarbutton-menu-dropmarker {
-  -moz-appearance: none !important;
-  border: none !important;
-  background-color: transparent !important;
+  -moz-appearance: none;
   padding: 0;
   width: auto;
   height: auto;
@@ -124,7 +117,7 @@ toolbarbutton:-moz-focusring {
 
 toolbarbutton[type="menu-button"] {
   -moz-box-align: stretch;
-  -moz-box-orient: horizontal !important;
+  -moz-box-orient: horizontal;
 }
 
 .toolbarbutton-menubutton-button {

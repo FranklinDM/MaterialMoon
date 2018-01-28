@@ -1,0 +1,21 @@
+<svg width="32" height="16" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ic"] {
+		  fill: #cecece;
+		}
+	</style>
+	<defs>
+	  <g id="bookmarks">
+		<path d="M 8,11.2808 4.9896,13.1925 5.7856,9.5873 3.128,7.1638 6.632,6.8472 8,3.4485 l 1.368,3.3987 3.504,0.3166 -2.6576,2.4235 0.796,3.6052 M 16,6.1002 10.2472,5.5807 8,0 5.7528,5.5807 0,6.1002 4.364,10.0808 3.056,16 8,12.8607 12.944,16 11.636,10.0808 Z"/>
+		<path d="M 24,12.8614 28.944,16 27.636,10.0809 32,6.101 26.2472,5.5806 24,0 21.7528,5.5806 16,6.101 20.364,10.0809 19.056,16 Z" fill="#4285f4"/>
+	  </g>
+	</defs>
+    <use id="state" xlink:href="#bookmarks"/>
+    <use id="state-ic" xlink:href="#bookmarks"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg version="1.1" viewBox="0 0 16 16" width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #000;
+		  opacity: .87;
+		}
+	</style>
+	<defs>
+		<path id="arrow-down" d="m6.9898 2.064e-5h2.0204v12.133l5.5612-5.5612 1.4286 1.4286-8 8-8-8 1.4286-1.4286 5.5612 5.5612z"/>
+		<path id="arrow-up"   d="m6.9898 16h2.0204v-12.133l5.5612 5.5612 1.4286-1.4286-8-8-8 8 1.4286 1.4286 5.5612-5.5612z"/>
+	</defs>
+    <use id="down" xlink:href="#arrow-down"/>
+    <use id="up" xlink:href="#arrow-up"/>
+</svg>

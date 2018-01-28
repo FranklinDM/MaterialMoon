@@ -4,6 +4,10 @@
 
 @import url("chrome://global/skin/inContentUI.css");
 
+/* header */
+#permissions-pagetitle {
+  margin-top: 15px;
+}
 
 /* sites box */
 
@@ -19,7 +23,7 @@
 #sites-list {
   -moz-appearance: none;
   border: 1px solid rgba(0, 0, 0, 0.32);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #fff;
   margin: 5px 0 0 0;
 }
 
@@ -42,7 +46,9 @@
 /* permissions box */
 
 #permissions-box {
-  padding-top: 10px;
+  margin: 10px;
+  background: var(--viewport-background);
+  box-shadow: var(--viewport-shadow);
   overflow-y: auto;
 }
 
@@ -64,7 +70,8 @@
 }
 
 .pref-item {
-  margin-bottom: 10px;
+  border-bottom: 1px solid var(--list-border-color);	
+  padding: 10px 15px;
 }
 
 .pref-icon {

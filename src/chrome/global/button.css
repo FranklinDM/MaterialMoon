@@ -21,15 +21,14 @@ button {
   min-height: 24px;
   -moz-padding-start: 8px;
   -moz-padding-end: 8px;
-  padding: 5px;
+  padding: 2px;
   transition-property: background-color, border-color, box-shadow, color;
+  border: 1px solid #B1B1B1;
   transition-duration: 250ms;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, .15);
 }
 
 button:not([disabled="true"]):hover {
   background-color: #FAFAFA;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, .15);
 }
 
 button:not([disabled="true"]):hover:active,

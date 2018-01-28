@@ -42,7 +42,7 @@ menuitem[appHandlerIcon="save"] {
 
 richlistitem[appHandlerIcon="feed"],
 menuitem[appHandlerIcon="feed"] {
-  list-style-image: url("chrome://browser/skin/page-livemarks.png");
+  list-style-image: url("chrome://browser/skin/places/livemark-item.svg#state");
 }
 
 richlistitem[appHandlerIcon="plugin"],

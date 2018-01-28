@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="16" height="16" viewBox="0 0 16 16">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-wt"] {
+		  fill: #fff;
+		}
+	</style>
+	<defs>
+		<path id="search-close" d="m8 0c4.424 0 8 3.576 8 8s-3.576 8-8 8-8-3.576-8-8 3.576-8 8-8zm2.872 4-2.872 2.872-2.872-2.872-1.128 1.128 2.872 2.872-2.872 2.872 1.128 1.128 2.872-2.872 2.872 2.872 1.128-1.128-2.872-2.872 2.872-2.872z"/>
+	</defs>
+    <use id="state" xlink:href="#search-close"/>
+	<use id="state-wt" xlink:href="#search-close"/>
+</svg>

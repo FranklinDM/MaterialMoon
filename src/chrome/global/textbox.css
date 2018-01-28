@@ -68,10 +68,6 @@ textbox.plain {
 
 /* ::::: search textbox ::::: */
 
-textbox[type="search"] > .textbox-input-box {
-  margin-top: -3px;
-}
-
 textbox[type="search"],
 textbox[type="search"]:not([disabled="true"])[focused] {
   -moz-appearance: none;
@@ -79,27 +75,18 @@ textbox[type="search"]:not([disabled="true"])[focused] {
   -moz-padding-start: 34px;
   border: 1px solid transparent;
   background-image: url("chrome://global/skin/icons/search-item.svg#state");
-  background-position: center left;
+  background-position: .5em;
   background-repeat: no-repeat;
 }
 
 .textbox-search-clear {
-  list-style-image: url(chrome://global/skin/icons/Search-close.png);
+  list-style-image: url(chrome://global/skin/icons/search-close.svg#state);
   -moz-image-region: rect(0, 16px, 16px, 0);
+  margin-left: 5px;
 }
 
 .textbox-search-clear:not([disabled]) {
-  cursor: default;
-}
-
-.textbox-search-clear:not([disabled]):hover ,
-.textbox-search-icon[searchbutton]:not([disabled]):hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-.textbox-search-clear:not([disabled]):hover:active ,
-.textbox-search-icon[searchbutton]:not([disabled]):hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
+  cursor: pointer;
 }
 
 /* ::::: textboxes inside toolbarpaletteitems ::::: */

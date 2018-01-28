@@ -20,17 +20,17 @@ richlistitem {
 }
 
 richlistitem:hover {
-  background-color: #E4ECF7;
+  background-color: #EEEEEE;
 }
 
 richlistitem[selected="true"] {
-  background-color: #d0d0d0;
-  color: -moz-cellhighlighttext;
+  background-color: #F5F5F5;
+  color: #000;
 }
 
 richlistbox:focus > richlistitem[selected="true"] {
-  background-color: #BBCEE9;
-  color: -moz-cellhighlighttext;
+  background-color: #F5F5F5;
+  color: #000;
 }
 
 richlistbox[seltype="multiple"]:focus > richlistitem[current="true"] {
