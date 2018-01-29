@@ -58,8 +58,8 @@
   -moz-image-region: rect(0px, 34px, 18px, 0px) !important;
 }
 
-#main-window[privatebrowsingmode=temporary] #TabsToolbar[multibar] .tabs-newtab-button,
-#main-window[privatebrowsingmode=temporary] #TabsToolbar[multibar] #new-tab-button {
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #TabsToolbar[multibar] .tabs-newtab-button,
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #TabsToolbar[multibar] #new-tab-button {
   list-style-image: url(chrome://browser/skin/tabbrowser/n-tab_new.png) !important;
 }
 
@@ -186,14 +186,12 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 #aios-toolbox-left > #aios-toolbar {
   padding-left: 0px !important;
   padding-right: 1px !important;
-  background-color: var(--main-navbg-color) !important;
   box-shadow: -1px 0 0 0 var(--main-border-color) inset !important;
 }
 
 #aios-toolbox-right > #aios-toolbar {
   padding-left: 1px !important;
   padding-right: 1px !important;
-  background-color: var(--main-navbg-color) !important;
   box-shadow: 1px 0 0 0 var(--main-border-color) inset !important;
 }
 
@@ -201,12 +199,15 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   border-bottom: 1px solid var(--main-border-color) !important;
-  background-color: var(--main-navbg-color) !important;
 }
 
-#aios-toolbox-sidebartop2 > #aios-toolbar,
-#aios-toolbox-sidebarbottom > #aios-toolbar {
-  background-color: var(--main-navbg-color) !important;
+#aios-toggle-button:not(:-moz-lwtheme),
+#aios-toolbox-sidebartop:not(:-moz-lwtheme) > #aios-toolbar,
+#aios-toolbox-left:not(:-moz-lwtheme) > #aios-toolbar,
+#aios-toolbox-right:not(:-moz-lwtheme) > #aios-toolbar,
+#aios-toolbox-sidebartop2:not(:-moz-lwtheme) > #aios-toolbar,
+#aios-toolbox-sidebarbottom:not(:-moz-lwtheme) > #aios-toolbar {
+  background-color: var(--main-navbg-color);
 }
 
 #addons-page[aios-inSidebar] {
@@ -272,7 +273,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   border-style: solid !important;
   -moz-border-left-colors: transparent transparent !important;
   -moz-border-right-colors: var(--main-border-color) transparent !important;
-  background: var(--main-navbg-color) !important;
+  background: transparent !important;
 }
 
 #contentAreaDownloadsView #clearListButton {
