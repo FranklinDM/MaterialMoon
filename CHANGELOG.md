@@ -1,5 +1,33 @@
 # Changelog
 
+### 2.8.6
+- Improve overall browser theme appearance
+  - Use dark mode when not in brighttext
+  - Don't use gradients on notifications
+  - Use blue color on tabs (not on main window)
+  - Align URL & Search bars' button styles with current Chrome version
+  - SVGify a lot of areas (this includes toolbar icons, tab, net-error images, arrows, and others)
+- Configurable small/large icon scales
+  - By configurable, you can override any of these variables using userChrome/Stylish with your own values:
+    - __--toolbarbutton-large-is__
+    - __--toolbarbutton-small-is__
+  - and change how large the icons are (can be in use small icons mode or vice versa)
+  - Since we're using SVG now, no need to adjust tons of things just to have a large icon size!
+- Cherrypick commits from upstream PMChrome
+  - Fix window title position
+  - Add basic OS X support and add checkmark items
+  - Style menubar on Linux in lwthemes
+  - Move Windows-specific elements to winnt/browser.css
+  - Improve Linux menubar styling
+  - Improve appmenu appearance on Linux
+- Circle button animation should apply only to navigation bar
+- Page Info & Preferences window now has proper selected (blue) and hover states
+- Rewrite Add-ons Manager style
+- Improve certificate error page appearance
+- About pages style cleanup (home, memory, support, plugins)
+- Use material progress meter
+- Use material folder icon for all
+
 ### 2.8.5
 - Use native styling for context menus on Windows
 - Fixes to Win10 window implementation
