@@ -26,7 +26,7 @@ toolbarbutton:not(.titlebar-button) {
   border-radius: 3px;
   transition-property: border-radius, background-color, border-color;
   transition-duration: 500ms;
-  /* border-width: 5px; */
+  border-width: 3px;
 }
 
 .toolbarbutton-menubutton-button,

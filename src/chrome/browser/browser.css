@@ -580,34 +580,19 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #stop-button[disabled=true]:not(
   margin: 0px;
 }
 
-/* #nav-bar .toolbarbutton-1 {
-  margin: 3px 0px !important;
-}
- */
 .toolbarbutton-1 .toolbarbutton-icon {
   margin-bottom: 1px;
 }
 
 /* toolbar button on navbar */
 
-.toolbarbutton-1, toolbarbutton {
-  -moz-appearance: none;
-}
-
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):not(#addon-bar) {
   -moz-padding-start: 2px;
   -moz-padding-end: 2px;
 }
-toolbar:not([mode=text]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
-toolbar:not([mode=text]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[checked="true"]:not([disabled="true"]),
-toolbar:not([mode=text]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[open="true"]:not([disabled="true"]),
-toolbar:not([mode=text]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]),
-toolbar:not([mode=text]):not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1 {
-  background: transparent;
-  border-color: transparent;
-}
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1 .toolbarbutton-icon {
+#nav-bar .toolbarbutton-1 .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1 {
   padding: 0px;
   background: transparent;
   background-clip: padding-box;
@@ -615,6 +600,10 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon
   border-radius: 3px;
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
+}
+
+toolbar .toolbarbutton-1 {
+  border-width: 4px;
 }
 
 /* Strict icon size for PMkit 'ui/button' */
@@ -632,16 +621,12 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):-moz-lwtheme .toolbarbutton-1 {
 }
 
 toolbar[mode="text"] toolbarbutton .toolbarbutton-text {
-  margin-top: 0px!important;
-  margin-bottom: 0px!important;
-  -moz-margin-start: 2px !important;
-  -moz-margin-end: 2px !important;
+  margin: 0 2px;
 }
 
 .toolbarbutton-1 > .toolbarbutton-menubutton-button,
 .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
   padding: 0px 3px;
-  border: none !important;
 }
 
 .toolbarbutton-1:not(:-moz-any(#colorzilla-navbar-button)) > .toolbarbutton-menubutton-button,
@@ -652,15 +637,15 @@ toolbar[mode="text"] toolbarbutton .toolbarbutton-text {
   border-color: transparent !important;
 }
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover .toolbarbutton-icon,
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[checked="true"]:not([disabled="true"]) .toolbarbutton-icon,
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1[open="true"]:not([disabled="true"]) .toolbarbutton-icon {
+#nav-bar .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1[checked="true"]:not([disabled="true"]) .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1[open="true"]:not([disabled="true"]) .toolbarbutton-icon {
   border-radius: 3px;
   background-color: var(--toolbarbutton-rg-hover);
   border-color: var(--toolbarbutton-rg-hover);
 }
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#PersonalToolbar):not(#addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]):not([open="true"]) .toolbarbutton-icon {
+#nav-bar .toolbarbutton-1:hover:active:not([disabled="true"]):not([open="true"]) .toolbarbutton-icon {
   border-radius: 500em;
   box-shadow: 0px 0px 0px 5px var(--toolbarbutton-rg-open);
   background-color: var(--toolbarbutton-rg-open);
