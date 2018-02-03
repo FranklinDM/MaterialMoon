@@ -43,7 +43,7 @@
   /* accent color */
   --window-text-color: currentColor;
   /* Toolbar icons scale */
-  --toolbarbutton-large-is: 1.3; 
+  --toolbarbutton-large-is: 1.0;
   --toolbarbutton-small-is: 1.0;
 }
 
@@ -584,6 +584,11 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #stop-button[disabled=true]:not(
 
 .toolbarbutton-1 .toolbarbutton-icon {
   margin-bottom: 1px;
+}
+
+#navigator-toolbox > toolbar {
+  /* force iconsize="small" on these toolbars */
+  counter-reset: smallicons;
 }
 
 /* toolbar button on navbar */
