@@ -13,7 +13,7 @@
 }
 
 .folder-icon {
-  list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+  list-style-image: url("chrome://global/skin/icons/folder-item.svg#state") !important;
   -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
 }
 

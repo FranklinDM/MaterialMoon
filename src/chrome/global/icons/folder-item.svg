@@ -1,0 +1,24 @@
+<svg width="32" height="48" viewBox="0 0 32 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #595959;
+		}
+		use[id$="-ic"] {
+		  fill: #cecece;
+		}
+	</style>
+	<defs>
+	  <g id="shape">
+		<path d="m22.4 1.7h-4.8c-.884 0-1.592.7168-1.592 1.6l-.008 9.6c0 .8832.716 1.6 1.6 1.6h12.8c.8828 0 1.6-.7168 1.6-1.6v-8c0-.8832-.7172-1.6-1.6-1.6h-6.4z"/>
+		<path d="m22.4 17.7h-4.8c-.884 0-1.592.7168-1.592 1.6l-.008 9.6c0 .8832.716 1.6 1.6 1.6h12.8c.8828 0 1.6-.7168 1.6-1.6v-8c0-.8832-.7172-1.6-1.6-1.6h-6.4z"/>
+		<path d="m22.4 33.7h-4.8c-.884 0-1.592.7168-1.592 1.6l-.008 9.6c0 .8832.716 1.6 1.6 1.6h12.8c.8828 0 1.6-.7168 1.6-1.6v-8c0-.8832-.7172-1.6-1.6-1.6h-6.4z" opacity=".3"/>
+		<path d="m3 8v-7h5.6514l4.3486 4.6289v9.3711h-10zm9 2v-4h-4v-4h-4v12h8zm-3-7.118v2.118h2z"/>
+		<path d="m3 40v-7h5.6514l4.3486 4.6289v9.3711h-10zm9 2v-4h-4v-4h-4v12h8zm-3-7.118v2.118h2z" opacity=".3"/>
+	  </g>
+	</defs>
+    <use id="state" xlink:href="#shape"/>
+    <use id="state-ic" xlink:href="#shape"/>
+</svg>

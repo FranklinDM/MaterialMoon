@@ -107,7 +107,7 @@ radio[pane=paneSync] {
   width: 16px;
   height: 16px;
   margin: 0 2px;
-  list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+  list-style-image: url("chrome://global/skin/icons/folder-item.svg#state") !important;
   -moz-image-region: rect(0, 16px, 16px, 0);
 }
 

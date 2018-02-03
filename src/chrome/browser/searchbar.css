@@ -20,7 +20,7 @@
 .searchbar-engine-image {
   height: 16px;
   width: 16px;
-  list-style-image: url("chrome://global/skin/icons/folder-item.png");
+  list-style-image: url("chrome://global/skin/icons/folder-item.svg#state");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
   -moz-margin-start: 3px;
 }
