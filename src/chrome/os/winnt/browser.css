@@ -754,6 +754,16 @@
     #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme) {
 	  text-shadow: 0 0 .5em white, 0 0 .5em white, 0 1px 0 rgba(255,255,255,.4) !important;
 	}
+	#allTabs-panel,
+	#ctrlTab-panel {
+	  background: transparent;
+	  -moz-appearance: -moz-win-glass;
+	  border-radius: 0;
+	  border: none;
+	  font: normal 1.2em "Segoe UI";
+	  color: black;
+	  text-shadow: white -1px -1px .35em, white -1px 1px .35em, white 1px 1px .35em, white 1px -1px .35em;
+	}
   }
 
   /* ==== Windows 8/10 (flat color) styling ==== */
@@ -789,8 +799,8 @@
     
   /* Show toolbar borders on vista through win8, but not on win10 and later: */
   @media (-moz-os-version: windows-vista),          
-  (-moz-os-version: windows-win7),          
-  (-moz-os-version: windows-win8) {
+		 (-moz-os-version: windows-win7),          
+		 (-moz-os-version: windows-win8) {
      /* Vertical toolbar border */
     #main-window[sizemode=normal] #navigator-toolbox::after,
     #main-window[sizemode=normal] #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar) ,
@@ -826,17 +836,6 @@
 
   #browser-bottombox:not(:-moz-lwtheme) {
     background-clip: padding-box;
-  }
-
-  #allTabs-panel,
-  #ctrlTab-panel {
-    background: transparent;
-    -moz-appearance: -moz-win-glass;
-    border-radius: 0;
-    border: none;
-    font: normal 1.2em "Segoe UI";
-    color: black;
-    text-shadow: white -1px -1px .35em, white -1px 1px .35em, white 1px 1px .35em, white 1px -1px .35em;
   }
 
   #tab-view:-moz-lwtheme {
@@ -942,25 +941,6 @@
   #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme),
   #navigator-toolbox[tabsontop=false] > toolbar:not(#toolbar-menubar):not(:-moz-lwtheme) {
     -moz-binding: url("chrome://global/content/bindings/toolbar.xml#toolbar-drag");
-  }
-}
-
-@media (-moz-windows-compositor) {
-  #navigator-toolbox[tabsontop="true"] #toolbar-menubar:not([autohide="true"]) {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
-  #main-window[sizemode="maximized"][tabsontop="true"] #toolbar-menubar:not([autohide="true"]) {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
-  #navigator-toolbox[tabsontop=false] #toolbar-menubar:not([autohide="true"]) {
-    margin-top: 5px !important;
-    margin-bottom: 0px !important;
-  }
-  #main-window[sizemode="maximized"][tabsontop=false] #toolbar-menubar:not([autohide="true"]) {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
   }
 }
 
