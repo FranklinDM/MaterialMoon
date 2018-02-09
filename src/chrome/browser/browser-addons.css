@@ -186,19 +186,19 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 #aios-toolbox-left > #aios-toolbar {
   padding-left: 0px !important;
   padding-right: 1px !important;
-  box-shadow: -1px 0 0 0 var(--main-border-color) inset !important;
+  box-shadow: -1px 0 0 0 var(--toolbar-border-color) inset !important;
 }
 
 #aios-toolbox-right > #aios-toolbar {
   padding-left: 1px !important;
   padding-right: 1px !important;
-  box-shadow: 1px 0 0 0 var(--main-border-color) inset !important;
+  box-shadow: 1px 0 0 0 var(--toolbar-border-color) inset !important;
 }
 
 #aios-toolbox-sidebartop > #aios-toolbar {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  border-bottom: 1px solid var(--main-border-color) !important;
+  border-bottom: 1px solid var(--toolbar-border-color) !important;
 }
 
 #aios-toggle-button:not(:-moz-lwtheme),
@@ -207,7 +207,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 #aios-toolbox-right:not(:-moz-lwtheme) > #aios-toolbar,
 #aios-toolbox-sidebartop2:not(:-moz-lwtheme) > #aios-toolbar,
 #aios-toolbox-sidebarbottom:not(:-moz-lwtheme) > #aios-toolbar {
-  background-color: var(--main-navbg-color);
+  background-color: var(--toolbar-custom-color);
 }
 
 #addons-page[aios-inSidebar] {
@@ -228,7 +228,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 
 #addons-page[aios-inSidebar] #categories,
 #addons-page[aios-inSidebar] #header {
-  background: var(--main-navbg-color) !important;
+  background: var(--toolbar-custom-color) !important;
 }
 
 #addons-page[aios-inSidebar] .category-icon {
@@ -272,8 +272,9 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   border-width: 0 2px !important;
   border-style: solid !important;
   -moz-border-left-colors: transparent transparent !important;
-  -moz-border-right-colors: var(--main-border-color) transparent !important;
-  background: transparent !important;
+  -moz-border-right-colors: var(--toolbar-border-color) transparent !important;
+  background: transparent;
+  background-image: none !important;
 }
 
 #contentAreaDownloadsView #clearListButton {
@@ -300,11 +301,11 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
 }
 
 #webpanels-window #commandBar {
-  border-bottom: var(--main-border-color) 1px solid !important;
+  border-bottom: var(--toolbar-border-color) 1px solid !important;
 }
 
 #main-window[privatebrowsingmode=temporary] sidebarheader {
-  background-color: var(--main-navbg-color);
+  background-color: var(--toolbar-custom-color);
 }
 
 #main-window[privatebrowsingmode=temporary] sidebarheader,

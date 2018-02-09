@@ -1,14 +1,14 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 :root {
-  --toolbarbutton-rg-hover: rgba(0, 0, 0, 0.1);
-  --toolbarbutton-rg-open: rgba(0, 0, 0, 0.1);
+  --toolbarbutton-hover: rgba(0, 0, 0, 0.1);
+  --toolbarbutton-open: rgba(0, 0, 0, 0.1);
 }
 
 #main-window[privatebrowsingmode=temporary]:root,
 :root:-moz-lwtheme-brighttext {
-  --toolbarbutton-rg-hover: rgba(255, 255, 255, 0.1);
-  --toolbarbutton-rg-open: rgba(255, 255, 255, 0.2);
+  --toolbarbutton-hover: rgba(255, 255, 255, 0.1);
+  --toolbarbutton-open: rgba(255, 255, 255, 0.2);
 }
 
 .findbar-closebutton {
@@ -84,20 +84,20 @@ toolbarbutton[checked="true"]:not([disabled="true"]),
 toolbarbutton[open="true"]:not([disabled="true"]),
 .findbar-find-next:hover:not([disabled="true"]),
 .findbar-find-previous:hover:not([disabled="true"]) {
-  background-color: var(--toolbarbutton-rg-hover);
-  border-color: var(--toolbarbutton-rg-hover);
+  background-color: var(--toolbarbutton-hover);
+  border-color: var(--toolbarbutton-hover);
 }
 
 toolbarbutton:hover:active:not([disabled="true"]),
 .findbar-find-next:hover:active:not([disabled="true"]),
 .findbar-find-previous:hover:active:not([disabled="true"]) {
-  background-color: var(--toolbarbutton-rg-open);
-  border-color:  var(--toolbarbutton-rg-open);
+  background-color: var(--toolbarbutton-open);
+  border-color:  var(--toolbarbutton-open);
 }
 
 .findbar-find-next:hover:active:not([disabled="true"]),
 .findbar-find-previous:hover:active:not([disabled="true"]) {
-  box-shadow: 0px 0px 0px 5px var(--toolbarbutton-rg-open);
+  box-shadow: 0px 0px 0px 5px var(--toolbarbutton-open);
   border-radius: 500em;
 }
 

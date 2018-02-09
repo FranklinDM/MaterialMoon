@@ -12,7 +12,7 @@ notification {
   background: #E5E5E5;
   color: black;
   text-shadow: none;
-  box-shadow: 0px 1px var(--main-border-color) inset;
+  box-shadow: 0px 1px var(--toolbar-border-color) inset;
 }
 
 notification[type="info"] { 

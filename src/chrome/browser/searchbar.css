@@ -81,14 +81,14 @@
 
 .search-go-button:not([checked="true"]):not([disabled="true"]):hover:not(:-moz-any(:active, :hover:active, [open="true"])),
 .searchbar-engine-button:not([checked="true"]):not([disabled="true"]):hover:not(:-moz-any(:active, :hover:active, [open="true"])) {
-  background-color: var(--urlbar-rg-hover);
-  border-color: var(--urlbar-rg-hover);
+  background-color: var(--urlbar-button-hover);
+  border-color: var(--urlbar-button-hover);
 }
 
 .search-go-button:-moz-any(:active, :hover:active, [open="true"]):not([disabled="true"]),
 .searchbar-engine-button:-moz-any(:active, :hover:active, [open="true"]):not([disabled="true"]) {
-  background-color: var(--urlbar-rg-open);
-  border-color: var(--urlbar-rg-open);
+  background-color: var(--urlbar-button-open);
+  border-color: var(--urlbar-button-open);
 }
 
 .searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
