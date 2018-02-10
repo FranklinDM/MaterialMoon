@@ -1255,6 +1255,10 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   margin: 0;
   background-clip: padding-box;
   list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
+}
+
+#urlbar > toolbarbutton,
+#notification-popup-box {
   transition-property: background-color, border-color, box-shadow;
   transition-duration: 500ms;
 }
@@ -1287,12 +1291,14 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   transform: scaleX(-1);
 }
 
-#urlbar > toolbarbutton:hover {
+#urlbar > toolbarbutton:hover,
+#notification-popup-box:hover {
   background-color: var(--urlbar-button-hover);
   border-color: var(--urlbar-button-hover);
 }
 
-#urlbar > toolbarbutton:hover:active {
+#urlbar > toolbarbutton:hover:active,
+#notification-popup-box:hover:active {
   background-color: var(--urlbar-button-open);
   border-color: var(--urlbar-button-open);
 }
@@ -2143,10 +2149,10 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 
 /* Notification icon box */
 #notification-popup-box {
-  margin: 2px 0 1px;
   min-width: 26px;
   -moz-margin-end: 0;
   border-right: 1px solid var(--urlbar-border-color);
+  margin: 1px 0 1px 1px;
 }
 
 .notification-anchor-icon {
