@@ -1,5 +1,19 @@
 # Changelog
 
+### 2.8.7
+- Bring back options.png: causes blank option images for some extensions
+- Further improve lightweight themes appearance based on feedback given
+  - Stop showing the background gradient on the nav bar - it was originally intended to be able to see the toolbar images more clearly but that is no longer the case
+  - Graphical tab switcher's background is now fixed to color white, using the variable causes some bugs when on a lightweight theme
+  - Don't enforce black background on fullscreen (this allows it to be able to have persona background on fullscreen)
+- Make the graphical Ctrl+Tab switcher flat
+- Alternative download status button should change state properly
+- Rename a lot of variables and give them a better name
+- URL bar's background when unfocused is now less opaque when using a lightweight theme
+  - This can be configured with the variable '--urlbar-unfocused-background-color'
+- Notification icon now uses the same style of other URL bar buttons
+- Restore private browsing indicator on menu bar
+
 ### 2.8.6
 - Improve overall browser theme appearance
   - Use dark mode when not in brighttext
