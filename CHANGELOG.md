@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.8.7.1
+- Fix up tab border image slice on HDPI displays
+
 ### 2.8.7
 - Bring back options.png: causes blank option images for some extensions
 - Further improve lightweight themes appearance based on feedback given
