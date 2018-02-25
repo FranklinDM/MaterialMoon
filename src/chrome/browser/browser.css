@@ -1579,7 +1579,7 @@ window[sizemode="maximized"] #navigator-toolbox {
 /* Adjust tab border image slices for resolutions above 1dppx (in order to avoid blurred tabs) */
 @media not all and (max-resolution: 1dppx) {
 	.tab-content {
-		border-image-slice: 1 15 fill !important;
+		border-image-slice: 2 15 fill !important;
 	}
 }
 
