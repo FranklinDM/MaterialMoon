@@ -453,7 +453,7 @@ menuitem.bookmark-item {
 }
 
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #PlacesToolbarItems .bookmark-item[container][livemark] {
-  list-style-image: url("chrome://browser/skin/livemark-folder.svg#state-ic");
+  list-style-image: url("chrome://browser/skin/places/livemark-folder.svg#state-ic");
 }
 
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #PlacesToolbarItems .bookmark-item[container][query] {
@@ -482,7 +482,7 @@ menuitem.bookmark-item {
 }
 
 .bookmark-item[container][livemark] { 
-  list-style-image: url("chrome://browser/skin/livemark-folder.svg#state");
+  list-style-image: url("chrome://browser/skin/places/livemark-folder.svg#state");
   -moz-image-region: auto;
 }
 
