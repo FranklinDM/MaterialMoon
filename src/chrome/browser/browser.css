@@ -1585,9 +1585,10 @@ window[sizemode="maximized"] #navigator-toolbox {
 
 /* Adjust tab border image slices for resolutions above 1dppx (in order to avoid blurred tabs) */
 @media not all and (max-resolution: 1dppx) {
-	.tab-content {
-		border-image-slice: 2 15 fill !important;
-	}
+  .tab-content {
+    border-image-slice: 3 15 fill !important;
+    border-width: 3px 15px !important;
+  }
 }
 
 /* preloading hack */
