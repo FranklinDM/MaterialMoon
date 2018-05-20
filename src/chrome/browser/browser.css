@@ -43,6 +43,14 @@
   /* toolbar icons scale */
   --toolbarbutton-large-is: 1.0;
   --toolbarbutton-small-is: 1.0;
+  /* throbber colors */
+  --throbber-color: var(--throbber-busy-color);
+  --throbber-inactive-color: var(--throbber-busy-inactive-color);
+
+  --throbber-busy-color: #8E9295;
+  --throbber-busy-inactive-color: var(--throbber-color);
+  --throbber-busyprogress-color: #4285F4;
+  --throbber-busyprogress-inactive-color: transparent;
 }
 
 :root:-moz-lwtheme-brighttext,
@@ -61,6 +69,8 @@
   --urlbar-button-open: rgba(255, 255, 255, 0.2);
   --urlbar-text-color: rgba(255, 255, 255, .4);
   --urlbar-unfocused-background-color: rgba(98, 98, 98, .7);
+  --throbber-busy-color: #E4E4E4;
+  --throbber-busyprogress-color: #C6DAFC;
 }
 
 :root:-moz-lwtheme,
@@ -194,7 +204,7 @@
 }
 
 #nav-bar {
-  min-height: 36px;
+  min-height: 36.5px;
   -moz-padding-start: 4px;
   -moz-padding-end: 4px;
 }
@@ -1407,15 +1417,6 @@ toolbarseparator {
   margin: 0 3px;
 }
 
-#navigator-throbber[busy="true"] {
-  list-style-image: url("chrome://global/skin/icons/loading_16.png");
-}
-
-#navigator-throbber,
-#wrapper-navigator-throbber > #navigator-throbber {
-  list-style-image: url("chrome://global/skin/icons/notloading_16.png");
-}
-
 /* Tabstrip */
 
 #TabsToolbar {
@@ -1491,7 +1492,7 @@ window[sizemode="maximized"] #navigator-toolbox {
 
 /* Tabs */
 .tab-stack {
-  min-height: 28px !important;
+  min-height: 30px !important;
 }
 
 .tabbrowser-tab {
@@ -1656,12 +1657,51 @@ window[sizemode="maximized"] #navigator-toolbox {
   list-style-image: url("chrome://global/skin/icons/file_16.png");
 }
 
-.tab-throbber {
-  list-style-image: url("chrome://browser/skin/tabbrowser/connecting.png");
+/* Dynamic Tab & Navigator Throbber */
+.tab-throbber,
+#navigator-throbber > image {
+  content: "";
+  vertical-align: bottom;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--throbber-color);
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: 1.1s linear throbber-spin infinite;
+}
+/* Only show the throbber when on [busy] (gray) or [busy][progress] (blue)*/
+.tab-throbber:-moz-any([busy], [busy][progress]) {
+  display: inline-block;
+}
+/* Assigns the throbber's colors depending on the state */
+.tab-throbber[busy][progress] {
+  --throbber-color: var(--throbber-busyprogress-color);
+  --throbber-inactive-color: var(--throbber-busyprogress-inactive-color);
+}
+/* Custom styles for navigator throbber */
+#navigator-throbber:not([busy]) > image {
+  border-right-color: var(--throbber-busy-color);
+  --throbber-inactive-color: var(--throbber-busy-color);
+  animation-play-state: paused;
+  opacity: 0.5;
+}
+#navigator-throbber[busy] > image {
+  border-right-color: var(--throbber-busy-color);
+  --throbber-color: var(--throbber-busyprogress-color);
+  --throbber-inactive-color: var(--throbber-busyprogress-color);
 }
 
-.tab-throbber[progress] {
-  list-style-image: url("chrome://browser/skin/tabbrowser/loading.png");
+@keyframes throbber-spin {
+  0% {
+    transform: none;
+  }
+  30%, 70% {
+    border-left-color: var(--throbber-inactive-color);
+    border-top-color: var(--throbber-inactive-color);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .tab-throbber[pinned],
