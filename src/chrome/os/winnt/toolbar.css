@@ -3,10 +3,10 @@
 /* ::::: toolbox ::::: */
 
 toolbox {
-  -moz-appearance: none;
-  background-color: #F1F1F1;
-  border-top: 1px solid;
-  -moz-border-top-colors: #A9A9A9;
+  -moz-appearance: toolbox;
+  background-color: -moz-Dialog;
+  border-top: 2px solid;
+  -moz-border-top-colors: ThreeDShadow ThreeDHighlight;
 }
 
 /* ::::: toolbar & menubar ::::: */
@@ -18,8 +18,8 @@ toolbar, menubar {
 toolbar {
   min-width: 1px;
   min-height: 19px;
-  border-top: 1px solid #A9A9A9;
-  border-bottom: 1px solid #A8A8A8;
+  border-top: 1px solid ThreeDHighlight;
+  border-bottom: 1px solid ThreeDShadow;
 }
 
 toolbar:first-child, menubar {
