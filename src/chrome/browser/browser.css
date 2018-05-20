@@ -204,9 +204,15 @@
 }
 
 #nav-bar {
-  min-height: 36.5px;
+  min-height: 37px;
   -moz-padding-start: 4px;
   -moz-padding-end: 4px;
+}
+
+@media not all and (max-resolution: 1dppx) {
+  #nav-bar {
+    min-height: 36.5px;
+  }
 }
 
 #print-preview-toolbar:not(:-moz-lwtheme) {
