@@ -1,0 +1,49 @@
+.ac-comment {
+  font-size: 1.06em;
+  color: #3367D6;
+}
+.ac-url-text,
+.ac-action-text {
+  font-size: 1.06em;
+  color: #66727F;
+}
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext)  .autocomplete-richlistbox {
+  background-color: #282828;
+}
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .autocomplete-richlistitem:hover {
+  background-color: #333333;
+}
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .autocomplete-richlistitem[selected="true"] {
+  background-color: #393939;
+}
+.autocomplete-richlistitem:hover {
+  background-color: #cce5ff;
+}
+.autocomplete-richlistitem[selected="true"] {
+  background-color: #3399ff;
+}
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-comment {
+  color: #7BAAF7;
+}
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-url-text,
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-action-text {
+  color: #939393;
+}
+.autocomplete-richlistitem[selected="true"] .ac-comment {
+  color: #FFFFFF;
+}
+.autocomplete-richlistitem[selected="true"] .ac-url-text,
+.autocomplete-richlistitem[selected="true"] .ac-action-text {
+  color: #99c8ff;
+}
+.autocomplete-treebody::-moz-tree-cell-text(treecolAutoCompleteComment) {
+  color: GrayText;
+}
+.autocomplete-treebody::-moz-tree-cell-text(suggesthint, treecolAutoCompleteComment), 
+.autocomplete-treebody::-moz-tree-cell-text(suggestfirst, treecolAutoCompleteComment) {
+  color: GrayText;
+  font-size: smaller;
+}
+.autocomplete-treebody::-moz-tree-cell(suggesthint) {
+  border-top: 1px solid GrayText;
+}
