@@ -61,17 +61,11 @@ radio[disabled="true"] {
   list-style-image: url("chrome://global/skin/radio/radio.svg#state");
   -moz-image-region: rect(0, 16px, 16px, 0);
   transition-duration: 250ms;
-  transition-property: transform, filter, box-shadow;
-  border-radius: 99999em;
+  transition-property: transform, filter;
 }
 
 radio:not([disabled="true"]):hover > .radio-check-box1 {
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, .15));
-}
-
-radio:not([disabled="true"]):active > .radio-check-box1 {
-  box-shadow: rgba(0, 0, 0, .1) 0px 0px 0px 10px;
-  transition-duration: 100ms;
 }
 
 radio:not([disabled="true"]):hover:active > .radio-check-box1 {
