@@ -19,7 +19,7 @@ button {
   font: inherit;
   margin: 2px;
   min-width: 4em;
-  min-height: 28px;
+  min-height: 24px;
   -moz-padding-start: 8px;
   -moz-padding-end: 8px;
   transition-property: background-color, border-color, box-shadow, color;
