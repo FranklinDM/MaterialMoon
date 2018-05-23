@@ -80,3 +80,19 @@ checkbox:not([disabled="true"]):hover:active > .checkbox-check {
 checkbox[checked="true"] .checkbox-check {
   list-style-image: url("chrome://global/skin/checkbox/checkbox-marked.svg#state-ac");
 }
+
+/* ..... hover radii ..... */
+checkbox:not([disabled="true"])::before {
+  border-radius: 99999em;
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  transition-property: background, box-shadow;
+  transition-duration: 100ms;
+  margin-top: -8px;
+}
+checkbox:not([disabled="true"]):hover:active::before {
+  background: rgba(0, 0, 0, .1);
+  box-shadow: rgba(0, 0, 0, .1) 0px 0px 0px 10px;
+}

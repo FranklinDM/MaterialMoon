@@ -77,3 +77,19 @@ radio:not([disabled="true"]):hover:active > .radio-check-box1 {
 radio[selected="true"] > .radio-check-box1 {
   list-style-image: url("chrome://global/skin/radio/radio-marked.svg#state-ac");
 }
+
+/* ..... hover radii ..... */
+radio:not([disabled="true"]):not([pane])::before {
+  border-radius: 99999em;
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  transition-property: background, box-shadow;
+  transition-duration: 100ms;
+  margin-top: -8px;
+}
+radio:not([disabled="true"]):not([pane]):hover:active::before {
+  background: rgba(0, 0, 0, .1);
+  box-shadow: rgba(0, 0, 0, .1) 0px 0px 0px 10px;
+}
