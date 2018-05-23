@@ -14,7 +14,7 @@ input::-moz-focus-inner {
 
 /* SCROLLBOX */
 #newtab-scrollbox:not([page-disabled]) {
-  background-color: #F7F7F7;
+  background-color: #fff;
 }
 
 /* UNDO */

@@ -1,4 +1,15 @@
 <svg width="64" height="64" version="1.1" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		use:not(:target) {
+		  display: none;
+		}
+		use {
+		  fill: #DB4437;
+		}
+		use[id$="-nonfatal"] {
+		  fill: #626262;
+		}
+	</style>
     <defs>
         <linearGradient id="a">
             <stop stop-opacity=".36607" offset="0"/>
@@ -6,11 +17,13 @@
         </linearGradient>
         <linearGradient id="c" x1="168" x2="200.29" y1="227.17" y2="259.66" gradientTransform="matrix(.75 0 0 .75 -82.5 -128.91)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
         <linearGradient id="b" x1="168" x2="187.11" y1="262.07" y2="278.84" gradientTransform="matrix(.75 0 0 .75 -82.5 -128.91)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+        <g id="alert-group">
+            <path id="triangle" d="m48 6.5625-48 82.875h96z"/>
+            <path id="exclamation-shadow-top" d="m52.212 41.464 32.908 30.047 10.88 17.927h-16l-36.5-30.531v-17.443z" fill="url(#c)"/>
+            <path id="exclamation-shadow-bottom" d="m52.212 67.642 25.788 21.796h-20l-14.5-13.088v-8.7081z" fill="url(#b)"/>
+            <path id="exclamation" d="m43.5 41.464v17.443h8.7122v-17.443m-8.7122 26.178v8.7081h8.7122v-8.7081" fill="#fff"/>
+        </g>
     </defs>
-    <g id="alert-group">
-        <path id="triangle" d="m48 6.5625-48 82.875h96z" fill="#db4437"/>
-        <path id="exclamation-shadow-top" d="m52.212 41.464 32.908 30.047 10.88 17.927h-16l-36.5-30.531v-17.443z" fill="url(#c)"/>
-        <path id="exclamation-shadow-bottom" d="m52.212 67.642 25.788 21.796h-20l-14.5-13.088v-8.7081z" fill="url(#b)"/>
-        <path id="exclamation" d="m43.5 41.464v17.443h8.7122v-17.443m-8.7122 26.178v8.7081h8.7122v-8.7081" fill="#fff"/>
-    </g>
+    <use id="state" xlink:href="#alert-group"/>
+    <use id="state-nonfatal" xlink:href="#alert-group"/>
 </svg>

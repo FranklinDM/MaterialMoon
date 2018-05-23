@@ -50,6 +50,7 @@
   background: var(--viewport-background);
   box-shadow: var(--viewport-shadow);
   overflow-y: auto;
+  border-radius: var(--viewport-roundness);
 }
 
 #site-description {

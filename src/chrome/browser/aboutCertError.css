@@ -49,7 +49,7 @@ a {
   font-weight: normal;
   line-height: 1.25em;
   text-align: left;
-  background: url('chrome://global/skin/icons/alert.svg') no-repeat;
+  background: url('chrome://global/skin/icons/alert.svg#state') no-repeat;
 }
 
 #errorLongContent {

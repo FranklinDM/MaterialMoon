@@ -6,18 +6,17 @@
    == Styles used by the about:plugins page.
    ======================================================================= */
 
+@import url("chrome://global/skin/in-content/common.css");
+
 body {
-  background: #f7f7f7;
-  color: #646464;
+  background: var(--in-content-page-background);
+  color: var(--in-content-page-color);
   font: message-box;
   font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 div#outside {
- text-align: justify;
- width: 90%;
- margin-left: 5%;
- margin-right: 5%;
+  margin: 40px 48px;
 }
 
 #plugs {
@@ -46,8 +45,8 @@ dl {
 }
 
 table {
-  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
-  background-color: #fff;
+  box-shadow: var(--in-content-viewport-shadow);
+  background-color: var(--in-content-viewport-background);
   color: #000;
   font: message-box;
   text-align: start;

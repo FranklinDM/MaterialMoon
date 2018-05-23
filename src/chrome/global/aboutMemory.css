@@ -7,9 +7,11 @@
  * mobile/android/themes/core/aboutMemory.css.
  * Desktop-specific stuff is at the bottom of this file.
  */
+ 
+@import url("chrome://global/skin/inContentUI.css");
 
 html {
-  background: #F7F7F7;
+  background: var(--page-background);
   font-size: 12px;
   font-family: 'Segoe UI', Tahoma, sans-serif !important;
 }

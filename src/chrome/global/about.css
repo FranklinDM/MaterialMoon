@@ -1,9 +1,11 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
+@import url("chrome://global/skin/inContentUI.css");
 
 html {
-  background: #f7f7f7;
+  background: var(--page-background);
   padding: 0 1em;
   font-size: 12px;
   font-family: 'Segoe UI', Tahoma, sans-serif;

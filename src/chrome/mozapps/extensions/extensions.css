@@ -396,6 +396,11 @@
   margin: 10px;
 }
 
+#list-view,
+#view-port-container {
+  border-radius: var(--viewport-roundness);
+}
+
 
 /*** discover view ***/
 

@@ -33,7 +33,7 @@ textbox[type="search"] {
 
 #tabs-display {
   background: #fff url(chrome://browser/skin/sync-bg.png) repeat-x;
-  background-color: #F7F7F7;
+  background-color: var(--page-background);
 }
 
 #headers {

@@ -6,7 +6,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #warningScreen {
-  background: #f7f7f7;
+  background: var(--page-background);
   font-family: 'Segoe UI', Tahoma, sans-serif;
   color: #646464;
   font-size: 15px;

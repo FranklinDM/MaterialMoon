@@ -108,7 +108,7 @@ button:active {
 /* Custom styling for 'blacklist' error class */
 
 :root.blacklist #errorPageContainer #errorTitleText {
-  background: url(chrome://global/skin/icons/alert.svg) no-repeat;
+  background: url(chrome://global/skin/icons/alert.svg#state) no-repeat;
 }
 
 :root.blacklist {

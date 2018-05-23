@@ -10,4 +10,7 @@ skin	os          		MMChrome 			chrome/os/darwin/ 							os=Darwin
 override chrome://browser/skin/appmenu-icon.png chrome://browser/skin/appmenu-icon-flat.png os=WINNT osversion>=6.2
 override chrome://browser/skin/pb-icon.png 		chrome://browser/skin/pb-icon-flat.png 		os=WINNT osversion>=6.2
 
-override chrome://browser/skin/autocomplete_27.css chrome://browser/skin/blank.css          appversion>=28.0.0a1
+# PM 28 compatibility
+override chrome://browser/skin/autocomplete_27.css                      chrome://browser/skin/blank.css                             appversion>=28.0.0a1
+override chrome://browser/skin/permissions/aboutPermissions.css         chrome://browser/skin/preferences/aboutPermissions.css      appversion>=28.0.0a1
+override chrome://mozapps/skin/aboutNetworking.css                      chrome://mozapps/skin/aboutNetworking_28.css                appversion>=28.0.0a1

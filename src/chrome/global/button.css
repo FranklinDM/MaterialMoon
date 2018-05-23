@@ -13,17 +13,16 @@
 button {
   -moz-appearance: none;
   background-color: #FFFFFF;
+  border: 1px solid #e0e0e0;
   border-radius: 2px;
-  color: rgb(34, 34, 34);
+  color: #000;
   font: inherit;
-  margin: 2px 2px 3px 2px;
+  margin: 2px;
   min-width: 4em;
-  min-height: 24px;
+  min-height: 28px;
   -moz-padding-start: 8px;
   -moz-padding-end: 8px;
-  padding: 2px;
   transition-property: background-color, border-color, box-shadow, color;
-  border: 1px solid #B1B1B1;
   transition-duration: 250ms;
 }
 

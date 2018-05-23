@@ -3,16 +3,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 html {
-  background: #f7f7f7;
-  color: #646464;
+  background: var(--in-content-page-background);
+  color: var(--in-content-page-color);
   font: message-box;
 }
 
 body {
-  width: 90%;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 40px 48px;
 }
 
 .page-subtitle {
@@ -28,8 +25,8 @@ body {
 }
 
 table {
-  box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
-  background-color: #fff;
+  box-shadow: var(--in-content-viewport-shadow);
+  background-color: var(--in-content-viewport-background);
   color: #000;
   font: message-box;
   text-align: start;
@@ -80,7 +77,7 @@ td {
   overflow: hidden;
 }
 
-#reset-box {
+#action-box {
   background-color: #fff;
   box-shadow: 0px 2px 1px 0px rgba(167, 167, 167, 0.45);
   border: solid 1px lightgray;
@@ -94,7 +91,17 @@ td {
   width: 30%;
 }
 
-#reset-box:-moz-dir(rtl) {
+#contents {
+  clear: right;
+}
+
+#action-box,
+#reset-box,
+#safe-mode-box {
+  display: none;
+}
+
+#action-box:-moz-dir(rtl) {
   float: left;
 }
 
@@ -102,7 +109,19 @@ td {
   margin-top: 0;
 }
 
-#reset-box > button {
+#action-box button {
   display: block;
-  margin: auto;
+}
+
+#verify-place-result {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
