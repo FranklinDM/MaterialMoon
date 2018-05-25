@@ -68,7 +68,6 @@ notification[type="critical"] .messageImage,
   border: none !important;
   box-shadow: none !important;
   background: none !important;
-  border-image: none !important;
 }
 
 popupnotification .messageCloseButton {

@@ -64,14 +64,19 @@
   --tabun-text-color: #DCDEDF;
   --urlbar-background-color: #626262;
   --urlbar-border-color: #383838;
-  --general-color: #FFFFFF;
-  --toolbarbutton-hover: rgba(255, 255, 255, 0.1);
-  --toolbarbutton-open: rgba(255, 255, 255, 0.2);
   --urlbar-button-open: rgba(255, 255, 255, 0.2);
   --urlbar-text-color: rgba(255, 255, 255, .4);
   --urlbar-unfocused-background-color: rgba(98, 98, 98, .7);
   --throbber-busy-color: #E4E4E4;
   --throbber-busyprogress-color: #C6DAFC;
+}
+
+:root:-moz-lwtheme-brighttext,
+#main-window[privatebrowsingmode=temporary]:root,
+#TabsToolbar[brighttext] {
+  --toolbarbutton-hover: rgba(255, 255, 255, 0.1);
+  --toolbarbutton-open: rgba(255, 255, 255, 0.2);    
+  --general-color: #FFFFFF;
 }
 
 :root:-moz-lwtheme,
@@ -206,14 +211,17 @@
 
 #nav-bar {
   min-height: 37px;
-  -moz-padding-start: 4px;
-  -moz-padding-end: 4px;
 }
 
 @media not all and (max-resolution: 1dppx) {
   #nav-bar {
     min-height: 36.5px;
   }
+}
+
+toolbar:not(#addon-bar) {
+  -moz-padding-start: 4px;
+  -moz-padding-end: 4px;
 }
 
 #print-preview-toolbar:not(:-moz-lwtheme) {
@@ -249,7 +257,6 @@
   border: 1px solid transparent;
   padding: 2px;
   background: transparent;
-  border-image: none !important;
 }
 
 .appmenu-edit-button:not([disabled]):hover {
@@ -593,10 +600,6 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #stop-button[disabled=true]:not(
   margin: 0px;
 }
 
-.toolbarbutton-1 .toolbarbutton-icon {
-  margin-bottom: 1px;
-}
-
 #navigator-toolbox > toolbar {
   /* force iconsize="small" on these toolbars */
   counter-reset: smallicons;
@@ -604,13 +607,7 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #stop-button[disabled=true]:not(
 
 /* toolbar button on navbar */
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):not(#addon-bar) {
-  -moz-padding-start: 2px;
-  -moz-padding-end: 2px;
-}
-
-#nav-bar .toolbarbutton-1 .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1 {
+#nav-bar[mode=icons] .toolbarbutton-1 > :-moz-any(.toolbarbutton-icon, .toolbarbutton-menubutton-dropmarker) {
   padding: 0px;
   background: transparent;
   background-clip: padding-box;
@@ -620,14 +617,50 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):not(#addon-bar) {
   transition-duration: 500ms;
 }
 
-toolbar .toolbarbutton-1 {
-  border-width: 4px;
+#nav-bar[mode=icons] .toolbarbutton-1 {
+  padding: 0px;
+  margin: 0px 1.5px;
+  background: transparent;
+  border: none;
+  border-radius: 3px;
 }
+
+#nav-bar[mode=icons] .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover > :-moz-any(.toolbarbutton-icon, .toolbarbutton-menubutton-dropmarker),
+#nav-bar[mode=icons] .toolbarbutton-1[checked="true"]:not([disabled="true"]) > :-moz-any(.toolbarbutton-icon, .toolbarbutton-menubutton-dropmarker),
+#nav-bar[mode=icons] .toolbarbutton-1[open="true"]:not([disabled="true"]) > :-moz-any(.toolbarbutton-icon, .toolbarbutton-menubutton-dropmarker),
+#TabsToolbar .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
+#TabsToolbar .toolbarbutton-1[checked="true"]:not([disabled="true"]),
+#TabsToolbar .toolbarbutton-1[open="true"]:not([disabled="true"]) {
+  border-radius: 3px;
+  background-color: var(--toolbarbutton-hover);
+  border-color: var(--toolbarbutton-hover);
+}
+
+#nav-bar[mode=icons] .toolbarbutton-1:hover:active:not([disabled="true"]):not([open="true"]) > .toolbarbutton-icon {
+  border-radius: 500em;
+  box-shadow: 0px 0px 0px 5px var(--toolbarbutton-open);
+  background-color: var(--toolbarbutton-open);
+  border-color: var(--toolbarbutton-open);
+  transition-duration: 200ms;
+}
+
+#nav-bar[mode=icons] .toolbarbutton-1:hover:active:not([disabled="true"]):not([open="true"]) > .toolbarbutton-menubutton-dropmarker,
+#TabsToolbar .toolbarbutton-1:hover:active:not([disabled="true"]):not([open="true"]) {
+  background-color: var(--toolbarbutton-open);
+  border-color: var(--toolbarbutton-open);
+}
+
+#nav-bar:-moz-any([mode=full], [mode=text]) .toolbarbutton-menubutton-button,
+#nav-bar:-moz-any([mode=full], [mode=text]) .toolbarbutton-menubutton-dropmarker {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 
 /* Strict icon size for PMkit 'ui/button' */
 toolbarbutton[pmkit-button="true"] > .toolbarbutton-badge-container > .toolbarbutton-icon {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 }
 
 toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(:-moz-lwtheme) .toolbarbutton-1 {
@@ -645,30 +678,6 @@ toolbar[mode="text"] toolbarbutton .toolbarbutton-text {
 .toolbarbutton-1 > .toolbarbutton-menubutton-button,
 .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
   padding: 0px 3px;
-}
-
-.toolbarbutton-1:not(:-moz-any(#colorzilla-navbar-button)) > .toolbarbutton-menubutton-button,
-.toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
-.appmenu-edit-button > .toolbarbutton-icon {
-  box-shadow: none !important;
-  background: none !important;
-  border-color: transparent !important;
-}
-
-#nav-bar .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1[checked="true"]:not([disabled="true"]) .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1[open="true"]:not([disabled="true"]) .toolbarbutton-icon {
-  border-radius: 3px;
-  background-color: var(--toolbarbutton-hover);
-  border-color: var(--toolbarbutton-hover);
-}
-
-#nav-bar .toolbarbutton-1:hover:active:not([disabled="true"]):not([open="true"]) .toolbarbutton-icon {
-  border-radius: 500em;
-  box-shadow: 0px 0px 0px 5px var(--toolbarbutton-open);
-  background-color: var(--toolbarbutton-open);
-  border-color: var(--toolbarbutton-open);
-  transition-duration: 200ms;
 }
 
 .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
@@ -997,11 +1006,11 @@ window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back
 
 window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"][mode=icons],
 #nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button[forwarddisabled] + #urlbar-container > #urlbar:-moz-locale-dir(ltr) {
-  margin-left: -30px !important;
+  margin-left: -23px !important;
 }
 window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"][mode=icons],
 #nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button[forwarddisabled] + #urlbar-container > #urlbar:-moz-locale-dir(rtl) {
-  margin-right: -30px !important;
+  margin-right: -23px !important;
 }
 
 .urlbar-textbox-container {
@@ -1087,12 +1096,6 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 
 #identity-box:active, #identity-box[open] {
   background: var(--urlbar-button-open);
-}
-
-#identity-box:hover,
-#identity-box:active,
-#identity-box[open] {
-  border-image: none !important;
 }
 
 #identity-box.verifiedDomain #identity-icon-labels {
@@ -1348,7 +1351,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 /* ::::: content area ::::: */
 
 #sidebar {
-  background-color: Window;
+  background-color: #F0F0F0;
 }
 
 #sidebar-title {
@@ -1388,49 +1391,6 @@ toolbarseparator {
 window[sizemode="maximized"] #navigator-toolbox {
   -moz-margin-start: -1px !important;
   -moz-margin-end: -1px !important;
-}
-
-:-moz-any(#TabsToolbar, #addon-bar) .toolbarbutton-1,
-:-moz-any(#TabsToolbar, #addon-bar) toolbarbutton,
-:-moz-any(#TabsToolbar, #addon-bar) toolbarbutton.bookmark-item,
-:-moz-any(#TabsToolbar, #addon-bar) toolbarbutton.chevron,
-.tabbrowser-arrowscrollbox > .scrollbutton-up,
-.tabbrowser-arrowscrollbox > .scrollbutton-down {
-  -moz-appearance: none;
-  border-style: none;
-  padding: 0 3px;
-  box-shadow: none !important;
-}
-
-:-moz-any(#TabsToolbar, #addon-bar) .toolbarbutton-1:not([open="true"]):not([checked="true"]):not([disabled="true"]):not(:active):hover,
-:-moz-any(#TabsToolbar, #addon-bar) .toolbarbutton-1:hover:active:not([disabled="true"]),
-:-moz-any(#TabsToolbar, #addon-bar) .toolbarbutton-1[checked="true"]:not([disabled="true"]),
-:-moz-any(#TabsToolbar, #addon-bar) .toolbarbutton-1[open="true"]:not([disabled="true"]),
-:-moz-any(#TabsToolbar, #addon-bar) toolbarbutton.bookmark-item:hover,
-:-moz-any(#TabsToolbar, #addon-bar) toolbarbutton.chevron:hover,
-:-moz-any(#TabsToolbar, #addon-bar) toolbarbutton.bookmark-item[open="true"],
-:-moz-any(#TabsToolbar, #addon-bar) toolbarbutton.chevron[open="true"],
-.tabbrowser-arrowscrollbox > .scrollbutton-up:not([disabled]):hover,
-.tabbrowser-arrowscrollbox > .scrollbutton-down:not([disabled]):hover {
-  background-image: linear-gradient(rgba(232,232,232,0), rgba(213,213,213,.7)),
-                    linear-gradient(transparent,  rgba(0,0,0,.15) 30%),
-                    linear-gradient(transparent, rgba(0,0,0,.15) 30%) !important;
-  background-position: 1px -1px, 0 -1px, 100% -1px !important;
-  background-size: calc(100% - 2px) 100%, 1px 100%, 1px 100% !important;
-  background-repeat: no-repeat !important;
-  box-shadow: none !important;
-}
-
-#TabsToolbar toolbarbutton {
-  border: none;
-  box-shadow: none;
-  background: none;
-  border-image: none;
-}
-
-#TabsToolbar .toolbarbutton-1,
-#addon-bar toolbarbutton {
-  border-image: none !important;
 }
 
 #TabsToolbar > toolbarbutton .box-inherit.toolbarbutton-menubutton-button .toolbarbutton-icon {
@@ -2097,7 +2057,6 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
   border: none !important;
   box-shadow: none !important;
   background: none !important;
-  border-image: none !important;
 }
 
 .popup-progress-cancel:hover,
@@ -2768,7 +2727,6 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
   -moz-appearance: none;
   border-style: none;
   margin: 0 !important;
-  border-image: none !important;
 }
 
 #close-button {

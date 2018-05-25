@@ -19,7 +19,6 @@
   border: none !important;
   box-shadow: none !important;
   background: none !important;
-  -moz-border-image: none !important;
 }
 
 #main-window[privatebrowsingmode=temporary] .findbar-closebutton {
