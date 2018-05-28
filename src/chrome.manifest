@@ -14,3 +14,4 @@ override chrome://browser/skin/pb-icon.png 		chrome://browser/skin/pb-icon-flat.
 override chrome://browser/skin/autocomplete_27.css                      chrome://browser/skin/blank.css                             appversion>=28.0.0a1
 override chrome://browser/skin/permissions/aboutPermissions.css         chrome://browser/skin/preferences/aboutPermissions.css      appversion>=28.0.0a1
 override chrome://mozapps/skin/aboutNetworking.css                      chrome://mozapps/skin/aboutNetworking_28.css                appversion>=28.0.0a1
+override chrome://global/skin/alerts/alert.css                          chrome://global/skin/alerts/alert_28.css                    appversion>=28.0.0a1
