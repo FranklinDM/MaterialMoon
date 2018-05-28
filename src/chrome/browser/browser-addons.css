@@ -201,7 +201,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   border-bottom: 1px solid var(--toolbar-border-color) !important;
 }
 
-#aios-toggle-button:not(:-moz-lwtheme),
+#aios-toggle-button:not(:-moz-lwtheme):not([invHover="true"]),
 #aios-toolbox-sidebartop:not(:-moz-lwtheme) > #aios-toolbar,
 #aios-toolbox-left:not(:-moz-lwtheme) > #aios-toolbar,
 #aios-toolbox-right:not(:-moz-lwtheme) > #aios-toolbar,
@@ -268,7 +268,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   padding: 0px !important;
 }
 
-#aios-toggle-button {
+#aios-toggle-button:not([invHover="true"]) {
   border-width: 0 2px !important;
   border-style: solid !important;
   -moz-border-left-colors: transparent transparent !important;
