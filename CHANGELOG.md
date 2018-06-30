@@ -1,7 +1,16 @@
 # Changelog
 
-### 2.8.7.1
+### 2.8.8
+- Initial support for Pale Moon 28
+  - This is the last version that will support Pale Moon 27
+  - Serves as a transition release (when you update to PM 28, this theme will not be disabled)
 - Fix up tab border image slice on HDPI displays
+- Fix missing RSS icons in bookmarks toolbar
+- Replace throbber with better looking CSS equivalent
+  - Invisible in PM28 for some reason, but this will be fixed in the next PM28-only release
+- Restore native styling for toolbar(box) on Windows
+- Don't override TGS toggle button when on invisible mode
+- Fix up toolbar button styling on different areas (reduce margin/padding)
 
 ### 2.8.7
 - Bring back options.png: causes blank option images for some extensions
