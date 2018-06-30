@@ -9,10 +9,11 @@
 }
 
 input::-moz-focus-inner { 
-  border:0;
+  border: 0;
 }
 
 /* SCROLLBOX */
+body,
 #newtab-scrollbox:not([page-disabled]) {
   background-color: #fff;
 }
@@ -198,6 +199,25 @@ input::-moz-focus-inner {
   line-height: 24px;
 }
 
+.newtab-site[pinned] .newtab-title {
+  padding-inline-start: 16px;
+}
+
+.newtab-site[pinned] .newtab-title::before {
+  background-image: url(chrome://browser/skin/newtab/pinned.png);
+  content: "";
+  left: 2px;
+  top: 2px;
+  position: absolute;
+  width: 12px;
+  height: 20px;
+}
+
+.newtab-site[pinned] .newtab-title:dir(rtl)::before {
+  left: auto;
+  right: 2px;
+}
+
 /* CONTROLS */
 .newtab-control {
   width: 24px;
@@ -218,6 +238,17 @@ input::-moz-focus-inner {
   margin: -3px;
 }
 
+.newtab-control-pin:dir(ltr),
+.newtab-control-block:dir(rtl) {
+  left: 4px;
+}
+
+.newtab-control-block:dir(ltr),
+.newtab-control-pin:dir(rtl) {
+  right: 4px;
+}
+
+.newtab-site[pinned] .newtab-control-pin,
 .newtab-control-pin[pinned] {
   background-position: -48px 0;
 }
@@ -225,4 +256,53 @@ input::-moz-focus-inner {
 .newtab-control-block {
   margin: -4px;
   background-position: -144px 0;
+}
+
+.newtab-undo-button {
+  -moz-appearance: none;
+  color: -moz-nativehyperlinktext;
+  color: rgb(0,102,204);
+  cursor: pointer;
+  padding: 0;
+  margin: 0 4px;
+  border: 0;
+  background: transparent;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.newtab-undo-button > .button-box {
+  padding: 0;
+}
+
+#newtab-undo-close-button {
+  -moz-appearance: none;
+  padding: 0;
+  border: none;
+  -moz-user-focus: normal;
+}
+
+#searchLogoContainer > * {
+  transform: scale(.75);
+}
+
+/* PM28 search style */
+#searchText {
+  -moz-box-flex: 1;
+  background: #fff padding-box;
+  border: 1px solid transparent;
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+#searchText:hover,
+#searchText:focus,
+#searchText[autofocus] {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border-color: transparent;
+}
+
+#searchSubmit {
+  display: none;
 }
