@@ -201,7 +201,7 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   border-bottom: 1px solid var(--toolbar-border-color) !important;
 }
 
-#aios-toggle-button:not(:-moz-lwtheme):not([invHover="true"]),
+#aios-toggle-button:not(:-moz-lwtheme):not([invHover]),
 #aios-toolbox-sidebartop:not(:-moz-lwtheme) > #aios-toolbar,
 #aios-toolbox-left:not(:-moz-lwtheme) > #aios-toolbar,
 #aios-toolbox-right:not(:-moz-lwtheme) > #aios-toolbar,
