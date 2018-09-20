@@ -7,11 +7,6 @@
 
   body {
     color: #eee;
-    background-image: black;
-  }
-
-  img.decoded {
-    background: white;
-    color: #222;
+    background: #2E3B41;
   }
 }
