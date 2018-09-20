@@ -1374,6 +1374,15 @@ toolbarseparator {
   margin: 0 3px;
 }
 
+#navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://global/skin/icons/loading_16.png");
+}
+
+#navigator-throbber,
+#wrapper-navigator-throbber > #navigator-throbber {
+  list-style-image: url("chrome://global/skin/icons/notloading_16.png");
+}
+
 /* Tabstrip */
 
 #TabsToolbar {
@@ -1564,26 +1573,14 @@ window[sizemode="maximized"] #navigator-toolbox {
 
 .tab-throbber,
 .tab-icon-image {
-  -moz-margin-start: 1px;
-  -moz-margin-end: 4px;
+  -moz-margin-start: 2px;
+  -moz-margin-end: 6px;
   margin-top: 0;
   width: 16px;
   height: 16px;
   list-style-image: url("chrome://global/skin/icons/file_16.png");
 }
 
-/* Dynamic Tab & Navigator Throbber */
-.tab-throbber,
-#navigator-throbber > image {
-  content: "";
-  vertical-align: bottom;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--throbber-color);
-  border-right-color: transparent;
-  border-radius: 50%;
-  animation: 1.1s linear throbber-spin infinite;
-}
 /* Only show the throbber when on [busy] (gray) or [busy][progress] (blue)*/
 .tab-throbber:-moz-any([busy], [busy][progress]) {
   display: inline-block;
@@ -1592,18 +1589,6 @@ window[sizemode="maximized"] #navigator-toolbox {
 .tab-throbber[busy][progress] {
   --throbber-color: var(--throbber-busyprogress-color);
   --throbber-inactive-color: var(--throbber-busyprogress-inactive-color);
-}
-/* Custom styles for navigator throbber */
-#navigator-throbber:not([busy]) > image {
-  border-right-color: var(--throbber-busy-color);
-  --throbber-inactive-color: var(--throbber-busy-color);
-  animation-play-state: paused;
-  opacity: 0.5;
-}
-#navigator-throbber[busy] > image {
-  border-right-color: var(--throbber-busy-color);
-  --throbber-color: var(--throbber-busyprogress-color);
-  --throbber-inactive-color: var(--throbber-busyprogress-color);
 }
 
 @keyframes throbber-spin {
@@ -1620,9 +1605,18 @@ window[sizemode="maximized"] #navigator-toolbox {
 }
 
 .tab-throbber[pinned],
-.tab-icon-image[pinned] {
+.tab-icon-image[pinned],
+.tabs-newtab-button > .toolbarbutton-icon {
   -moz-margin-start: 3px;
   -moz-margin-end: 3px;
+}
+
+.tab-throbber {
+  list-style-image: url("chrome://browser/skin/tabbrowser/connecting.png");
+}
+
+.tab-throbber[progress] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/loading.png");
 }
 
 .tabbrowser-tab:not([pinned]):not([busy]) .tab-icon-image:not([src]),
