@@ -1572,8 +1572,18 @@ window[sizemode="maximized"] #navigator-toolbox {
   list-style-image: url("chrome://global/skin/icons/file_16.png");
 }
 
-/* Dynamic Tab & Navigator Throbber */
-.tab-throbber,
+/* Tab Throbber */
+.tab-throbber {
+  width: 16px;
+  height: 16px;
+}
+.tab-throbber[busy] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/throbber_gray.svg");
+}
+.tab-throbber[busy][progress] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/throbber_active.svg");
+}
+/* Dynamic Navigator Throbber */
 #navigator-throbber > image {
   content: "";
   vertical-align: bottom;
@@ -1584,16 +1594,6 @@ window[sizemode="maximized"] #navigator-toolbox {
   border-radius: 50%;
   animation: 1.1s linear throbber-spin infinite;
 }
-/* Only show the throbber when on [busy] (gray) or [busy][progress] (blue)*/
-.tab-throbber:-moz-any([busy], [busy][progress]) {
-  display: inline-block;
-}
-/* Assigns the throbber's colors depending on the state */
-.tab-throbber[busy][progress] {
-  --throbber-color: var(--throbber-busyprogress-color);
-  --throbber-inactive-color: var(--throbber-busyprogress-inactive-color);
-}
-/* Custom styles for navigator throbber */
 #navigator-throbber:not([busy]) > image {
   border-right-color: var(--throbber-busy-color);
   --throbber-inactive-color: var(--throbber-busy-color);

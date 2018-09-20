@@ -1,0 +1,76 @@
+<svg version="1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="16px" height="16px" viewBox="0 0 16 16">
+
+  <style type="text/css">
+      .qp-circular-loader {
+        width: 16px;
+        height: 16px;
+      }
+      .qp-circular-loader-path {
+        stroke-dasharray: 32.4;
+        stroke-dashoffset: 32.4;
+      }
+
+      /* SVG elements seem to have a different default origin */
+      .qp-circular-loader, .qp-circular-loader * {
+        transform-origin: 50% 50%;
+      }
+
+      /* Rotating the whole thing */
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .qp-circular-loader {
+        animation-duration: 1568.63ms;
+        animation-iteration-count: infinite;
+        animation-name: rotate;
+        animation-timing-function: linear;
+      }
+
+      /* Filling and unfilling the arc */
+      @keyframes fillunfill {
+        from {
+          stroke-dashoffset: 32.3;
+        }
+        50% {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: -31.9;
+        }
+      }
+      @keyframes rot {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+      @keyframes colors {
+        from {
+          stroke: #4285f4;
+        }
+        to {
+          stroke: #4285f4;
+        }
+      }
+      .qp-circular-loader-path {
+        animation-duration: 1333ms, 5332ms, 5332ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite, infinite, infinite;
+        animation-name: fillunfill, rot, colors;
+        animation-play-state: running, running, running;
+        animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1), steps(4), linear;
+      }
+
+  </style>
+
+  <g class="qp-circular-loader">
+    <path class="qp-circular-loader-path" fill="none" 
+          d="M 8,1.125 A 6.875,6.875 0 1 1 1.125,8" stroke-width="2.25"
+          stroke-linecap="round"></path>
+  </g>
+</svg>
