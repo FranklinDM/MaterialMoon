@@ -52,6 +52,9 @@
   --throbber-busy-inactive-color: var(--throbber-color);
   --throbber-busyprogress-color: #4285F4;
   --throbber-busyprogress-inactive-color: transparent;
+  
+  --toolbarbutton-image: url("chrome://browser/skin/toolbar_vector.svg#state");
+  --toolbarbutton-inverted-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
 }
 
 :root:-moz-lwtheme-brighttext,
@@ -551,16 +554,20 @@ menuitem.bookmark-item {
 
 /* ::::: primary toolbar buttons ::::: */
 
+#go-button,
+#urlbar > toolbarbutton,
 .toolbarbutton-1 {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
+  list-style-image: var(--toolbarbutton-image);
 }
 
 toolbar[brighttext] .toolbarbutton-1 {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
+  list-style-image: var(--toolbarbutton-inverted-image);
 }
 
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #go-button,
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #urlbar > toolbarbutton,
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) :-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button, #webrtc-status-button):not(:-moz-any(#alltabs-button,#tabview-button,#sync-button[status])) > .toolbarbutton-icon {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
+  list-style-image: var(--toolbarbutton-inverted-image);
 }
 
 /* large toolbar button scale (we're now using svg, life's a lot easier with it!) */
@@ -748,11 +755,11 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #reload-button[disabled=true]:no
 }
 
 #home-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
+  list-style-image: var(--toolbarbutton-image);
 }
 
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #home-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
+  list-style-image: var(--toolbarbutton-inverted-image);
 }
 
 #home-button.bookmark-item > .toolbarbutton-icon {
@@ -780,11 +787,11 @@ toolbar:not(#toolbar-menubar):not(#TabsToolbar) #reload-button[disabled=true]:no
 }
 
 #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
+  list-style-image: var(--toolbarbutton-image);
 }
 
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
+  list-style-image: var(--toolbarbutton-inverted-image);
 }
 
 #print-button {
@@ -1221,7 +1228,6 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   padding: 0 4px;
   margin: 0;
   background-clip: padding-box;
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state");
 }
 
 #urlbar > toolbarbutton,
@@ -1238,10 +1244,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   margin: 1px;
 }
 
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #urlbar > toolbarbutton {
-  list-style-image: url("chrome://browser/skin/toolbar_vector.svg#state-ic");
-}
-
+#go-button,
 #urlbar-go-button {
   -moz-image-region: rect(0, 36px, 16px, 18px);
 }
