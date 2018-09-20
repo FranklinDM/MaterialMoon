@@ -1,5 +1,13 @@
 # Changelog
 
+### 3.0.0
+- Drop support for Pale Moon 27
+- Fix inconsistent favicons in Saved Logins
+- Fix missing tab throbber
+- Update global styling, media controls, and devtools style
+- Fix missing Go button
+- Use variables for toolbar images
+
 ### 2.8.8
 - Initial support for Pale Moon 28
   - This is the last version that will support Pale Moon 27
