@@ -1,5 +1,8 @@
 # Changelog
 
+### 3.0.1
+- Add tab audio indicator (for Pale Moon 28.3+)
+
 ### 3.0.0
 - Drop support for Pale Moon 27
 - Fix inconsistent favicons in Saved Logins
