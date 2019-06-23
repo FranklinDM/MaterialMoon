@@ -1143,7 +1143,7 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 #page-proxy-favicon {
   width: 16px;
   height: 16px;
-  -moz-image-region: rect(0, 18px, 18px, 0);
+  -moz-image-region: rect(0, 16px, 16px, 0);
   list-style-image: url(chrome://browser/skin/info-item.svg#state);
 }
 
