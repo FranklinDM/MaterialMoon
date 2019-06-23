@@ -15,7 +15,7 @@ scrollbar {
   -moz-appearance: none;
   -moz-binding: url("chrome://global/content/bindings/scrollbar.xml#scrollbar");
   cursor: default;
-  background-color: #f1f1f1;
+  background-color: #F2F2F2;
 }
 
 scrollbar[orient="vertical"] 
@@ -28,7 +28,7 @@ scrollbar[orient="vertical"]
 thumb {
   -moz-appearance: none;
   min-height: 8px;
-  border: 2px solid #f1f1f1;
+  border: 2px solid #F2F2F2;
   background-color: #c1c1c1;
 }
 
@@ -48,7 +48,7 @@ thumb[orient="horizontal"] {
 /* ::::: scrollbar button ::::: */
 
 scrollbarbutton {
-  background-color: #f1f1f1;
+  background-color: #F2F2F2;
   min-width: 16px;
   min-height: 16px;
   background-position: center center;

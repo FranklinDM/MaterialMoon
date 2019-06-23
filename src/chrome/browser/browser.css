@@ -14,7 +14,7 @@
 
 :root {
   /* toolbar colors */
-  --toolbar-custom-color: #F1F1F1;
+  --toolbar-custom-color: #F2F2F2;
   --toolbar-border-color: #B5B5B5;
   /* fine tuning gradients when lwthemes are in use */
   --toolbar-gradient1-color: rgba(241, 241, 241, 1);
@@ -263,7 +263,7 @@ toolbar:not(#addon-bar) {
 }
 
 .appmenu-edit-button:not([disabled]):hover {
-  background-color: #F1F1F1;
+  background-color: #F2F2F2;
 }
 
 .appmenu-edit-button:not([disabled]):hover:active {
