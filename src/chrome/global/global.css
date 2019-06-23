@@ -333,9 +333,3 @@ label[disabled="true"]:-moz-system-metric(windows-classic) {
   list-style-image: url("chrome://global/skin/icons/close.svg#state-hov-act");
   background: none;
 }
-
-@media (min-resolution: 2dppx) {
-  .close-icon {
-	transform: scale(1.3);
-  }
-}

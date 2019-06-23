@@ -1681,12 +1681,6 @@ window[sizemode="maximized"] #navigator-toolbox {
   list-style-image: url("chrome://global/skin/icons/close_circle.svg#state-ic") !important;
 }
 
-@media (min-resolution: 2dppx) {
-  .tab-close-button.close-icon {
-	  transform: scale(1.3);
-  }
-}
-
 .tab-close-button:focus {
   outline: none !important;
 }
