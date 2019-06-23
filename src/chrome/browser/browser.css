@@ -595,13 +595,6 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button]) {
   opacity: .3;
 }
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #back-button[disabled=true]:not(:-moz-lwtheme) > .toolbarbutton-icon,
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #forward-button[disabled=true]:not(:-moz-lwtheme) > .toolbarbutton-icon,
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #reload-button[disabled=true]:not(:-moz-lwtheme) > .toolbarbutton-icon,
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #stop-button[disabled=true]:not(:-moz-lwtheme) > .toolbarbutton-icon {
-  opacity: 1;
-}
-
 #TabsToolbar .toolbarbutton-1,
 #TabsToolbar toolbarbutton:not([type="menu-button"]) {
   margin: 0px;
@@ -701,7 +694,7 @@ toolbar[mode=full] .toolbarbutton-1 > .toolbarbutton-menubutton-button {
   min-width: 57px;
 }
 
-toolbar toolbarbutton[disabled=true] .toolbarbutton-text {
+.toolbarbutton-1[disabled=true] .toolbarbutton-text {
   color: #999;
 }
 
@@ -712,18 +705,10 @@ toolbar toolbarbutton[disabled=true] .toolbarbutton-text {
   -moz-padding-start: 1px !important;
 }
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #back-button[disabled=true]:not(:-moz-lwtheme) {
-  -moz-image-region: rect(18px, 18px, 36px, 0);
-}
-
 #forward-button,
 window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"][mode=icons], #nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button > #forward-button {
   -moz-image-region: rect(0, 36px, 18px, 18px);
   -moz-padding-start: 1px !important;
-}
-
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #forward-button[disabled=true]:not(:-moz-lwtheme) {
-  -moz-image-region: rect(18px, 36px, 36px, 18px);
 }
 
 #back-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
@@ -741,17 +726,9 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
   -moz-padding-start: 1px !important;
 }
 
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #stop-button[disabled=true]:not(:-moz-lwtheme) {
-  -moz-image-region: rect(18px, 54px, 36px, 36px);
-}
-
 #reload-button {
   -moz-image-region: rect(0, 72px, 18px, 54px);
   -moz-padding-start: 1px !important;
-}
-
-toolbar:not(#toolbar-menubar):not(#TabsToolbar) #reload-button[disabled=true]:not(:-moz-lwtheme) {
-  -moz-image-region: rect(18px, 72px, 36px, 54px);
 }
 
 #home-button.bookmark-item {
