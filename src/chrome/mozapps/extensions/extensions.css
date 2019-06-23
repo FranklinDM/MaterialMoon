@@ -637,7 +637,11 @@
 }
 
 .addon[active="false"] {
-  background-color: #e0e0e0;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.addon[active="false"][selected] {
+  opacity: 1;
 }
 
 .addon-view[active="false"],
@@ -886,10 +890,6 @@ setting {
 
 #detail-controls {
   margin-bottom: 1em;
-}
-
-#detail-view[active="false"]:not([pending]):not([notification]) {
-  background-color: rgb(224, 224, 224);
 }
 
 setting[first-row="true"] {
