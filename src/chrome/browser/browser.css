@@ -1368,6 +1368,10 @@ toolbarseparator {
   margin-bottom: -2px;
 }
 
+window[sizemode="maximized"] #TabsToolbar[tabsontop="true"] {
+  padding-top: 1px;
+}
+
 window[sizemode="maximized"] #navigator-toolbox {
   -moz-margin-start: -1px !important;
   -moz-margin-end: -1px !important;
@@ -2483,6 +2487,7 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
 #addon-bar {
   border-top: 1px solid var(--toolbar-border-color);	
 }
+
 #addon-bar:not(:-moz-lwtheme) {
   border-bottom-style: none;
   background: var(--toolbar-custom-color);
@@ -2807,11 +2812,32 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
   transform: scaleX(-1);
 }
 
-/* Tab Icons workaround */
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .tab-icon-image[src="chrome://global/skin/icons/warning-16.png#-moz-resolution=16,16"],
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .tab-icon-image[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png#-moz-resolution=16,16"],
+/* Chrome apparently uses thin borders at higher DPIs */
+@media not all and (max-resolution: 1dppx) {
+  #urlbar,
+  .searchbar-textbox {
+    border-width: 0.5px;
+  }
+  
+  #main-window[tabsontop="true"] #nav-bar,
+  #main-window[tabsontop="false"] #nav-bar:not(:-moz-lwtheme),
+  #main-window > #nav-bar[collapsed=true]:not([customizing]) + toolbar,
+  #main-window > #nav-bar[collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar,
+  #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] ~ #PersonalToolbar,
+  #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] + toolbar {
+    border-width: 0.5px;
+  }
+  
+  #addon-bar {
+    border-top-width: 0.5px;
+  }
+}
+
+/* Tab icons workaround */
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .tab-icon-image[src="chrome://global/skin/icons/warning-16.png"],
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .tab-icon-image[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png"],
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .tabbrowser-tab[label="about:config"] .tab-icon-image,
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .tab-icon-image[src="https://assets-cdn.github.com/favicon.ico#-moz-resolution=16,16"],
+#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .tab-icon-image[src="https://assets-cdn.github.com/favicon.ico"],
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #page-proxy-favicon[src="https://assets-cdn.github.com/favicon.ico"],
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #page-proxy-favicon[src="chrome://global/skin/icons/warning-16.png"],
 #main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #page-proxy-favicon[src="chrome://mozapps/skin/extensions/extensionGeneric-16.png"],

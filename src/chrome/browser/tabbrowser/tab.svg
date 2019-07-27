@@ -52,7 +52,7 @@
 	</style>
 <defs>
     <g id="tab">
-        <path id="tab-shape" d="m.79472 28.498 30.426-.000416-12.743-27.997h-4.3343z"/>
+        <path id="tab-shape" d="m.79472 28.498 30.426-.000416-12.743-27.997h-4.3343z" stroke-width="0.5"/>
     </g>
 </defs>
     <use id="state" xlink:href="#tab"/>

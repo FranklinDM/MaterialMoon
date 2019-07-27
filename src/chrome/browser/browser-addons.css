@@ -201,6 +201,18 @@ window[tabsontop] .tabbrowser-tabs:not([highlightProtected]) > .tabbrowser-tab[p
   border-bottom: 1px solid var(--toolbar-border-color) !important;
 }
 
+@media not all and (max-resolution: 1dppx) {
+  #aios-toolbox-left > #aios-toolbar {
+    box-shadow: -0.5px 0 0 0 var(--toolbar-border-color) inset !important;
+  }
+  #aios-toolbox-right > #aios-toolbar {
+    box-shadow: 0.5px 0 0 0 var(--toolbar-border-color) inset !important;
+  }
+  #aios-toolbox-sidebartop > #aios-toolbar {
+    border-bottom: 0.5px solid var(--toolbar-border-color) !important;
+  }
+}
+
 #aios-toggle-button:not(:-moz-lwtheme):not([invHover]),
 #aios-toolbox-sidebartop:not(:-moz-lwtheme) > #aios-toolbar,
 #aios-toolbox-left:not(:-moz-lwtheme) > #aios-toolbar,

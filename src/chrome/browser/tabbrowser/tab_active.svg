@@ -5,8 +5,8 @@
 		  display: none;
 		}
 		use {
-		  fill: #f1f1f1;
-		  stroke: #b6b4b6;
+		  fill: #F2F2F2;
+		  stroke: #B5B5B5;
 		  fill-opacity: 1;
 		}
 		use[id$="-ic"] {
@@ -16,14 +16,14 @@
 		}
 		use[id$="-lw"] {
 		  fill: #f1f1f1;
-		  stroke: #b6b4b6;
+		  stroke: #B5B5B5;
 		  fill-opacity: 1;
 		}
 	</style>
 <defs>
     <g id="tab">
         <path d="M -2,32 34,31.936 V 28.4 H 31 L 17.997,0.681 H 13.6634 L 0.6684,28.4 h -2.6686 z"/>
-        <path d="m33.121 28.499h-1.9994l-12.741-27.993h-4.3336l-13.347 27.993h-1.9997" stroke-width="1"/>
+        <path id="tab-shape" d="m33.121 28.499h-1.9994l-12.741-27.993h-4.3336l-13.347 27.993h-1.9997" stroke-width="0.5"/>
     </g>
 </defs>
     <use id="state" xlink:href="#tab"/>
