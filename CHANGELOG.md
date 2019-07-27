@@ -1,5 +1,16 @@
 # Changelog
 
+### 3.0.2
+- Add style for reader and narrator components
+- Reduce border width to 0.5px in some browser elements (affects HiDPI)
+- Remove custom disabled icons for back/forward/stop/reload
+- Update main toolbar image (adjustments to some icons)
+- Adjust image region of the page proxy favicon
+- Adjust info item icon appearance
+- Adjust main toolbar background and URL bar border color
+- Don't scale up the close icon (affects HiDPI)
+- Add 1 pixel gap between tabs and screen edge when window is maximized
+
 ### 3.0.1
 - Add tab audio indicator (for Pale Moon 28.3+)
 
