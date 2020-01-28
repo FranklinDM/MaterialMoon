@@ -1,5 +1,8 @@
 # Changelog
 
+### 3.0.3
+- Initial support for Pale Moon 29
+
 ### 3.0.2
 - Add style for reader and narrator components
 - Reduce border width to 0.5px in some browser elements (affects HiDPI)
