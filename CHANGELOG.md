@@ -1,5 +1,8 @@
 # Changelog
 
+### 3.1.3
+- Initial support for Pale Moon 33
+
 ### 3.1.2
 - Initial support for Pale Moon 32
 
