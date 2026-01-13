@@ -3,7 +3,7 @@
     <Description about="urn:mozilla:install-manifest">
         <!-- General -->
         <em:id>materialmoon@franklindm</em:id>
-        <em:version>dev-build</em:version>
+        <em:version>3.2.0</em:version>
         <em:type>4</em:type>
         <em:internalName>MMChrome</em:internalName>
         <em:skinnable>true</em:skinnable>
