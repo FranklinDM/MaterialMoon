@@ -373,10 +373,11 @@
     -moz-appearance: -moz-win-exclude-glass;
   }
 
-/* ==== Windows 10 styling ==== */
+/* ==== Windows 10/11 styling ==== */
 
-  @media (-moz-os-version: windows-win10) {
-    /* Draw XUL caption buttons and background on Win10 */
+  @media (-moz-os-version: windows-win10),
+         (-moz-os-version: windows-win11) {
+    /* Draw XUL caption buttons and background on Win10/11 */
     @media (-moz-windows-accent-color-applies: 0) {
       /* Default styling for when no accent color is applied */
       #main-window:not(:-moz-window-inactive):not(:-moz-lwtheme) {
@@ -761,7 +762,7 @@
 	}
   }
 
-  /* ==== Windows 8/10 (flat color) styling ==== */
+  /* ==== Windows 8/10/11 (flat color) styling ==== */
   @media (-moz-os-version: windows-win8) {
     /* Use a light text styling on dark window frames */
     :root[darkwindowframe="true"]:not(:-moz-lwtheme):not(:-moz-window-inactive) {
@@ -770,7 +771,8 @@
   }
 
   @media (-moz-os-version: windows-win8),
-         (-moz-os-version: windows-win10) {
+         (-moz-os-version: windows-win10),
+         (-moz-os-version: windows-win11) {
     /* Fade text stylings on window inactivity */
     :root:not(:-moz-lwtheme):-moz-window-inactive {
       --window-text-color: ThreeDShadow;
