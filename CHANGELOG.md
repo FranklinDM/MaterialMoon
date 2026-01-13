@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.2.0
+- Initial support for Pale Moon 34
+- Use standard :is() pseudo-class instead of :-moz-any()
+
 ### 3.1.3
 - Initial support for Pale Moon 33
 
