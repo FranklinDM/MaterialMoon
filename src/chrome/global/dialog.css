@@ -25,7 +25,7 @@ dialog {
   box-shadow: none;
 }
 
-.dialog-button:-moz-any(:hover, :hover:active) {
+.dialog-button:is(:hover, :hover:active) {
   box-shadow: none;
 }
 

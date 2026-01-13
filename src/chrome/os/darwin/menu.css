@@ -152,7 +152,7 @@ menulist[editable="true"] > menupopup > menucaption {
   -moz-appearance: none;
 }
 
-menulist[editable="true"] > menupopup > :-moz-any(menuitem, menucaption) > .menu-iconic-left {
+menulist[editable="true"] > menupopup > :is(menuitem, menucaption) > .menu-iconic-left {
   display: none;
 }
 

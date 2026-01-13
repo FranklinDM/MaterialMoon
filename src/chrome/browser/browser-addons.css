@@ -58,8 +58,8 @@
   -moz-image-region: rect(0px, 34px, 18px, 0px) !important;
 }
 
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #TabsToolbar[multibar] .tabs-newtab-button,
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #TabsToolbar[multibar] #new-tab-button {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #TabsToolbar[multibar] .tabs-newtab-button,
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #TabsToolbar[multibar] #new-tab-button {
   list-style-image: url(chrome://browser/skin/tabbrowser/n-tab_new.png) !important;
 }
 

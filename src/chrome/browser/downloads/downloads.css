@@ -244,7 +244,7 @@ richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:acti
 }
 
 toolbar[brighttext] #downloads-indicator-icon,
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #downloads-indicator-icon {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) #downloads-indicator-icon {
   background: -moz-image-rect(url("chrome://browser/skin/toolbar_vector.svg#state-ic"),
                               0, 108, 18, 90) center no-repeat;
 }

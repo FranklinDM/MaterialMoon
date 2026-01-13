@@ -112,24 +112,24 @@ treechildren.private-autocomplete-treebody::-moz-tree-cell-text(selected) {
   color: #3367D6;
 }
 
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) panel[type="autocomplete-richlistbox"],
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .private-autocomplete-richlistbox {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) panel[type="autocomplete-richlistbox"],
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .private-autocomplete-richlistbox {
   background-color: #282828;
 }
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) panel[type="autocomplete-richlistbox"] {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) panel[type="autocomplete-richlistbox"] {
   border-color: var(--toolbar-border-color);
 }
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .private-autocomplete-richlistitem:hover {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .private-autocomplete-richlistitem:hover {
   background-color: #333333;
 }
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .private-autocomplete-richlistitem[selected="true"] {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .private-autocomplete-richlistitem[selected="true"] {
   background-color: #393939;
 }
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-comment {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-comment {
   color: #7BAAF7;
 }
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-url-text,
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-action-text {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-url-text,
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .ac-action-text {
   color: #939393;
 }
 

@@ -48,7 +48,7 @@
   margin-left: -2px;
 }
 
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .searchbar-dropmarker-image {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .searchbar-dropmarker-image {
   list-style-image: url("chrome://global/skin/icons/mn_dropdown.svg#state-ic");
 }
 
@@ -75,18 +75,18 @@
   margin-right: -1px;
 }
 
-#main-window:-moz-any([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .search-go-button {
+#main-window:is([privatebrowsingmode=temporary], :-moz-lwtheme-brighttext) .search-go-button {
   list-style-image: url("chrome://global/skin/icons/search-item.svg#state-ic");
 }
 
-.search-go-button:not([checked="true"]):not([disabled="true"]):hover:not(:-moz-any(:active, :hover:active, [open="true"])),
-.searchbar-engine-button:not([checked="true"]):not([disabled="true"]):hover:not(:-moz-any(:active, :hover:active, [open="true"])) {
+.search-go-button:not([checked="true"]):not([disabled="true"]):hover:not(:is(:active, :hover:active, [open="true"])),
+.searchbar-engine-button:not([checked="true"]):not([disabled="true"]):hover:not(:is(:active, :hover:active, [open="true"])) {
   background-color: var(--urlbar-button-hover);
   border-color: var(--urlbar-button-hover);
 }
 
-.search-go-button:-moz-any(:active, :hover:active, [open="true"]):not([disabled="true"]),
-.searchbar-engine-button:-moz-any(:active, :hover:active, [open="true"]):not([disabled="true"]) {
+.search-go-button:is(:active, :hover:active, [open="true"]):not([disabled="true"]),
+.searchbar-engine-button:is(:active, :hover:active, [open="true"]):not([disabled="true"]) {
   background-color: var(--urlbar-button-open);
   border-color: var(--urlbar-button-open);
 }
