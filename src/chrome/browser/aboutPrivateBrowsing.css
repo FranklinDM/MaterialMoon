@@ -83,7 +83,7 @@ body.normal > #errorPageContainer {
 }
 
 #startPrivateBrowsingDesc > button {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 #moreInfo:-moz-dir(rtl) {

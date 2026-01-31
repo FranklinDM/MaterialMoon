@@ -70,7 +70,7 @@
 #downloadsSummary,
 richlistitem[type="download"] {
   height: 4em;
-  -moz-padding-end: 0;
+  padding-inline-end: 0;
   color: inherit;
 }
 
@@ -114,7 +114,7 @@ richlistitem[type="download"]:last-child {
 }
 
 .downloadTypeIcon {
-  -moz-margin-end: 8px;
+  margin-inline-end: 8px;
   /* Prevent flickering when changing states. */
   height: 32px;
   width: 32px;
@@ -155,12 +155,12 @@ richlistitem[type="download"]:last-child {
 }
 
 .downloadButton {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 0;
   min-height: 0;
   margin: 0;
   margin-top: -20px;
-  -moz-margin-start: -1px;
+  margin-inline-start: -1px;
   border: none;
   background: transparent;
   padding: 5px;
@@ -344,7 +344,7 @@ toolbar[brighttext] #downloads-indicator-counter,
 }
 
 #downloads-indicator-progress > .progress-bar {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 0;
   min-height: 0;
   /* The background-clip: border-box; and background-image: none; are there to expand the background-color behind the border */
@@ -356,7 +356,7 @@ toolbar[brighttext] #downloads-indicator-counter,
 }
 
 #downloads-indicator-progress > .progress-remainder {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 0;
   min-height: 0;
   background-image: linear-gradient(#505050, #575757);

@@ -3,7 +3,7 @@
 /* ::::: toolbox ::::: */
 
 toolbox {
-  -moz-appearance: toolbox;
+  appearance: toolbox;
   background-color: -moz-Dialog;
   border-top: 2px solid;
   -moz-border-top-colors: ThreeDShadow ThreeDHighlight;
@@ -12,7 +12,7 @@ toolbox {
 /* ::::: toolbar & menubar ::::: */
 
 toolbar, menubar {
-  -moz-appearance: toolbar;
+  appearance: toolbar;
 }
 
 toolbar {
@@ -33,7 +33,7 @@ toolbar:first-child, menubar {
 menubar:-moz-lwtheme,
 toolbox:-moz-lwtheme,
 toolbar:-moz-lwtheme {
-  -moz-appearance: none;
+  appearance: none;
   background: none;
   border-style: none;
 }
@@ -41,7 +41,7 @@ toolbar:-moz-lwtheme {
 /* ::::: toolbar decorations ::::: */
 
 toolbarseparator {
-  -moz-appearance: separator;
+  appearance: separator;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   border-left: 3px solid transparent;

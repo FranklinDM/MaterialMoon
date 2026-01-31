@@ -3,20 +3,20 @@
 /* ::::: toolbox ::::: */
 
 toolbox {
-  -moz-appearance: toolbox;
+  appearance: toolbox;
 }
 
 /* ::::: menubar & toolbar ::::: */
 
 toolbar {
-  -moz-appearance: toolbar;
+  appearance: toolbar;
   min-width: 1px;
   min-height: 20px;
   padding: 2px 0px;
 }
 
 menubar, toolbar[type="menubar"] {
-  -moz-appearance: menubar;
+  appearance: menubar;
   min-width: 1px;
   min-height: 20px;
   padding: 1px 0px;
@@ -24,18 +24,18 @@ menubar, toolbar[type="menubar"] {
 
 menubar:-moz-lwtheme,
 toolbar:-moz-lwtheme {
-  -moz-appearance: none;
+  appearance: none;
 }
 
 /* in browser.xul, the menubar is inside a toolbar... */
 toolbaritem > menubar {
-  -moz-appearance: none;
+  appearance: none;
 }
 
 /* ::::: toolbar decorations ::::: */
 
 toolbarseparator {
-  -moz-appearance: separator !important;
+  appearance: separator !important;
   margin : 0;
   border: 0;
   min-width: 2px;

@@ -44,7 +44,7 @@ html|html,
 xul|page,
 xul|window {
   font: message-box;
-  -moz-appearance: none;
+  appearance: none;
   background-color: var(--in-content-page-background);
   color: var(--in-content-page-color);
 }
@@ -70,7 +70,7 @@ html|hr {
 }
 
 xul|caption {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -106,7 +106,7 @@ xul|prefpane > xul|*.content-box {
 /* groupboxes */
 
 xul|groupbox {
-  -moz-appearance: none;
+  appearance: none;
   border: none;
   margin: 15px 0 0;
   padding-inline-start: 0;
@@ -124,7 +124,7 @@ xul|groupbox xul|description {
 /* tabpanels and tabs */
 
 xul|tabpanels {
-  -moz-appearance: none;
+  appearance: none;
   font-size: 1.25rem;
   line-height: 22px;
   border: none;
@@ -146,7 +146,7 @@ xul|*.tabs-right {
 }
 
 xul|tab {
-  -moz-appearance: none;
+  appearance: none;
   margin-top: 0;
   padding: 4px 20px;
   min-height: 44px;
@@ -183,7 +183,7 @@ html|button {
 
 /* xul buttons and menulists */
 *|button {
-  -moz-appearance: none;
+  appearance: none;
   background-color: #FFFFFF;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
@@ -192,8 +192,8 @@ html|button {
   margin: 2px;
   min-width: 4em;
   min-height: 28px;
-  -moz-padding-start: 8px;
-  -moz-padding-end: 8px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
   transition-property: background-color, border-color, box-shadow, color;
   transition-duration: 250ms;
 }
@@ -246,7 +246,7 @@ html|input[type="checkbox"] + html|label {
 }
 
 html|input[type="checkbox"] + html|label::before {
-  -moz-appearance: none;
+  appearance: none;
   width: 16px;
   height: 16px;
   margin-inline-end: 10px;
@@ -282,7 +282,7 @@ html|*.toggle-container-with-text {
 /* Category List */
 
 *|*#categories {
-  -moz-appearance: none;
+  appearance: none;
   background-color: var(--in-content-category-background);
   padding-top: 39px;
   margin: 0;
@@ -290,7 +290,7 @@ html|*.toggle-container-with-text {
 }
 
 *|*.category {
-  -moz-appearance: none;
+  appearance: none;
   color: var(--in-content-category-text);
   font-size: 120%;
   font-weight: 600;
@@ -321,7 +321,7 @@ html|*.toggle-container-with-text {
   padding-bottom: 2px;
   padding-inline-start: 9px;
   margin: 0;
-  -moz-user-select: none;
+  user-select: none;
 }
 
 *|*.category-icon {
@@ -344,7 +344,7 @@ html|*.toggle-container-with-text {
   font-weight: normal;
   line-height: 40px;
   margin: 0;
-  -moz-user-select: none;
+  user-select: none;
 }
 
 /* Use a 2px border so that selected row highlight is still visible behind

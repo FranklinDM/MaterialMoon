@@ -7,7 +7,7 @@
 #tabs-display,
 #tabsList {
   background-color: transparent;
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -42,16 +42,16 @@ textbox[type="search"] {
   margin-top: 0px;
   width: 105em;
   height: 56px;
-  -moz-margin-start: 2em;
-  -moz-margin-end: 2em;
+  margin-inline-start: 2em;
+  margin-inline-end: 2em;
 }
 
 #tabsListHeading {
-  -moz-margin-start: 40px;
+  margin-inline-start: 40px;
 }
 
 richlistitem {
-  -moz-margin-end: 2em;
+  margin-inline-end: 2em;
 }
 
 richlistitem[selected="true"],
@@ -64,7 +64,7 @@ richlistitem[type="tab"] {
   border: #999999 1px solid !important;
   padding: 2px 5px;
   margin-bottom: 4px;
-  -moz-margin-start: 4em;
+  margin-inline-start: 4em;
   border-radius: 6px;
   background-color: menu;
   width: 44em;
@@ -82,7 +82,7 @@ richlistitem[type="tab"][selected="true"] {
 richlistitem[type="client"] {
   min-height: 2em;
   color: #000000;
-  -moz-margin-start: 2em;
+  margin-inline-start: 2em;
   margin-top: 2px;
   margin-bottom: 3px;
   width: 42em;
@@ -114,7 +114,7 @@ richlistitem.desktop[type="client"] {
 }
 
 .tabIcon {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
   padding-top: 2px;
 }
 

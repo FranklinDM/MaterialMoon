@@ -21,7 +21,7 @@
 }
 
 #sites-list {
-  -moz-appearance: none;
+  appearance: none;
   border: 1px solid rgba(0, 0, 0, 0.32);
   background-color: #fff;
   margin: 5px 0 0 0;
@@ -35,7 +35,7 @@
 .site-favicon {
   height: 16px;
   width: 16px;
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
   list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png");
 }
 
@@ -55,7 +55,7 @@
 
 #site-description {
   font-size: 125%;
-  -moz-margin-start: 6px; /* to match button margin */
+  margin-inline-start: 6px; /* to match button margin */
 }
 
 #site-label {
@@ -67,7 +67,7 @@
 #defaults-description {
   font-size: 125%;
   font-weight: bold;
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
 }
 
 .pref-item {
@@ -78,7 +78,7 @@
 .pref-icon {
   width: 36px;
   height: 36px;
-  -moz-margin-end: 10px;
+  margin-inline-end: 10px;
 }
 
 .pref-icon[type="password"] {

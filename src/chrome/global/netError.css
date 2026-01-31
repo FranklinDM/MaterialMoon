@@ -30,7 +30,7 @@ body {
 
 ul, ol {
   margin: 0;
-  -moz-margin-start: 40px;
+  margin-inline-start: 40px;
   padding: 0;
 }
 
@@ -69,7 +69,7 @@ a {
 }
 
 button {
-  -moz-appearance: none;
+  appearance: none;
   background: #4285f4;
   border: 0;
   color: #fff;
@@ -139,7 +139,7 @@ button:active {
 }
 
 :root.blacklist #errorLongContent {
-  -moz-padding-end: 220px;
+  padding-inline-end: 220px;
 }
 
 #ignoreWarning {

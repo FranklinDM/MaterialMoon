@@ -12,11 +12,11 @@
 /* ::::: textbox ::::: */
 
 textbox {
-  -moz-appearance: none;
+  appearance: none;
   cursor: text;
   margin: 2px 4px;
   padding: 2px 2px 3px;
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
   border-bottom: 2px solid;
   -moz-border-bottom-colors: lightgray transparent;
   background-color: transparent;
@@ -59,7 +59,7 @@ textbox[disabled="true"] {
 /* ::::: plain textbox ::::: */
 
 textbox.plain {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background-color: transparent;
   padding: 0px !important;
   margin: 0px !important;
@@ -70,9 +70,9 @@ textbox.plain {
 
 textbox[type="search"],
 textbox[type="search"]:not([disabled="true"])[focused] {
-  -moz-appearance: none;
-  -moz-padding-end: 5px;
-  -moz-padding-start: 34px;
+  appearance: none;
+  padding-inline-end: 5px;
+  padding-inline-start: 34px;
   border: 1px solid transparent;
   background-image: url("chrome://global/skin/icons/search-item.svg#state");
   background-position: .5em;

@@ -22,23 +22,23 @@
   width: 16px;
   list-style-image: url("chrome://global/skin/icons/folder-item.svg#state");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
-  -moz-margin-start: 3px;
+  margin-inline-start: 3px;
 }
 
 .searchbar-engine-button {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 0;
   margin: 1px;
   padding: 0;
   border-radius: 1px;
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   -moz-box-align: center;
   border: none;
   background: transparent;
 }
 
 .searchbar-engine-button > .button-box {
-  -moz-appearance: none;
+  appearance: none;
   padding: 0;
   border: 0;
 }
@@ -59,8 +59,8 @@
   font-style: italic;
   -moz-box-align: center;
   margin: 0;
-  -moz-margin-start: 2px;
-  -moz-margin-end: 2px;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
   background-origin: border-box;
   border: none;
 }

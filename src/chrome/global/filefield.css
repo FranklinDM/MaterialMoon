@@ -7,12 +7,12 @@
 
 /* File Field Widget */
 filefield {
-  -moz-appearance: none;
+  appearance: none;
   margin: 2px 4px;
 }
 
 .fileFieldContentBox {
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
   color: -moz-FieldText;
   border-bottom: 2px solid;
   -moz-border-bottom-colors: lightgray transparent;
@@ -28,12 +28,12 @@ filefield {
   height: 16px;
   margin-top: 1px;
   margin-bottom: 1px;
-  -moz-margin-start: 1px;
-  -moz-margin-end: 4px;
+  margin-inline-start: 1px;
+  margin-inline-end: 4px;
 }
 
 .fileFieldLabel {
-  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: none;
   margin: 0px;

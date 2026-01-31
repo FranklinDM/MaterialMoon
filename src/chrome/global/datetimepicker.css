@@ -18,14 +18,14 @@ datepicker, timepicker {
 }
 
 .datetimepicker-input-box {
-  -moz-appearance: none;
+  appearance: none;
   cursor: text;
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   border-bottom: 2px solid;
   -moz-border-bottom-colors: lightgray transparent;
   padding: 2px 0 3px 0;
-  -moz-padding-start: 4px;
-  -moz-padding-end: 2px;
+  padding-inline-start: 4px;
+  padding-inline-end: 2px;
   background-color: -moz-Field;
   color: -moz-FieldText;
 }
@@ -90,7 +90,7 @@ timepicker[disabled="true"] {
 }
 
 .datepicker-button {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 8px;
   padding: 0px;
 }

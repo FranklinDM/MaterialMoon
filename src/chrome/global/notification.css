@@ -30,13 +30,13 @@ notification[type="critical"] {
 .messageImage {
   width: auto;
   height: auto;
-  -moz-margin-start: 10px;
-  -moz-margin-end: 4px;
+  margin-inline-start: 10px;
+  margin-inline-end: 4px;
 }
 
 #sync-notifications > notification .messageImage {
-  -moz-margin-start: 0;
-  -moz-margin-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .popup-notification-learnmore-link:not([href]) {
@@ -61,10 +61,10 @@ notification[type="critical"] .messageImage,
 }
 
 .messageCloseButton {
-  -moz-appearance: none;
+  appearance: none;
   padding: 0px;
-  -moz-margin-start: 7px;
-  -moz-margin-end: 7px;
+  margin-inline-start: 7px;
+  margin-inline-end: 7px;
   border: none !important;
   box-shadow: none !important;
   background: none !important;
@@ -72,7 +72,7 @@ notification[type="critical"] .messageImage,
 
 popupnotification .messageCloseButton {
   margin-top: -4px !important;
-  -moz-margin-end: -5px !important;
+  margin-inline-end: -5px !important;
 }
 
 /* Popup notification */
@@ -96,7 +96,7 @@ XXX: apply styles to all themes until bug 509642 is fixed
 }
 
 .popup-notification-menubutton > .button-menubutton-button {
-  -moz-appearance: none;
+  appearance: none;
   padding: 1px 5px 1px 5px;
   margin: 0;
   border: none;
@@ -130,6 +130,6 @@ XXX: apply styles to all themes until bug 509642 is fixed
 }
 
 .popup-notification-closebutton {
-  -moz-margin-end: -7px;
+  margin-inline-end: -7px;
   margin-top: -7px;
 }

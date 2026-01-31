@@ -147,11 +147,11 @@ code {
   position: relative;
   font-family: Menlo, Andale Mono, monospace;
   padding-left: 13px;
-  -moz-user-select: -moz-none;
+  user-select: -moz-none;
 }
 
 .nodeBox.search-selection {
-  -moz-user-select: text;
+  user-select: text;
 }
 
 .twisty {

@@ -14,7 +14,7 @@
 panel[type="autocomplete"],
 panel[type="autocomplete-richlistbox"],
 .autocomplete-history-popup {
-  -moz-appearance: none;
+  appearance: none;
   border-width: 1px;
   -moz-border-top-colors: ThreeDDarkShadow;
   -moz-border-right-colors: ThreeDDarkShadow;
@@ -27,7 +27,7 @@ panel[type="autocomplete-richlistbox"],
 /* ::::: richlistbox autocomplete ::::: */
 
 .autocomplete-richlistbox {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -58,8 +58,8 @@ panel[type="autocomplete-richlistbox"],
 .ac-type-icon {
   width: 16px; 
   height: 16px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 4px;
+  margin-inline-start: 6px;
+  margin-inline-end: 4px;
   margin-bottom: -1px;
 }
 

@@ -12,7 +12,7 @@
 /* ::::: scrollbar ::::: */
 
 scrollbar {
-  -moz-appearance: none;
+  appearance: none;
   -moz-binding: url("chrome://global/content/bindings/scrollbar.xml#scrollbar");
   cursor: default;
   background-color: #F2F2F2;
@@ -20,13 +20,13 @@ scrollbar {
 
 scrollbar[orient="vertical"] 
 {
-   -moz-appearance: none;
+   appearance: none;
 }
 
 /* ::::: thumb (horizontal) ::::: */
 
 thumb {
-  -moz-appearance: none;
+  appearance: none;
   min-height: 8px;
   border: 2px solid #F2F2F2;
   background-color: #c1c1c1;
@@ -41,7 +41,7 @@ thumb:hover:active, thumb:active, thumb[active="true"], thumb:focus {
 }
 
 thumb[orient="horizontal"] {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 8px;
 }
 
@@ -66,7 +66,7 @@ scrollbarbutton:hover:active, scrollbarbutton[active="true"] {
 /* ::::: square at the corner of two scrollbars ::::: */
 
 scrollcorner { 
-  /* XXX -moz-appearance: scrollcorner; */
+  /* XXX appearance: scrollcorner; */
   -moz-binding: url(chrome://global/content/bindings/scrollbar.xml#scrollbar-base);
   width: 16px;
   cursor: default;
@@ -76,7 +76,7 @@ scrollcorner {
 /* ..... increment .... */
 
 scrollbarbutton[type="increment"] {
-  -moz-appearance: none;
+  appearance: none;
   background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#right")
 }
 
@@ -89,13 +89,13 @@ scrollbarbutton[type="increment"][disabled="true"] {
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {
-  -moz-appearance: none;
+  appearance: none;
   background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#down")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton:hover:active[type="increment"],
 scrollbar[orient="vertical"] > scrollbarbutton[type="increment"][active="true"] {
-  -moz-appearance: none;
+  appearance: none;
   background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#down-ac")
 }
 
@@ -106,7 +106,7 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="increment"][disabled="true"
 /* ..... decrement .... */
 
 scrollbarbutton[type="decrement"] {
-  -moz-appearance: none;
+  appearance: none;
    background-image: url("chrome://global/skin/arrow/arrow-mt-ver.svg#left")
 }
 
@@ -120,13 +120,13 @@ scrollbarbutton[type="decrement"][disabled="true"] {
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {
-  -moz-appearance: none;
+  appearance: none;
    background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#up")
 }
 
 scrollbar[orient="vertical"] > scrollbarbutton:hover:active[type="decrement"],
 scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][active="true"] {
-  -moz-appearance: none;
+  appearance: none;
    background-image: url("chrome://global/skin/arrow/arrow-mt-hor.svg#up-ac")
 }
 
@@ -141,7 +141,7 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
   /* ::::: scrollbar ::::: */
 
   html|div scrollbar {
-    -moz-appearance: scrollbartrack-horizontal;
+    appearance: scrollbartrack-horizontal;
     -moz-binding: url("chrome://global/content/bindings/scrollbar.xml#scrollbar");
     cursor: default;
     background: url("chrome://global/skin/scrollbar/slider.gif") scrollbar;
@@ -149,7 +149,7 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
 
   html|div scrollbar[orient="vertical"] 
   {
-     -moz-appearance: scrollbartrack-vertical;
+     appearance: scrollbartrack-vertical;
   }
 
   /* ::::: borders for thumb and buttons ::::: */
@@ -167,12 +167,12 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
   /* ::::: thumb (horizontal) ::::: */
 
   html|div thumb {
-    -moz-appearance: scrollbarthumb-vertical;
+    appearance: scrollbarthumb-vertical;
     min-height: 8px;
   }
 
   html|div thumb[orient="horizontal"] {
-    -moz-appearance: scrollbarthumb-horizontal;
+    appearance: scrollbarthumb-horizontal;
     min-width: 8px;
   }
 
@@ -195,7 +195,7 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
   /* ..... increment .... */
 
   html|div scrollbarbutton[type="increment"] {
-    -moz-appearance: none;
+    appearance: none;
     background-image: url("chrome://global/skin/arrow/arrow-rit.gif")
   }
 
@@ -204,7 +204,7 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
   }
 
   html|div scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {
-    -moz-appearance: scrollbarbutton-down;
+    appearance: scrollbarbutton-down;
     background-image: url("chrome://global/skin/arrow/arrow-dn.gif")
   }
 
@@ -215,7 +215,7 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
   /* ..... decrement .... */
 
   html|div scrollbarbutton[type="decrement"] {
-    -moz-appearance: scrollbarbutton-left;
+    appearance: scrollbarbutton-left;
      background-image: url("chrome://global/skin/arrow/arrow-lft.gif")
   }
 
@@ -224,7 +224,7 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
   }
 
   html|div scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {
-    -moz-appearance: scrollbarbutton-up;
+    appearance: scrollbarbutton-up;
      background-image: url("chrome://global/skin/arrow/arrow-up.gif")
   }
 

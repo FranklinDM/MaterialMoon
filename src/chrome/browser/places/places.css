@@ -4,7 +4,7 @@
 
 /* Sidebars */
 .sidebar-placesTree {
-  -moz-appearance: none;
+  appearance: none;
   border: 0;
   margin: 0;
   border-top: 1px solid ThreeDShadow;
@@ -144,7 +144,7 @@ treechildren::-moz-tree-cell-text(cutting) {
 #viewButton {
   margin-top: 0px;
   margin-bottom: 0px;
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
 }
 
 /* Style Places sidebars as Vista media collection */

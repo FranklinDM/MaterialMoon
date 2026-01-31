@@ -11,7 +11,7 @@
 
 /* Page background */
 *|*:root {
-  -moz-appearance: none;
+  appearance: none;
   color: #000;
   background-color: var(--page-background);
   --page-background: #F2F2F2;
@@ -30,8 +30,8 @@ html|html {
 #permissions-header,
 #header {
   min-height: 56px;
-  -moz-padding-start: 2em;
-  -moz-padding-end: 2em;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em;
   background-color: #3367d6;
   color: white;
   transition: min-height 500ms;

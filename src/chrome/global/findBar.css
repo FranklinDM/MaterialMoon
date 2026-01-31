@@ -13,9 +13,9 @@
 
 .findbar-closebutton {
   padding: 0;
-  -moz-margin-start: 7px;
-  -moz-margin-end: 7px;
-  -moz-appearance: none;
+  margin-inline-start: 7px;
+  margin-inline-end: 7px;
+  appearance: none;
   border: none !important;
   box-shadow: none !important;
   background: none !important;
@@ -62,7 +62,7 @@ findbar:not(:-moz-lwtheme) {
 
 .findbar-find-next,
 .findbar-find-previous {
-  -moz-appearance: none !important;
+  appearance: none !important;
   border: 0 !important;
   padding: 0 !important;
   border-radius: 3px;
@@ -134,15 +134,15 @@ toolbarbutton:hover:active:not([disabled="true"]),
   list-style-image: none;
   margin-top: 2px;
   margin-bottom: 0px;
-  -moz-margin-start: 12px;
-  -moz-margin-end: 0px;
+  margin-inline-start: 12px;
+  margin-inline-end: 0px;
   width: 16px;
   height: 16px;
 }
 
 .findbar-find-status {
   margin: 0 !important;
-  -moz-margin-start: 3px !important;
+  margin-inline-start: 3px !important;
   padding: 2px !important;
 }
 
@@ -163,7 +163,7 @@ toolbarbutton:hover:active:not([disabled="true"]),
 }
 
 .findbar-textbox.findbar-find-fast {
-  -moz-appearance: none !important;
+  appearance: none !important;
   height: 25px !important;
   border-radius: 3px;
   border: 1px solid;

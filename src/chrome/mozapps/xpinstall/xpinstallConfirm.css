@@ -3,7 +3,7 @@
 }
 
 #itemList {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0px 3px;
   height: 8.1em;
   background-color: white;
@@ -17,7 +17,7 @@
 }
 
 #itemWarningIntro {
-  -moz-margin-start: 8px;
+  margin-inline-start: 8px;
 }
 
 #dialogContentBox {
@@ -27,8 +27,8 @@
 installitem {
   padding-top: 5px;
   padding-bottom: 5px;
-  -moz-padding-start: 5px;
-  -moz-padding-end: 0;
+  padding-inline-start: 5px;
+  padding-inline-end: 0;
   margin-bottom: 5px;
 }
 
@@ -36,8 +36,8 @@ installitem {
   list-style-image: url("chrome://global/skin/icons/allowed_plugins2.png");
   width: 38px;
   height: 38px;
-  -moz-margin-start: 2px;
-  -moz-margin-end: 6px;
+  margin-inline-start: 2px;
+  margin-inline-end: 6px;
 }
 
 .warning {
@@ -47,7 +47,7 @@ installitem {
 .xpinstallIconContainer {
   width: 32px;
   height: 32px;
-  -moz-margin-end: 5px;
+  margin-inline-end: 5px;
 }
 
 .xpinstallItemName {
@@ -60,15 +60,15 @@ installitem {
 }
 
 .xpinstallItemURL {
-  -moz-appearance: none;
+  appearance: none;
   border: none;
   padding: 0;
   background-color: -moz-Field;
   color: -moz-FieldText;
   margin-top: 1px;
   margin-bottom: 1px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 5px;
+  margin-inline-start: 6px;
+  margin-inline-end: 5px;
 }
 
 .xpinstallItemIcon {

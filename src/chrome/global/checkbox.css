@@ -11,23 +11,23 @@
 /* ::::: checkbox ::::: */
 
 checkbox {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   margin: 2px 5px;
   padding-top: 1px;
   padding-bottom: 1px;
-  -moz-padding-start: 4px;
-  -moz-padding-end: 2px;
+  padding-inline-start: 4px;
+  padding-inline-end: 2px;
 }
 
 .checkbox-label-box {
-  -moz-margin-start: 1px;
+  margin-inline-start: 1px;
   border: 1px solid transparent;
   padding: 0px 3px;
 }
 
 .checkbox-icon {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 
 .checkbox-label {
@@ -57,7 +57,7 @@ checkbox[disabled="true"] {
 /* ::::: checkmark image ::::: */
 
 .checkbox-check {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   min-width: 15px;
   min-height: 15px;

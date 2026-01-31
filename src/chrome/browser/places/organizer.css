@@ -5,8 +5,8 @@
 /* Toolbar */
 #placesToolbar {
   padding: 3px;
-  -moz-padding-end: 22px;
-  -moz-appearance: none;
+  padding-inline-end: 22px;
+  appearance: none;
   background-color: #F0F0F0;
   border-bottom: 1px solid #CFCFCF;
   color: black;
@@ -36,12 +36,12 @@
 
 /* Menu */
 #placesMenu {
-  -moz-appearance: none;
+  appearance: none;
   border: none;
 }
 
 #placesMenu > menu {
-  -moz-appearance: none !important;
+  appearance: none !important;
   padding: 1px 3px;
   margin-top: 0px; 
   margin-bottom: 0px;
@@ -117,7 +117,7 @@
 }
 
 #infoBoxExpanderLabel {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
 }
 
 #searchFilter {
@@ -125,12 +125,12 @@
 }
 
 #searchFilter .textbox-search-icon {
-  -moz-padding-start: 2px;
-  -moz-padding-end: 2px;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
 }
 
 #placesToolbox {
-  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border-top: none;
 }
@@ -149,6 +149,6 @@
   min-width: 0;
   width: 3px;
   background-color: transparent;
-  -moz-margin-start: -3px;
+  margin-inline-start: -3px;
   position: relative;
 }

@@ -16,12 +16,12 @@ groupbox {
 }
 
 .groupbox-title {
-  -moz-margin-start: -4px;
+  margin-inline-start: -4px;
   color: #303942;
 }
 
 .groupbox-body {
-  -moz-margin-start: 8px;
+  margin-inline-start: 8px;
   margin-top: 6px;
 }
 
@@ -34,5 +34,5 @@ caption {
   font-weight: bold;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  -moz-margin-start: 1px !important;
+  margin-inline-start: 1px !important;
 }

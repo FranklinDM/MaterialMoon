@@ -14,7 +14,7 @@
 
 #warningBox {
   padding: 3em;
-  -moz-padding-start: 30px;
+  padding-inline-start: 30px;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -44,7 +44,7 @@
 
 #exclam {
   list-style-image: url("chrome://global/skin/icons/flags_2x.png");
-  -moz-margin-end: 2em;
+  margin-inline-end: 2em;
 }
 
 #configTreeBody::-moz-tree-cell-text(user) {

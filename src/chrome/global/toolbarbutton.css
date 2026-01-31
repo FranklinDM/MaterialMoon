@@ -10,7 +10,7 @@
 
 /* ::::: toolbarbutton ::::: */
 toolbarbutton {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   -moz-box-pack: center;
   color: -moz-DialogText;
@@ -73,7 +73,7 @@ toolbarbutton[open="true"]:not([disabled="true"]):-moz-lwtheme-brighttext,
 
 .toolbarbutton-icon[label]:not([label=""]),
 .toolbarbutton-icon[type="menu"] {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 
 .toolbarbutton-text {
@@ -92,7 +92,7 @@ toolbarbutton:-moz-focusring {
 /* ::::: toolbarbutton menu ::::: */
 
 .toolbarbutton-menu-dropmarker {
-  -moz-appearance: none;
+  appearance: none;
   padding: 0;
   width: auto;
   height: auto;
@@ -115,7 +115,7 @@ toolbarbutton[type="menu-button"] {
 /* ::::: toolbarbutton badged ::::: */
 
 .toolbarbutton-badge-container > .toolbarbutton-icon[label]:not([label=""]) {
-  -moz-margin-end: 0;
+  margin-inline-end: 0;
 }
 
 .toolbarbutton-badge[badge=""] {
@@ -157,7 +157,7 @@ toolbarbutton[type="menu-button"] {
 /* .......... dropmarker .......... */
 
 .toolbarbutton-menubutton-dropmarker {
-  -moz-appearance: none;
+  appearance: none;
   padding: 3px;
   border: none;
   background-color: transparent;

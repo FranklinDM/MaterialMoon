@@ -42,8 +42,8 @@ wizardpage {
 }
 
 #licenseContent, #incompatibleListbox {
-  -moz-margin-start: 6px;
-  -moz-margin-end: 6px;
+  margin-inline-start: 6px;
+  margin-inline-end: 6px;
 }
 
 .inline-link {
@@ -57,8 +57,8 @@ wizardpage {
 
 /* Unsupported Page */
 #unsupportedLabel, #unsupportedLinkLabel {
-  -moz-margin-start: 0;
-  -moz-padding-start: 0;
+  margin-inline-start: 0;
+  padding-inline-start: 0;
 }
 
 /* Update Found Basic Page */
@@ -69,7 +69,7 @@ wizardpage {
 
 /* License Page */
 #licenseContent {
-  -moz-appearance: listbox;
+  appearance: listbox;
 }
 
 /* Incompatible List Page */
@@ -93,7 +93,7 @@ wizardpage {
 #pauseButton {
   list-style-image: url(chrome://mozapps/skin/update/downloadButtons.png);
   -moz-image-region: rect(0px, 48px, 16px, 32px);
-  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: none;
   min-width: 0;
@@ -144,8 +144,8 @@ wizardpage {
 #errorReason {
   margin-top: 1px;
   margin-bottom: 2px;
-  -moz-margin-start: 6px !important;
-  -moz-margin-end: 5px;
+  margin-inline-start: 6px !important;
+  margin-inline-end: 5px;
   font-weight: bold;
 }
 
@@ -168,7 +168,7 @@ update {
 }
 
 #historyItems {
-  -moz-appearance: listbox;
+  appearance: listbox;
   height: 200px;
   margin: 1px 5px 4px 5px;
 }

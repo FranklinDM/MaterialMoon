@@ -18,7 +18,7 @@
 /* ::::: app menu button ::::: */
 
 #appmenu-button {
-  -moz-appearance: none;
+  appearance: none;
   min-height: 0 !important;
   max-height: 20px !important;
   min-width: 0 !important;
@@ -195,11 +195,11 @@
   @media not all and (-moz-windows-compositor) {
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) {
       padding-bottom: 4px !important; 
-	  -moz-margin-start: 5px !important;
+	  margin-inline-start: 5px !important;
     }
 
     #main-window[tabsontop="true"][sizemode="maximized"] #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
-      -moz-padding-end: 3px !important; 
+      padding-inline-end: 3px !important; 
     }
 
     #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
@@ -214,12 +214,12 @@
   }	
 	
   #main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar:not([autohide="false"]) {
-    -moz-margin-start: 5px !important;
+    margin-inline-start: 5px !important;
     padding-bottom: 4px !important; 
   }
 
    #main-window[tabsontop="true"][sizemode="normal"]:not([inFullscreen]) #toolbar-menubar:not([autohide="false"]) ~ #TabsToolbar {
-	-moz-padding-start: 5px !important;
+	padding-inline-start: 5px !important;
   } 
 }
 
@@ -238,7 +238,7 @@
 }
 
 #appmenu-popup {
-  -moz-appearance: none;
+  appearance: none;
   border: 3px gray solid;
   background-color: transparent;
 }
@@ -251,15 +251,15 @@
 
 #appmenu-popup .menu-accel,
 #appmenu-popup .menu-iconic-accel {
-  -moz-margin-start: 1.7em !important;
-  -moz-margin-end: 2em !important;
+  margin-inline-start: 1.7em !important;
+  margin-inline-end: 2em !important;
 }
 
 @media not all and (-moz-windows-compositor) {
   #appmenu-popup .menu-accel,
   #appmenu-popup .menu-iconic-accel {
-    -moz-margin-start: 1.7em !important;
-    -moz-margin-end: 3em !important;
+    margin-inline-start: 1.7em !important;
+    margin-inline-end: 3em !important;
   }
 }
 
@@ -272,7 +272,7 @@
 #appmenuSecondaryPane > menuitem,
 #appmenuSecondaryPane > splitmenu > .splitmenu-menuitem,
 #appmenuSecondaryPane > splitmenu > .splitmenu-menu {
-  -moz-appearance: none;
+  appearance: none;
   height: 25px;
 }
 
@@ -290,7 +290,7 @@
 }
 
 .appmenu-menuseparator {
-  -moz-appearance: none;
+  appearance: none;
   border-top: 1px solid #E9E9E9;
   border-bottom: none;
   margin: 7px 0 0 0;
@@ -300,7 +300,7 @@
 #appmenuSecondaryPane {
   background-color: #F1F1F1;
   box-shadow: 1px 0 0 rgb(232, 232, 232) inset;
-  -moz-padding-start: 1px;
+  padding-inline-start: 1px;
   font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
 }
 
@@ -326,19 +326,19 @@
 
 @media (-moz-windows-compositor) {
   #main-window[sizemode=normal] > #titlebar {
-    -moz-appearance: -moz-window-titlebar;
+    appearance: -moz-window-titlebar;
   }
 
   #main-window[sizemode="maximized"] > #titlebar {
-    -moz-appearance: -moz-window-titlebar-maximized;
+    appearance: -moz-window-titlebar-maximized;
   }
 
   #titlebar-buttonbox {
-    -moz-appearance: -moz-window-button-box;
+    appearance: -moz-window-button-box;
   }
 
   #main-window[sizemode="maximized"] #titlebar-buttonbox {
-    -moz-appearance: -moz-window-button-box-maximized;
+    appearance: -moz-window-button-box-maximized;
   }
 
   .titlebar-placeholder[type="caption-buttons"] {
@@ -363,14 +363,14 @@
 @media (-moz-windows-compositor) {
   #main-window {
 	background-color: transparent;
-    -moz-appearance: -moz-win-glass;
+    appearance: -moz-win-glass;
   }
 
   /* On win 10, if we don't set this on the entire browser container, including
    * the sidebar, then the accent color bleeds through in the titlebar
    * if the sidebar is open. */
   #browser {
-    -moz-appearance: -moz-win-exclude-glass;
+    appearance: -moz-win-exclude-glass;
   }
 
 /* ==== Windows 10/11 styling ==== */
@@ -510,7 +510,7 @@
 
     #titlebar-buttonbox,
     .titlebar-button {
-      -moz-appearance: none !important;
+      appearance: none !important;
     }
 
     .titlebar-button {
@@ -701,7 +701,7 @@
      * We can't use -moz-win-glass there because the border sizing would
      * not be correct. */
     #main-window {
-      -moz-appearance: -moz-win-borderless-glass;
+      appearance: -moz-win-borderless-glass;
     }
     
     /* These should be hidden w/ glass enabled. Windows draws its own buttons. */
@@ -713,11 +713,11 @@
      * vista and win7 we want to make sure they are "glassy", so we can't use
      * #browser as the exclude-glass container. We use #appcontent instead. */
     #browser {
-      -moz-appearance: none;
+      appearance: none;
     }
 
     #appcontent {
-      -moz-appearance: -moz-win-exclude-glass;
+      appearance: -moz-win-exclude-glass;
     }
 
     #main-window[chromemargin^="0,"][sizemode=normal] #navigator-toolbox {
@@ -753,7 +753,7 @@
 	#allTabs-panel,
 	#ctrlTab-panel {
 	  background: transparent;
-	  -moz-appearance: -moz-win-glass;
+	  appearance: -moz-win-glass;
 	  border-radius: 0;
 	  border: none;
 	  font: normal 1.2em "Segoe UI";
@@ -781,7 +781,7 @@
   /* ==== ==== */
   
   #main-window[sizemode=fullscreen]:not(:-moz-lwtheme) {
-    -moz-appearance: none;
+    appearance: none;
     background-color: #C0C0C0;
   }
 
@@ -841,7 +841,7 @@
   }
 
   .tab-drag-panel {
-    -moz-appearance: -moz-win-borderless-glass;
+    appearance: -moz-win-borderless-glass;
   }
   .tab-drag-label {
     padding: 4px;
@@ -858,7 +858,7 @@
     content: "";
     display: block;
     margin-top: -32px !important;
-    -moz-margin-start: -2px;
+    margin-inline-start: -2px;
     padding: 0;
     width: 32px !important;
     height: 32px !important;
@@ -949,7 +949,7 @@
    }
 
     #titlebar-content {
-      -moz-appearance: none;
+      appearance: none;
       margin-top: 2px;
     }
 
@@ -958,7 +958,7 @@
       margin-top: 1px;
     }
     window[sizemode="maximized"] #titlebar-buttonbox {
-      -moz-appearance: -moz-window-button-box;
+      appearance: -moz-window-button-box;
       margin-top: -2px;
       margin-bottom: 2px;
     }
@@ -1006,7 +1006,7 @@
     #titlebar-max,
     #restore-button,
     #titlebar-close {
-      -moz-appearance: none !important;
+      appearance: none !important;
       background-color: transparent;
     }
 

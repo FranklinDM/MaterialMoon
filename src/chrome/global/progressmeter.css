@@ -11,14 +11,14 @@
 /* ::::: progressmeter ::::: */
 
 progressmeter {
-  -moz-appearance: none;
+  appearance: none;
   background-color: #82B1FF;
   min-width: 128px;
   min-height: 6px;
 }
 
 .progress-bar {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 0px;
   background-color: #2962FF;
 }

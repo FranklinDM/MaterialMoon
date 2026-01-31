@@ -17,7 +17,7 @@ tree {
   -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
   background-color: -moz-Field;
   color: -moz-FieldText;
-  -moz-appearance: listbox;
+  appearance: listbox;
 }
 
 /* ::::: tree focusring ::::: */
@@ -162,7 +162,7 @@ treechildren::-moz-tree-drop-feedback {
   background-color: Highlight;
   width: 50px;
   height: 2px;
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 /* ::::: tree progress meter ::::: */
@@ -191,7 +191,7 @@ treechildren::-moz-tree-cell-text(progressmeter) {
 
 treecol,
 treecolpicker {
-  -moz-appearance: treeheadercell;
+  appearance: treeheadercell;
   -moz-box-align: center;
   -moz-box-pack: center;
   border: 2px solid;
@@ -213,7 +213,7 @@ treecolpicker {
 }
 
 treecol[hideheader="true"] {
-  -moz-appearance: none;
+  appearance: none;
   border: none;
   padding: 0;
 }
@@ -232,15 +232,15 @@ treecolpicker:hover:active {
   -moz-border-left-colors: ThreeDShadow -moz-Dialog;
   padding-top: 1px;
   padding-bottom: 0px;
-  -moz-padding-start: 5px;
-  -moz-padding-end: 4px;
+  padding-inline-start: 5px;
+  padding-inline-end: 4px;
 }
 
 .treecol-image:hover:active {
   padding-top: 1px;
   padding-bottom: 0px;
-  -moz-padding-start: 2px;
-  -moz-padding-end: 1px;
+  padding-inline-start: 2px;
+  padding-inline-end: 1px;
 }
 
 /* ::::: column drag and drop styles ::::: */
@@ -303,7 +303,7 @@ treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descend
 /* ::::: twisty :::::  */
 
 treechildren::-moz-tree-twisty {
-  -moz-padding-end: 4px;
+  padding-inline-end: 4px;
   padding-top: 1px;
   width: 9px; /* The image's width is 9 pixels */
   list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
@@ -341,13 +341,13 @@ treechildren::-moz-tree-cell-text(selected, editing) {
 }
 
 .tree-input {
-  -moz-appearance: none;
+  appearance: none;
   border: 1px solid Highlight;
   -moz-border-top-colors: Highlight;
   -moz-border-bottom-colors: Highlight;
   -moz-border-left-colors: Highlight;
   -moz-border-right-colors: Highlight;
   margin: 0;
-  -moz-margin-start: -4px;
+  margin-inline-start: -4px;
   padding: 1px;
 }

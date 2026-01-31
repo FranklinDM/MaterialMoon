@@ -25,8 +25,8 @@
   min-width: 0;
   padding: 2px 6px;
   margin: 0;
-  -moz-margin-start: 4px;
-  -moz-margin-end: 4px;
+  margin-inline-start: 4px;
+  margin-inline-end: 4px;
   min-width: 27px;
   min-height: 22px;
 }

@@ -24,7 +24,7 @@ body {
 
 ul, ol {
   margin: 0;
-  -moz-margin-start: 40px;
+  margin-inline-start: 40px;
   padding: 0;
 }
 
@@ -92,11 +92,11 @@ a {
 }
 
 .indent {
-  -moz-padding-start: 16px;
+  padding-inline-start: 16px;
 }
 
 button {
-  -moz-appearance: none;
+  appearance: none;
   background: #4285f4;
   border: 0;
   color: #fff;

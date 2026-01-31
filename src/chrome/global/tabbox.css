@@ -18,7 +18,7 @@ tabbox > tabs {
 /* ::::: tabpanels ::::: */
 
 tabpanels {
-  -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border: none;
   border-top: 0;
@@ -50,11 +50,11 @@ tabbox tab[selected="true"] {
 }
 
 tabbox .tabs-left {
-  -moz-margin-start: 18px;
+  margin-inline-start: 18px;
 }
 
 tabbox .tabs-right {
-  -moz-margin-end: 18px;
+  margin-inline-end: 18px;
 }
 
 .tab-text {
@@ -68,6 +68,6 @@ tab:-moz-focusring > .tab-middle {
 
 prefpane tabbox,
 dialog tabbox {
-  -moz-margin-start: -9px !important;
-  -moz-margin-end: -11px !important;
+  margin-inline-start: -9px !important;
+  margin-inline-end: -11px !important;
 }

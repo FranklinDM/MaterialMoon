@@ -12,7 +12,7 @@
 /* ::::: history button ::::: */
 
 .autocomplete-history-dropmarker {
-  -moz-appearance: none !important;
+  appearance: none !important;
   border: none !important;
   background-color: transparent !important;
   padding: 0px;
@@ -28,7 +28,7 @@ panel[type="autocomplete-richlistbox"],
   padding: 0px !important;
   background-color: -moz-Field;
   font: icon;
-  -moz-appearance: none;
+  appearance: none;
 }
 
 /* ::::: tree ::::: */
@@ -45,7 +45,7 @@ panel[type="autocomplete-richlistbox"],
 /* ::::: richlistbox autocomplete ::::: */
 
 .autocomplete-richlistbox {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -85,15 +85,15 @@ panel[type="autocomplete-richlistbox"],
   width: 16px; 
   height: 16px;
   margin-bottom: -1px;
-  -moz-margin-start: 7px;
-  -moz-margin-end: 5px;
+  margin-inline-start: 7px;
+  margin-inline-end: 5px;
 }
 
 .ac-type-icon {
   width: 16px;
   height: 16px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 4px;
+  margin-inline-start: 6px;
+  margin-inline-end: 4px;
 }
 
 .ac-url-box > .ac-site-icon,

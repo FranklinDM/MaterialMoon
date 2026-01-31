@@ -56,7 +56,7 @@ a {
   display: -moz-box;
   -moz-box-align: center;
   padding-top: 2px;
-  -moz-padding-end: 8px;
+  padding-inline-end: 8px;
 }
 
 #searchLogoContainer[hidden] {
@@ -87,7 +87,7 @@ a {
 }
 
 #searchSubmit {
-  -moz-margin-start: -1px;
+  margin-inline-start: -1px;
   background: #fff padding-box;
   padding: 0 9px;
   border: 1px solid transparent;
@@ -206,7 +206,7 @@ body[narrow] #restorePreviousSession {
   display: inline-block; /* display on same line as text label */
   vertical-align: middle;
   margin-bottom: 0;
-  -moz-margin-end: 8px;
+  margin-inline-end: 8px;
 }
 
 #restorePreviousSession:-moz-dir(rtl)::before {

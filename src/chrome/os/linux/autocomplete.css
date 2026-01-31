@@ -14,7 +14,7 @@
 panel[type="autocomplete"],
 panel[type="autocomplete-richlistbox"],
 .autocomplete-history-popup {
-  -moz-appearance: none;
+  appearance: none;
   border: 1px solid ThreeDShadow;
   padding: 0;
   background: Menu;
@@ -30,7 +30,7 @@ panel[type="autocomplete-richlistbox"],
 /* ::::: richlistbox autocomplete ::::: */
 
 .autocomplete-richlistbox {
-  -moz-appearance: none;
+  appearance: none;
   margin: 1px;
   background-color: transparent;
 }
@@ -53,15 +53,15 @@ panel[type="autocomplete-richlistbox"],
   width: 16px; 
   height: 16px;
   margin-bottom: -2px;
-  -moz-margin-start: 3px;
-  -moz-margin-end: 6px;
+  margin-inline-start: 3px;
+  margin-inline-end: 6px;
 }
 
 .ac-type-icon {
   width: 16px; 
   height: 16px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 4px;
+  margin-inline-start: 6px;
+  margin-inline-end: 4px;
 }
 
 .ac-extra > .ac-result-type-tag {
